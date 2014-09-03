@@ -1,0 +1,135 @@
+$font_stack: "Hoefler Text", 'Palatino', 'Times New Roman', 'Times', serif;
+
+$color_black: #000000;
+$color_white: #FFFFFF;
+
+$base_font_size: 12pt;
+$base_line_height: 1.45;
+$body_text: #{$base_font_size}/#{$base_line_height};
+
+$full_width: 8.5in;
+$full_height: 11in;
+
+$block_padding: 0.25in;
+
+$line_margin: $block_padding 0;
+$inline_margin: 0 0.65em;
+
+$out_block_width: (($full_width / 2) - ($block_padding * 2));
+$out_block_height: (($full_height / 2) - ($block_padding * 2));
+
+$border: 1px solid $color_black;
+
+
+
+* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		border-collapse: collapse;
+}
+
+
+body {
+		position: relative;
+		height: $full_height;
+		width: $full_width;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		background-color: $color_white;
+		color: $color_black;
+		font: {
+				family: $font_stack;
+				size: $body_text;
+		}
+}
+
+#carapace {
+		position: relative;
+		display: table;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		border: $border;
+		border-collapse: collapse;
+}
+
+
+.block-row {
+		position: relative;
+		display: table-row;
+		margin: 0;
+		padding: 0;
+		border: $border;
+		text-align: center;
+}
+
+.block-cell {
+		position: relative;
+		display: table-cell;
+		vertical-align: top;
+		margin: 0;
+		padding: $block_padding;
+		border: $border;
+}
+
+.block-block {
+		position: relative;
+		display: block;
+		width: $out_block_width;
+		height: $out_block_height;
+		padding: $block_padding;
+		margin: 0;
+		border: $border;
+}
+
+
+
+.sheet_line {
+		position: relative;
+		padding: 0;
+		margin: $line_margin;
+}
+
+
+.name {
+		@extend .sheet_line;
+		font-size: #{($base_font_size * 2)};
+		line-height: 100%;
+		font-weight: bold;
+}
+
+
+.vitals {
+		@extend .sheet_line;
+		text-align: center;
+}
+.vitals > div {
+		display: inline-block;
+		margin: $inline_margin;
+}
+
+
+.stats-line {
+		@extend .sheet_line;
+}
+
+.stat-block {
+		display: inline-block;
+		width: 15.5%;
+		margin: 0;
+		padding: 0;
+}
+
+.stat-val, .stat-hrd {
+		display: block;
+		clear: both;
+		text-align: center;
+}
+
+.stat-val {
+		font-size: ($base_font_size * 1.5);
+		line-height: 75%;
+}
