@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Magic_Wand" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<circle id="Handle_Bottom" cx="93.704" cy="91.467" r="4.016"/>
+<rect id="Handle" x="31.286" y="62.287" transform="matrix(-0.7198 -0.6941 0.6941 -0.7198 70.2499 160.985)" width="72.652" height="8.058"/>
+<circle id="Center_Circle" cx="42.423" cy="42.145" r="14.247"/>
+<polygon id="Star" points="2,35.871 36.336,37.246 27.644,4 43.622,34.423 68.068,10.273 49.709,39.322 82.848,48.417   48.511,47.042 57.203,80.289 41.226,49.865 16.779,74.016 35.138,44.967 "/>
+<circle id="Magic" cx="25.065" cy="28.225" r="3.528"/>
+<circle id="Magic_1_" cx="59.783" cy="56.063" r="3.528"/>
+<circle id="Magic_2_" cx="45.834" cy="20.157" r="3.528"/>
+<circle id="Magic_3_" cx="39.013" cy="64.132" r="3.528"/>
+<circle id="Magic_4_" cx="21.691" cy="50.221" r="3.528"/>
+<circle id="Magic_5_" cx="63.156" cy="34.068" r="3.529"/>
+</svg>
