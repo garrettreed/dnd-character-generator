@@ -1,0 +1,209 @@
+---
+Light:
+
+  - title: Padded
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Leather
+    cost: 10 gp
+    armor_bonus: 2
+    max_dex_bonus: 6
+    armor_penalty: 0
+    spell_fail_pct: 10%
+    speed: 30 ft.
+    weight: 15 lb.
+
+  - title: Studded leather
+    cost: 25 gp
+    armor_bonus: 3
+    max_dex_bonus: 5
+    armor_penalty: -1
+    spell_fail_pct: 15%
+    speed: 30 ft.
+    weight: 20 lb.
+
+  - title: Chain shirt
+    cost: 100 gp
+    armor_bonus: 4
+    max_dex_bonus: 4
+    armor_penalty: -2
+    spell_fail_pct: 20%
+    speed: 30 ft.
+    weight: 25 lb.
+
+
+
+Medium:
+
+  - title: Hide
+    cost: 15 gp
+    armor_bonus: 3
+    max_dex_bonus: 4
+    armor_penalty: -3
+    spell_fail_pct: 20%
+    speed: 20 ft.
+    weight: 25 lb.
+
+  - title: Scale mail
+    cost: 50 gp
+    armor_bonus: 4
+    max_dex_bonus: 3
+    armor_penalty: -4
+    spell_fail_pct: 25%
+    speed: 20 ft.
+    weight: 30 lb.
+
+  - title: Chainmail
+    cost: 150 gp
+    armor_bonus: 5
+    max_dex_bonus: 2
+    armor_penalty: -5
+    spell_fail_pct: 30%
+    speed: 20 ft.
+    weight: 40 lb.
+
+  - title: Breastplate
+    cost: 200 gp
+    armor_bonus: 5
+    max_dex_bonus: 3
+    armor_penalty: -4
+    spell_fail_pct: 25%
+    speed: 20 ft.
+    weight: 30 lb.
+
+
+
+Heavy:
+
+  - title: Splint mail
+    cost: 200 gp
+    armor_bonus: 6
+    max_dex_bonus: 0
+    armor_penalty: -7
+    spell_fail_pct: 40%
+    speed: 20 ft.
+    weight: 45 lb.
+
+  - title: Banded mail
+    cost: 250 gp
+    armor_bonus: 6
+    max_dex_bonus: 1
+    armor_penalty: -6
+    spell_fail_pct: 35%
+    speed: 20 ft.
+    weight: 35 lb.
+
+  - title: Half-plate
+    cost: 600 gp
+    armor_bonus: 7
+    max_dex_bonus: 0
+    armor_penalty: -7
+    spell_fail_pct: 40%
+    speed: 20 ft.
+    weight: 50 lb.
+
+  - title: Full plate
+    cost: 1,500 gp
+    armor_bonus: 8
+    max_dex_bonus: 1
+    armor_penalty: -6
+    spell_fail_pct: 35%
+    speed: 20 ft.
+    weight: 50 lb.
+
+
+
+Shields:
+
+  - title: Buckler
+    cost: 15 gp
+    armor_bonus: 1
+    max_dex_bonus: —
+    armor_penalty: -1
+    spell_fail_pct: 5%
+    speed: —
+    weight: 5 lb.
+
+  - title: Shield, light wooden
+    cost: 3 gp
+    armor_bonus: 1
+    max_dex_bonus: —
+    armor_penalty: -1
+    spell_fail_pct: 5%
+    speed: —
+    weight: 5 lb.
+
+  - title: Shield, light steel
+    cost: 9 gp
+    armor_bonus: 1
+    max_dex_bonus: —
+    armor_penalty: -1
+    spell_fail_pct: 5%
+    speed: —
+    weight: 6 lb.
+
+  - title: Shield, heavy wooden
+    cost: 7 gp
+    armor_bonus: 2
+    max_dex_bonus: —
+    armor_penalty: -2
+    spell_fail_pct: 15%
+    speed: —
+    weight: 10 lb.
+
+  - title: Shield, heavy steel
+    cost: 20 gp
+    armor_bonus: 2
+    max_dex_bonus: —
+    armor_penalty: -2
+    spell_fail_pct: 15%
+    speed: —
+    weight: 15 lb.
+
+  - title: Shield, tower
+    cost: 30 gp
+    armor_bonus: 4
+    max_dex_bonus: 2
+    armor_penalty: -10
+    spell_fail_pct: 50%
+    speed: —
+    weight: 45 lb.
+
+
+
+Extras:
+
+  - title: Armor spikes
+    cost: +50 gp
+    armor_bonus: —
+    max_dex_bonus: —
+    armor_penalty: —
+    spell_fail_pct: —
+    speed: —
+    weight: +10 lb.
+
+  - title: Gauntlet, locked
+    cost: 8 gp
+    armor_bonus: —
+    max_dex_bonus: —
+    armor_penalty: Special
+    spell_fail_pct: —
+    speed: —
+    weight: +5 lb.
+
+  - title: Shield spikes
+    cost: +10 gp
+    armor_bonus: —
+    max_dex_bonus: —
+    armor_penalty: —
+    spell_fail_pct: —
+    speed: —
+    weight: +5 lb.
+
+...

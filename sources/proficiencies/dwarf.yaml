@@ -1,0 +1,96 @@
+---
+- title: Armorer 
+  attribute: intelligence
+  mod: -2
+  desc: Ability to successfully manufacture and repair armor and shields
+
+- title: Detect Grade or Slope 
+  attribute: wisdom
+  mod: 4
+  desc: Detect grades or slopes in passages, tunnels and rooms
+
+- title: Detect New Construction 
+  attribute: wisdom
+  mod: 4
+  desc: Determine if tunnels, passages, rooms, etc. are newly constructed
+
+- title: Detect Sliding Walls
+  attribute: wisdom
+  mod: 2
+  desc: Detect sliding or shifting walls and rooms
+
+- title: Detect Stonework Traps
+  attribute: wisdom
+  mod: 0 
+  desc: Detect stonework traps, pits, and deadfalls
+
+- title: Determine Depth 
+  attribute: wisdom
+  mod: 0 
+  desc: Determine approximate depth underground
+
+- title: Dwarf Local History 
+  attribute: charisma
+  mod: 0 
+  desc: Knowledge of specific dwarven clan, city, or family
+
+- title: Dwarf Runes 
+  attribute: intelligence
+  mod: 2
+  desc: Knowledge of symbolic dwarven runes (not Dethek alphabet)
+
+- title: Endurance 
+  attribute: constitution
+  mod: 0 
+  desc: Perform strenuous activity twice as long as normal
+
+- title: Finesmithing
+  attribute: dexterity
+  mod: -3
+  desc: Ability to manufacture jewelry; Prerequisite - Whitesmithing
+
+- title: Gem Cutting 
+  attribute: dexterity
+  mod: -2
+  desc: Knowledge and ability to cut gems from raw stones
+
+- title: Gem Identification
+  attribute: intelligence
+  mod: 1
+  desc: Basic knowledge of gemstones (not value or special properties)
+
+- title: Giant-slaying 
+  attribute: wisdom
+  mod: 0 
+  desc: Successful check gives +1 bonus to hit and damage vs. ogres, giants, and titans
+
+- title: Mining
+  attribute: wisdom
+  mod: 0 
+  desc: In depth knowledge of ores and mining procedures
+
+- title: Pest Control
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to keep an area clear of rats and other pests
+
+- title: Poison Resistance 
+  attribute: constitution
+  mod: -1
+  desc: Successful skill check allows saving throw vs. poison at +2
+
+- title: Spelunking
+  attribute: intelligence
+  mod: -2
+  desc: Thorough understanding of caves and underground passages
+
+- title: Weaponsmithing
+  attribute: intelligence
+  mod: -3
+  desc: Ability to manufacture and repair weapons
+
+- title: Whitesmithing 
+  attribute: dexterity
+  mod: -2
+  desc: Ability to work soft metals such as gold or silver into simple shapes, such as rings
+...

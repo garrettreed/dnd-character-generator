@@ -1,0 +1,357 @@
+---
+level-0:
+  - title: Dancing Lights
+    description: Creates torches or other lights.
+  - title: Daze
+    description: Humanoid creature of 4 HD or less loses next action.
+  - title: Detect Magic
+    description: Detects spells and magic items within 60 ft.
+  - title: Flare
+    description: Dazzles one creature (–1 on attack rolls).
+  - title: Ghost Sound
+    description: Figment sounds.
+  - title: Know Direction
+    description: You discern north.
+  - title: Light
+    description: Object shines like a torch.
+  - title: Lullaby
+    description: Makes subject drowsy; –5 on Spot and Listen checks, –2 on Will saves against sleep.
+  - title: Mage Hand
+    description: 5-pound telekinesis.
+  - title: Mending
+    description: Makes minor repairs on an object.
+  - title: Message
+    description: Whispered conversation at distance.
+  - title: Open/Close
+    description: Opens or closes small or light things.
+  - title: Prestidigitation
+    description: Performs minor tricks.
+  - title: Read Magic
+    description: Read scrolls and spellbooks.
+  - title: Resistance
+    description: Subject gains +1 on saving throws.
+  - title: Summon Instrument
+    description: Summons one instrument of the caster's choice.
+
+
+
+level-1:
+  - title: Alarm
+    description: Wards an area for 2 hours/level.
+  - title: Animate Rope
+    description: Makes a rope move at your command.
+  - title: Cause Fear
+    description: One creature of 5 HD or less flees for 1d4 rounds.
+  - title: Charm Person
+    description: Makes one person your friend.
+  - title: Comprehend Languages
+    description: You understand all spoken and written languages.
+  - title: Confusion, Lesser
+    description: One creature is confused for 1 round.
+  - title: Cure Light Wounds
+    description: Cures 1d8 damage +1/level (max +5).
+  - title: Detect Secret Doors
+    description: Reveals hidden doors within 60 ft.
+  - title: Disguise Self
+    description: Changes your appearance.
+  - title: Erase
+    description: Mundane or magical writing vanishes.
+  - title: Expeditious Retreat
+    description: Your speed increases by 30 ft.
+  - title: Feather Fall
+    description: Objects or creatures fall slowly.
+  - title: Grease
+    description: Makes 10-ft. square or one object slippery.
+  - title: Hideous Laughter
+    description: Subject loses actions for 1 round/ level.
+  - title: Hypnotism
+    description: Fascinates 2d4 HD of creatures.
+  - title: IdentifyM&#160;
+    description: Determines properties of magic item.
+  - title: Magic MouthM&#160;
+    description: Speaks once when triggered.
+  - title: Magic Aura
+    description: Alters object's magic aura.
+  - title: Obscure Object
+    description: Masks object against scrying.
+  - title: Remove Fear
+    description: Suppresses fear or gives +4 on saves against fear for one subject + one per four levels.
+  - title: Silent Image
+    description: Creates minor illusion of your design.
+  - title: Sleep
+    description: Puts 4 HD of creatures into magical slumber.
+  - title: Summon Monster I
+    description: Calls extraplanar creature to fight for you.
+  - title: Undetectable Alignment
+    description: Conceals alignment for 24 hours.
+  - title: Unseen Servant
+    description: Invisible force obeys your commands.
+  - title: Ventriloquism
+    description: Throws voice for 1 min./level.
+
+
+
+level-2:
+  - title: Alter Self
+    description: Assume form of a similar creature.
+  - title: Animal Messenger
+    description: Sends a Tiny animal to a specific place.
+  - title: Animal Trance
+    description: Fascinates 2d6 HD of animals.
+  - title: Blindness/Deafness
+    description: Makes subject blind or deaf.
+  - title: Blur
+    description: Attacks miss subject 20% of the time.
+  - title: Calm Emotions
+    description: Calms creatures, negating emotion effects.
+  - title: Cat's Grace
+    description: Subject gains +4 to Dex for 1 min./level.
+  - title: Cure Moderate Wounds
+    description: Cures 2d8 damage +1/level (max +10).
+  - title: Darkness
+    description: 20-ft. radius of supernatural shadow.
+  - title: Daze Monster
+    description: Living creature of 6 HD or less loses next action.
+  - title: Delay Poison
+    description: Stops poison from harming subject for 1 hour/ level.
+  - title: Detect Thoughts
+    description: Allows “listening” to surface thoughts.
+  - title: Eagle's Splendor
+    description: Subject gains +4 to Cha for 1 min./level.
+  - title: Enthrall
+    description: Captivates all within 100 ft. + 10 ft./level.
+  - title: Fox's Cunning
+    description: Subject gains +4 to Int for 1 min./level.
+  - title: Glitterdust
+    description: Blinds creatures, outlines invisible creatures.
+  - title: Glossolalia
+    description: Cone-shaped shriek distracts smart foes, makes concentrating difficult.
+  - title: Heroism
+    description: Gives +2 on attack rolls, saves, skill checks.
+  - title: Hold Person
+    description: Paralyzes one humanoid for 1 round/level.
+  - title: Hypnotic Pattern
+    description: Fascinates (2d4 + level) HD of creatures.
+  - title: Invisibility
+    description: Subject is invisible for 1 min./level or until it attacks.
+  - title: Locate Object
+    description: Senses direction toward object (specific or type).
+  - title: Minor Image
+    description: As silent image, plus some sound.
+  - title: Mirror Image
+    description: Creates decoy duplicates of you (1d4 +1 per three levels, max 8).
+  - title: Misdirection
+    description: Misleads divinations for one creature or object.
+  - title: Pyrotechnics
+    description: Turns fire into blinding light or choking smoke.
+  - title: Rage
+    description: Gives +2 to Str and Con, +1 on Will saves, –2 to AC.
+  - title: Scare
+    description: Panics creatures of less than 6 HD.
+  - title: Shatter
+    description: Sonic vibration damages objects or crystalline creatures.
+  - title: Silence
+    description: Negates sound in 20-ft. radius.
+  - title: Sound Burst
+    description: Deals 1d8 sonic damage to subjects; may stun them.
+  - title: Suggestion
+    description: Compels subject to follow stated course of action.
+  - title: Summon Monster II
+    description: Calls extraplanar creature to fight for you.
+  - title: Summon Swarm
+    description: Summons swarm of bats, rats, or spiders.
+  - title: Tongues
+    description: Speak any language.
+  - title: Whispering Wind
+    description: Sends a short message 1 mile/level.
+
+
+
+level-3:
+  - title: Blink
+    description: You randomly vanish and reappear for 1 round/level.
+  - title: Charm Monster
+    description: Makes monster believe it is your ally.
+  - title: Clairaudience/Clairvoyance
+    description: Hear or see at a distance for 1 min./level.
+  - title: Confusion
+    description: Subjects behave oddly for 1 round/level.
+  - title: Crushing Despair
+    description: Subjects take –2 on attack rolls, damage rolls, saves, and checks.
+  - title: Cure Serious Wounds
+    description: Cures 3d8 damage +1/level (max +15).
+  - title: Daylight
+    description: 60-ft. radius of bright light.
+  - title: Deep Slumber
+    description: Puts 10 HD of creatures to sleep.
+  - title: Dispel Magic
+    description: Cancels magical spells and effects.
+  - title: Displacement
+    description: Attacks miss subject 50%.
+  - title: Fear
+    description: Subjects within cone flee for 1 round/level.
+  - title: Gaseous Form
+    description: Subject becomes insubstantial and can fly slowly.
+  - title: Geas, Lesser
+    description: Commands subject of 7 HD or less.
+  - title: Glibness
+    description: You gain +30 bonus on Bluff checks, and your lies can escape magical discernment.
+  - title: Good Hope
+    description: Subjects gain +2 on attack rolls, damage rolls, saves, and checks.
+  - title: Haste
+    description: One creature/level moves faster, +1 on attack rolls, AC, and Reflex saves.
+  - title: Illusory Script
+    description: Only intended reader can decipher.
+  - title: Invisibility Sphere
+    description: Makes everyone within 10 ft. invisible.
+  - title: Major Image
+    description: As silent image, plus sound, smell and thermal effects.
+  - title: Phantom Steed
+    description: Magic horse appears for 1 hour/level.
+  - title: Remove Curse
+    description: Frees object or person from curse.
+  - title: Scrying
+    description: Spies on subject from a distance.
+  - title: Sculpt Sound
+    description: Creates new sounds or changes existing ones.
+  - title: Secret Page
+    description: Changes one page to hide its real content.
+  - title: See Invisibility
+    description: Reveals invisible creatures or objects.
+  - title: Sepia Snake Sigil
+    description: Creates text symbol that immobilizes reader.
+  - title: Slow
+    description: One subject/level takes only one action/round, –1 to AC, reflex saves, and attack rolls.
+  - title: Speak with Animals
+    description: You can communicate with animals.
+  - title: Summon Monster III
+    description: Calls extraplanar creature to fight for you.
+  - title: Tiny Hut
+    description: Creates shelter for ten creatures.
+
+
+
+level-4:
+  - title: Break Enchantment
+    description: Frees subjects from enchantments, alterations, curses, and petrification.
+  - title: Cure Critical Wounds
+    description: Cures 4d8 damage +1/level (max +20).
+  - title: Detect Scrying
+    description: Alerts you of magical eavesdropping.
+  - title: Dimension Door
+    description: Teleports you short distance.
+  - title: Dominate Person
+    description: Controls humanoid telepathically.
+  - title: Freedom of Movement
+    description: Subject moves normally despite impediments.
+  - title: Hallucinatory Terrain
+    description: Makes one type of terrain appear like another (field into forest, or the like).
+  - title: Hold Monster
+    description: As hold person, but any creature.
+  - title: Invisibility, Greater
+    description: As invisibility, but subject can attack and stay invisible.
+  - title: Legend Lore
+    description: Lets you learn tales about a person, place, or thing.
+  - title: Locate Creature
+    description: Indicates direction to familiar creature.
+  - title: Modify Memory
+    description: Changes 5 minutes of subject's memories.
+  - title: Neutralize Poison
+    description: Immunizes subject against poison, detoxifies venom in or on subject.
+  - title: Rainbow Pattern
+    description: Lights fascinate 24 HD of creatures.
+  - title: Repel Vermin
+    description: Insects, spiders, and other vermin stay 10 ft. away.
+  - title: Secure Shelter
+    description: Creates sturdy cottage.
+  - title: Shadow Conjuration
+    description: Mimics conjuring below 4th level, but only 20% real.
+  - title: Shout
+    description: Deafens all within cone and deals 5d6 sonic damage.
+  - title: Speak with Plants
+    description: You can talk to normal plants and plant creatures.
+  - title: Summon Monster IV
+    description: Calls extraplanar creature to fight for you.
+  - title: Zone of Silence
+    description: Keeps eavesdroppers from overhearing conversations.
+
+
+
+level-5:
+  - title: Cure Light Wounds, Mass
+    description: Cures 1d8 damage +1/level for many creatures.
+  - title: Dispel Magic, Greater
+    description: As dispel magic, but +20 on check.
+  - title: Dream
+    description: Sends message to anyone sleeping.
+  - title: False Vision
+    description: Fools scrying with an illusion.
+  - title: Heroism, Greater
+    description: Gives +4 bonus on attack rolls, saves, skill checks; immunity to fear; temporary hp.
+  - title: Mind Fog
+    description: Subjects in fog get –10 to Wis and Will checks.
+  - title: Mirage Arcana
+    description: As hallucinatory terrain, plus structures.
+  - title: Mislead
+    description: Turns you invisible and creates illusory double.
+  - title: Nightmare
+    description: Sends vision dealing 1d10 damage, fatigue.
+  - title: Persistent Image
+    description: As major image, but no concentration required.
+  - title: Seeming
+    description: Changes appearance of one person per two levels.
+  - title: Shadow Evocation
+    description: Mimics evocation of lower than 5th level, but only 20% real.
+  - title: Shadow Walk
+    description: Step into shadow to travel rapidly.
+  - title: Song of Discord
+    description: Forces targets to attack each other.
+  - title: Suggestion, Mass
+    description: As suggestion, plus one subject/level.
+  - title: Summon Monster V
+    description: Calls extraplanar creature to fight for you.
+
+
+
+level-6:
+  - title: Analyze Dweomer
+    description: Reveals magical aspects of subject.
+  - title: Animate Objects
+    description: Objects attack your foes.
+  - title: Cat's Grace, Mass
+    description: As cat's grace, affects one subject/level.
+  - title: Charm Monster, Mass
+    description: As charm monster, but all within 30 ft.
+  - title: Cure Moderate Wounds, Mass
+    description: Cures 2d8 damage +1/level for many creatures.
+  - title: Eagle's Splendor, Mass
+    description: As eagle's splendor, affects one subject/level.
+  - title: Eyebite
+    description: Target becomes panicked, sickened, and comatose.
+  - title: Find the Path
+    description: Shows most direct way to a location.
+  - title: Fox's Cunning, Mass
+    description: As fox's cunning, affects one subject/level.
+  - title: Geas/Quest
+    description: As lesser geas, plus it affects any creature.
+  - title: Heroes' Feast
+    description: Food for one creature/level cures and grants combat bonuses.
+  - title: Irresistible Dance
+    description: Forces subject to dance.
+  - title: Permanent Image
+    description: Includes sight, sound, and smell.
+  - title: Programmed Image
+    description: As major image, plus triggered by event.
+  - title: Project Image
+    description: Illusory double can talk and cast spells.
+  - title: Scrying, Greater
+    description: As scrying, but faster and longer.
+  - title: Shout, Greater
+    description: Devastating yell deals 10d6 sonic damage; stuns creatures, damages objects.
+  - title: Summon Monster VI
+    description: Calls extraplanar creature to fight for you.
+  - title: Sympathetic Vibration
+    description: Deals 2d10 damage/round to freestanding structure.
+  - title: Veil
+    description: Changes appearance of group of creatures.
+...

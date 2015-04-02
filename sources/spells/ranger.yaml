@@ -1,0 +1,117 @@
+---
+level-1:
+	- title: Alarm
+    description: Wards an area for 2 hours/level.
+	- title: Animal Messenger
+    description: Sends a Tiny animal to a specific place.
+	- title: Calm Animals
+    description: Calms (2d4 + level) HD of animals.
+	- title: Charm Animal
+    description: Makes one animal your friend.
+	- title: Delay Poison
+    description: Stops poison from harming subject for 1 hour/level.
+	- title: Detect Animals or Plants
+    description: Detects kinds of animals or plants.
+	- title: Detect Poison
+    description: Detects poison in one creature or object.
+	- title: Detect Snares and Pits
+    description: Reveals natural or primitive traps.
+	- title: Endure Elements
+    description: Exist comfortably in hot or cold environments.
+	- title: Entangle
+    description: Plants entangle everyone in 40-ft.-radius circle.
+	- title: Hide from Animals
+    description: Animals can’t perceive one subject/level.
+	- title: Jump
+    description: Subject gets bonus on Jump checks.
+	- title: Longstrider
+    description: Increases your speed.
+	- title: Magic Fang
+    description: One natural weapon of subject creature gets +1 on attack and damage rolls.
+	- title: Pass without Trace
+    description: One subject/level leaves no tracks.
+	- title: Read Magic
+    description: Read scrolls and spellbooks.
+	- title: Resist Energy
+    description: Ignores 10 (or more) points of damage/attack from specified energy type.
+	- title: Speak with Animals
+    description: You can communicate with animals.
+	- title: Summon Nature's Ally I
+    description: Calls animal to fight for you.
+
+
+
+level-2:
+	- title: Barkskin
+    description: Grants +2 (or higher) enhancement to natural armor.
+	- title: Bear's Endurance
+    description: Subject gains +4 to Con for 1 min./level.
+	- title: Cat's Grace
+    description: Subject gains +4 to Dex for 1 min./level.
+	- title: Cure Light Wounds
+    description: Cures 1d8 damage +1/level (max +5).
+	- title: Hold Animal
+    description: Paralyzes one animal for 1 round/level.
+	- title: Owl's Wisdom
+    description: Subject gains +4 to Wis for 1 min./level.
+	- title: Protection from Energy
+    description: Absorb 12 points/level of damage from one kind of energy.
+	- title: Snare
+    description: Creates a magic booby trap.
+	- title: Speak with Plants
+    description: You can talk to normal plants and plant creatures.
+	- title: Spike Growth
+    description: Creatures in area take 1d4 damage, may be slowed.
+	- title: Summon Nature's Ally II
+    description: Calls animal to fight for you.
+	- title: Wind Wall
+    description: Deflects arrows, smaller creatures, and gases.
+
+
+
+level-3:
+	- title: Command Plants
+    description: Sway the actions of one or more plant creatures.
+	- title: Cure Moderate Wounds
+    description: Cures 2d8 damage +1/level (max +10).
+	- title: Darkvision
+    description: See 60 ft. in total darkness.
+	- title: Diminish Plants
+    description: Reduces size or blights growth of normal plants.
+	- title: Magic Fang, Greater
+    description: One natural weapon of subject creature gets +1/three caster levels on attack and damage rolls (max +5).
+	- title: Neutralize Poison
+    description: Immunizes subject against poison, detoxifies venom in or on subject.
+	- title: Plant Growth
+    description: Grows vegetation, improves crops.
+	- title: Reduce Animal
+    description: Shrinks one willing animal.
+	- title: Remove Disease
+    description: Cures all diseases affecting subject.
+	- title: Repel Vermin
+    description: Insects, spiders, and other vermin stay 10 ft. away.
+	- title: Summon Nature's Ally III
+    description: Calls animal to fight for you.
+	- title: Tree Shape
+    description: You look exactly like a tree for 1 hour/level.
+	- title: Water Walk
+    description: Subject treads on water as if solid.
+
+
+
+level-4:
+	- title: Animal Growth
+    description: One animal/two levels doubles in size.
+	- title: Commune with Nature
+    description: Learn about terrain for 1 mile/level.
+	- title: Cure Serious Wounds
+    description: Cures 3d8 damage +1/level (max +15).
+	- title: Freedom of Movement
+    description: Subject moves normally despite impediments.
+	- title: NondetectionM
+    description: Hides subject from Divination, scrying.
+	- title: Summon Nature's Ally IV
+    description: Calls animal to fight for you.
+	- title: Tree Stride
+    description: Step from one tree to another far away.
+...

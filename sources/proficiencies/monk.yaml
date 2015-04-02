@@ -1,0 +1,301 @@
+---
+- title: Administration
+  attribute: intelligence
+  mod: 1
+  desc: Management of temple-owned or controlled property
+
+- title: Alchemy 
+  attribute: intelligence
+  mod: -3
+  desc: Can brew and identify potions or toxins (must specify one)
+
+- title: Alms
+  attribute: charisma
+  mod: 0 
+  desc: Ability to find food, shelter, clothing for a simple blessing
+
+- title: Anatomy 
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of body structure; adds +1 to Healing; aids in zombie creation
+
+- title: Ancient Geography 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of the geography of a specific region in the distant past
+
+- title: Ancient History 
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of a specific region in the distant past
+
+- title: Astrology 
+  attribute: intelligence
+  mod: 0 
+  desc: Ability to predict future of an individual by the stars
+
+- title: Bookbinding 
+  attribute: intelligence
+  mod: 0 
+  desc: Skill with the process of assembling a book
+
+- title: Bureaucracy 
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of temple and governmental functions
+
+- title: Burial Customs
+  attribute: intelligence
+  mod: 0 
+  desc: Understanding of the burial rituals and customs of a specific religion or culture
+
+- title: Calligraphy 
+  attribute: dexterity
+  mod: -1
+  desc: Artistic writing ability; Prerequisite – Reading/Writing
+
+- title: Ceremony
+  attribute: wisdom
+  mod: 0 
+  desc: Well-versed in rites, customs, and ceremonies of a specific religion
+
+- title: Curse Lore
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of curses, their effects, and ways of removal
+
+- title: Diagnostics 
+  attribute: wisdom
+  mod: -1
+  desc: Diagnose the cause of wounds or pain
+
+- title: Diplomacy 
+  attribute: charisma
+  mod: -1
+  desc: Skill in diplomatic procedures and protocol
+
+- title: Dream Interpretation
+  attribute: wisdom
+  mod: -1
+  desc: Determine meaning of dreams and whether the dream is prophetic
+
+- title: Engineering 
+  attribute: intelligence
+  mod: -3
+  desc: Ability to repair great and small items, from catapults to buildings to aqueducts
+
+- title: Genie Lore
+  attribute: intelligence
+  mod: 0 
+  desc: Well-versed in the nature and types of all genies
+
+- title: Grooming
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to make another look his or her best
+
+- title: Gunsmithing 
+  attribute: intelligence
+  mod: -2
+  desc: Ability to make and repair smokepowder weapons
+
+- title: Healing 
+  attribute: wisdom
+  mod: -2
+  desc: Can heal 1d3 points of damage by binding wounds
+
+- title: Herbalism 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of plants and fungus, their abilities, and how to use them
+
+- title: Inquisitor
+  attribute: wisdom
+  mod: 0 
+  desc: Argue canon of specific religion, cross-examine faith of followers of that religion
+
+- title: Investigation 
+  attribute: intelligence
+  mod: -2
+  desc: Art of discovering the truth through careful examination of the facts
+
+- title: Languages, Ancient
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of an obscure language now considered “dead”
+
+- title: Law 
+  attribute: wisdom
+  mod: 0 
+  desc: Knowledge of the laws of a specific region
+
+- title: Local History 
+  attribute: charisma
+  mod: 0 
+  desc: In depth knowledge of the history of a specific region or country
+
+- title: Medium
+  attribute: wisdom
+  mod: 0 
+  desc: Channeling of spirits to seek divine aid or intervention
+
+- title: Midwife 
+  attribute: wisdom
+  mod: 2
+  desc: Aid in the birthing of children
+
+- title: Necrology 
+  attribute: wisdom
+  mod: 0 
+  desc: Well-versed in the lore of undead creatures
+
+- title: Netherworld Knowledge 
+  attribute: wisdom
+  mod: -3
+  desc: Knowledge of the cosmology of the Multiverse, focusing on destination of spirits
+
+- title: Numeracy
+  attribute: intelligence
+  mod: 0 
+  desc: Well-versed in accounting, mathematics, etc.
+
+- title: Omen Interpretation 
+  attribute: intelligence
+  mod: -2
+  desc: Ability to understand the meaning of unasked for omens (why did the sky turn red?, etc.)
+
+- title: Omen Reading
+  attribute: wisdom
+  mod: -2
+  desc: Ability to seek omens and predict the future through them
+
+- title: Organic Preservation
+  attribute: intelligence
+  mod: -1
+  desc: Skilled at preserving the longevity of organic substances
+
+- title: Papermaking 
+  attribute: intelligence
+  mod: 0 
+  desc: Ability to manufacture paper
+
+- title: Pharmacy
+  attribute: intelligence
+  mod: 0 
+  desc: Ability to manufacture complex medicines; Prerequisite - Herbalism
+
+- title: Planology 
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of the various planes of existence and their inhabitants
+
+- title: Prophecy
+  attribute: wisdom
+  mod: -1
+  desc: Can be used to analyze existing prophecies for meaning or to construct new prophecies
+
+- title: Psychology
+  attribute: wisdom
+  mod: -2
+  desc: Can analyze and treat madness and phobias or brainwash others (NOTE: brainwashing is evil)
+
+- title: Reading/Writing 
+  attribute: intelligence
+  mod: 1
+  desc: Ability to read and write a language
+
+- title: Religion
+  attribute: wisdom
+  mod: 0 
+  desc: Knowledge of the various religions of a given area, culture, or race
+
+- title: Rune Lore 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of magical runes and ability to differentiate them from non-magical runes
+
+- title: Sacred Legends
+  attribute: intelligence
+  mod: -1
+  desc: Well-versed in the myths and legends of a specific religion
+
+- title: Sage Knowledge
+  attribute: intelligence
+  mod: -2
+  desc: Specialized knowledge in a specific field, qualifying as a sage in that field
+
+- title: Screed Lore 
+  attribute: intelligence
+  mod: -1
+  desc: Expert in the care and collection of books, tomes, scrolls, etc.
+
+- title: Scribe
+  attribute: dexterity
+  mod: 1
+  desc: Transfer, copy, or transcribe books, scrolls, or dictation quickly and efficiently
+
+- title: Seance
+  attribute: charisma
+  mod: 0 
+  desc: Ability to contact spirits and extraplanar powers
+
+- title: Shamanic Ritual 
+  attribute: wisdom
+  mod: 1
+  desc: Knowledge of religious rituals of barbaric cultures and religions
+
+- title: Somatic Concealment 
+  attribute: dexterity
+  mod: -1
+  desc: Ability to conceal somatic spell components from view of others
+
+- title: Speed Casting 
+  attribute: wisdom
+  mod: -2
+  desc: Successful skill check allows caster to lower casting time by 1
+
+- title: Speed Reading 
+  attribute: intelligence
+  mod: -1
+  desc: Read already known languages up to 10x faster than normal
+
+- title: Spellcraft
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of the forms of spellcasting and types of spells
+
+- title: Spirit Lore 
+  attribute: charisma
+  mod: -4
+  desc: Knowledge of the ways to contact spirits and extraplanar power
+
+- title: Trance
+  attribute: constitution
+  mod: -3
+  desc: Ability to contact ancestral spirits through a trance
+
+- title: Tribal History
+  attribute: charisma
+  mod: 0 
+  desc: Storehouse of knowledge of a specific barbaric tribe (human or otherwise)
+
+- title: Undead Lore 
+  attribute: wisdom
+  mod: -1
+  desc: Identify common undead monsters
+
+- title: Venom Handling
+  attribute: wisdom
+  mod: -2
+  desc: Safely use magical and mundane poisons, identify poisons and antidotes
+
+- title: Veterinary Healing
+  attribute: wisdom
+  mod: -3
+  desc: Ability to heal 1d3 HP to animals with bandages and pressure
+
+- title: Vision Quest
+  attribute: wisdom
+  mod: -3
+  desc: Seeking of visions to answer major life questions, usually used by barbarians
+...

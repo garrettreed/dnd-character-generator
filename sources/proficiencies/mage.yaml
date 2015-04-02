@@ -1,0 +1,311 @@
+---
+- title: Abjuration Theory 
+  attribute: intelligence
+  mod: -2
+  desc: 5% bonus to learn abjuration spells, identify spells from residual energy
+
+- title: Alchemy 
+  attribute: intelligence
+  mod: -3
+  desc: Can brew and identify potions or toxins (must specify one)
+
+- title: Alteration Theory 
+  attribute: intelligence
+  mod: -2
+  desc: 5% bonus to learn alteration spells, identify spells from residual energy
+
+- title: Anatomy 
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of body structure; adds +1 to Healing; aids in zombie creation
+
+- title: Ancient Geography 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of the geography of a specific region in the distant past
+
+- title: Ancient History 
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of a specific region in the distant past
+
+- title: Arcanology
+  attribute: intelligence
+  mod: -3
+  desc: The study of the history and development of magic
+
+- title: Astrology 
+  attribute: intelligence
+  mod: 0 
+  desc: Ability to predict future of an individual by the stars
+
+- title: Astronomy 
+  attribute: intelligence
+  mod: 0 
+  desc: Detailed knowledge of the relative movement of stars, moons, and planets
+
+- title: Bookbinding 
+  attribute: intelligence
+  mod: 0 
+  desc: Skill with the process of assembling a book
+
+- title: Clockwork Creation
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to create intricate machines with tiny gears and clockwork mechanisms
+
+- title: Concentration 
+  attribute: wisdom
+  mod: -2
+  desc: Successful skill check allows ignoring of spell-disrupting attacks
+
+- title: Conjuration Theory
+  attribute: intelligence
+  mod: -2
+  desc: 5% bonus to learn conjuration spells, identify spells from residual energy
+
+- title: Divination Theory 
+  attribute: intelligence
+  mod: -2
+  desc: 5% bonus to learn divination spells, identify spells from residual energy
+
+- title: Dowsing 
+  attribute: wisdom
+  mod: -3
+  desc: Ability to detect lost or hidden items
+
+- title: Enchant/Charm Theory
+  attribute: intelligence
+  mod: -2
+  desc: 5% bonus to learn enchantment/charm spells, identify spells from residual energy
+
+- title: Engineering 
+  attribute: intelligence
+  mod: -3
+  desc: Ability to repair great and small items, from catapults to buildings to aqueducts
+
+- title: Gem Cutting 
+  attribute: dexterity
+  mod: -2  
+  desc: Knowledge and ability to cut gems from raw stones
+
+- title: Genie Lore
+  attribute: intelligence
+  mod: 0 
+  desc: Well-versed in the nature and types of all genies
+
+- title: Herbalism 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of plants and fungus, their abilities, and how to use them
+
+- title: High Magic
+  attribute: intelligence
+  mod: -3
+  desc: Knowledge of the most powerful magics in the world
+
+- title: Hypnotism 
+  attribute: charisma
+  mod: -2
+  desc: Place another into a relaxed state susceptible to suggestion
+
+- title: Illusion Theory 
+  attribute: intelligence
+  mod: -2
+  desc: 5% bonus to learn illusion spells, identify spells from residual energy
+
+- title: Invoc./Evocation Theory 2 
+  attribute: telligence
+  mod: -2
+  desc: 5% bonus to learn invocation/evocation spells, identify spells from residual energy
+
+- title: Languages, Ancient
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of an obscure language now considered “dead”
+
+- title: Magecraft 
+  attribute: intelligence
+  mod: -2
+  desc: Formal knowledge of basic magical theory, well-known spells, & bios of well-known mages
+
+- title: Mental Resistance 
+  attribute: wisdom
+  mod: -1
+  desc: Improves saving through vs. magical or psionic mind attacks by +2
+
+- title: Metaphysical Theory 
+  attribute: wisdom
+  mod: -3
+  desc: Knowledge of how magic works on other planes of existence
+
+- title: Necrology 
+  attribute: wisdom
+  mod: 0 
+  desc: Well-versed in the lore of undead creatures
+
+- title: Necromantic Theory
+  attribute: intelligence
+  mod: -2
+  desc: 5% bonus to learn necromantic spells, identify spells from residual energy
+
+- title: Netherworld Knowledge 
+  attribute: wisdom
+  mod: -3
+  desc: Knowledge of the cosmology of the Multiverse, focusing on spirits
+
+- title: Numeracy
+  attribute: intelligence
+  mod: 0 
+  desc: Well-versed in accounting, mathematics, etc.
+
+- title: Numerology
+  attribute: intelligence
+  mod: 0 
+  desc: Use of numbers to predict the future
+
+- title: Omen Interpretation 
+  attribute: intelligence
+  mod: -2
+  desc: Ability to understand the meaning of unasked for omens (why did the sky turn red?, etc.)
+
+- title: Omen Reading
+  attribute: wisdom
+  mod: -2
+  desc: Ability to seek omens and predict the future through them
+
+- title: Organic Preservation
+  attribute: intelligence
+  mod: -1
+  desc: Skilled at preserving the longevity of organic substances
+
+- title: Papermaking 
+  attribute: intelligence
+  mod: 0 
+  desc: Ability to manufacture paper
+
+- title: Pharmacy
+  attribute: intelligence
+  mod: 0 
+  desc: Ability to manufacture complex medicines; Prerequisite - Herbalism
+
+- title: Planology 
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of the various planes of existence and their inhabitants
+
+- title: Prestidigitation
+  attribute: dexterity
+  mod: -1
+  desc: The art of magical slight-of-hand
+
+- title: Prophecy
+  attribute: wisdom
+  mod: -1  
+  desc: Can be used to analyze existing prophecies for meaning or to construct new prophecies
+
+- title: Psychology
+  attribute: wisdom
+  mod: -2
+  desc: Can analyze and treat madness and phobias or brainwash others (NOTE: brainwashing is evil)
+
+- title: Reading/Writing 
+  attribute: intelligence
+  mod: 1
+  desc: Ability to read and write a language
+
+- title: Religion
+  attribute: wisdom
+  mod: 0 
+  desc: Knowledge of the various religions of a given area, culture, or race
+
+- title: Research
+  attribute: intelligence
+  mod: 0 
+  desc: 5% to research new spells and in ½ normal time
+
+- title: Rune Lore 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of magical runes and ability to differentiate them from non-magical runes
+
+- title: Sage Knowledge
+  attribute: intelligence
+  mod: -2
+  desc: Specialized knowledge in a specific field, qualifying as a sage in that field
+
+- title: Screed Lore 
+  attribute: intelligence
+  mod: -1
+  desc: Expert in the care and collection of books, tomes, scrolls, etc.
+
+- title: Scribe
+  attribute: dexterity
+  mod: 1
+  desc: Transfer, copy, or transcribe books, scrolls, or dictation quickly and efficiently
+
+- title: Seance
+  attribute: charisma
+  mod: 0 
+  desc: Ability to contact spirits and extraplanar powers
+
+- title: Shamanic Ritual 
+  attribute: wisdom
+  mod: 1
+  desc: Knowledge of religious rituals of barbaric cultures and religions
+
+- title: Somatic Concealment 
+  attribute: dexterity
+  mod: -1
+  desc: Ability to conceal somatic spell components from view of others
+
+- title: Speed Casting 
+  attribute: intelligence
+  mod: -2
+  desc: Successful skill check allows caster to lower casting time by 1
+
+- title: Speed Reading 
+  attribute: intelligence
+  mod: -1
+  desc: Read already known languages up to 10x faster than normal
+
+- title: Spellcraft
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of the forms of spellcasting and types of spells
+
+- title: Spirit Lore 
+  attribute: charisma
+  mod: -4
+  desc: Knowledge of the ways to contact spirits and extraplanar power
+
+- title: Tactics, Magic
+  attribute: intelligence
+  mod: -1
+  desc: Increased knowledge of magic in combat situations
+
+- title: Thaumaturgy 
+  attribute: intelligence
+  mod: -2
+  desc: 5% to chance to learn spells
+
+- title: Tribal History
+  attribute: charisma
+  mod: 0 
+  desc: Storehouse of knowledge of a specific barbaric tribe (human or otherwise)
+
+- title: Undead Lore 
+  attribute: wisdom
+  mod: 0 
+  desc: Identify common undead monsters
+
+- title: Venom Handling
+  attribute: wisdom
+  mod: -2
+  desc: Safely use magical and mundane poisons, identify poisons and antidotes
+
+- title: Veterinary Healing
+  attribute: wisdom
+  mod: -3
+  desc: Ability to heal 1d3 HP to animals with bandages and pressure
+...

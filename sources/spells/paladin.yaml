@@ -1,0 +1,105 @@
+---
+level-1:
+	- title: Bless
+    description: Allies gain +1 on attack rolls and +1 on saves against fear.
+	- title: Bless Water
+    description: Makes holy water.
+	- title: Bless Weapon
+    description: Weapon strikes true against evil foes.
+	- title: Create Water
+    description: Creates 2 gallons/level of pure water.
+	- title: Cure Light Wounds
+    description: Cures 1d8 damage +1/level (max +5).
+	- title: Detect Poison
+    description: Detects poison in one creature or small object.
+	- title: Detect Undead
+    description: Reveals undead within 60 ft.
+	- title: Divine Favor
+    description: You gain +1 per three levels on attack and damage rolls.
+	- title: Endure Elements
+    description: Exist comfortably in hot or cold environments.
+	- title: Magic Weapon
+    description: Weapon gains +1 bonus.
+	- title: Protection from Chaos
+    description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+	- title: Protection from Evil
+    description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+	- title: Read Magic
+    description: Read scrolls and spellbooks.
+	- title: Resistance
+    description: Subject gains +1 on saving throws.
+	- title: Restoration, Lesser
+    description: Dispels magical ability penalty or repairs 1d4 ability damage.
+	- title: Virtue
+    description: Subject gains 1 temporary hp.
+
+
+
+level-2:
+	- title: Bull's Strength
+    description: Subject gains +4 to Str for 1 min./level.
+	- title: Delay Poison
+    description: Stops poison from harming subject for 1 hour/level.
+	- title: Eagle's Splendor
+    description: Subject gains +4 to Cha for 1 min./level.
+	- title: Owl's Wisdom
+    description: Subject gains +4 to Wis for 1 min./level.
+	- title: Remove Paralysis
+    description: Frees one or more creatures from paralysis or slow effect.
+	- title: Resist Energy
+    description: Ignores 10 (or more) points of damage/attack from specified energy type.
+	- title: Shield Other
+    description: You take half of subject’s damage.
+	- title: Undetectable Alignment
+    description: Conceals alignment for 24 hours.
+	- title: Zone of Truth
+    description: Subjects within range cannot lie.
+
+
+
+level-3:
+	- title: Cure Moderate Wounds
+    description: Cures 2d8 damage +1/level (max +10).
+	- title: Daylight
+    description: 60-ft. radius of bright light.
+	- title: Discern Lies
+    description: Reveals deliberate falsehoods.
+	- title: Dispel Magic
+    description: Cancels spells and magical effects.
+	- title: Heal Mount
+    description: As heal on warhorse or other special mount.
+	- title: Magic Circle against Chaos
+    description: As protection from chaos, but 10-ft. radius and 10 min./level.
+	- title: Magic Circle against Evil
+    description: As protection from evil, but 10-ft. radius and 10 min./level.
+	- title: Magic Weapon, Greater
+    description: +1 bonus/four levels (max +5).
+	- title: Prayer
+    description: Allies +1 bonus on most rolls, enemies –1 penalty.
+	- title: Remove Blindness/Deafness
+    description: Cures normal or magical conditions.
+	- title: Remove Curse
+    description: Frees object or person from curse.
+
+
+
+level-4:
+	- title: Break Enchantment
+    description: Frees subjects from enchantments, alterations, curses, and petrification.
+	- title: Cure Serious Wounds
+    description: Cures 3d8 damage +1/level (max +15).
+	- title: Death Ward
+    description: Grants immunity to death spells and negative energy effects.
+	- title: Dispel Chaos
+    description: +4 bonus against attacks by chaotic creatures.
+	- title: Dispel Evil
+    description: +4 bonus against attacks by evil creatures.
+	- title: Holy Sword
+    description: Weapon becomes +5, deals +2d6 damage against evil.
+	- title: Mark of Justice
+    description: Designates action that will trigger curse on subject.
+	- title: Neutralize Poison
+    description: Immunizes subject against poison, detoxifies venom in or on subject.
+	- title: Restoration
+    description: Restores level and ability score drains.
+...

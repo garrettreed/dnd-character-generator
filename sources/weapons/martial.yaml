@@ -1,0 +1,330 @@
+---
+Light:
+
+  - title: Axe, throwing
+    cost: 8 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x2
+    range: 10 ft.
+    weight: 2 lb.
+    type: Slashing
+
+  - title: Hammer, light
+    cost: 1 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: x2
+    range: 20 ft.
+    weight: 2 lb.
+    type: Bludgeoning
+
+  - title: Handaxe
+    cost: 6 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x3
+    range: —
+    weight: 3 lb.
+    type: Slashing
+
+  - title: Kukri
+    cost: 8 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: 18-20/x2
+    range: —
+    weight: 2 lb.
+    type: Slashing
+
+  - title: Pick, light
+    cost: 4 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: x4
+    range: —
+    weight: 3 lb.
+    type: Piercing
+
+  - title: Sap
+    cost: 1 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x2
+    range: —
+    weight: 2 lb.
+    type: Bludgeoning
+
+  - title: Shield, light
+    cost: special
+    damage_s: 1d2
+    damage_m: 1d3
+    critical: x2
+    range: —
+    weight: special
+    type: Bludgeoning
+
+  - title: Spiked armor
+    cost: special
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x2
+    range: —
+    weight: special
+    type: Piercing
+
+  - title: Spiked shield, light
+    cost: special
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: x2
+    range: —
+    weight: special
+    type: Piercing
+
+  - title: Sword, short
+    cost: 10 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: —
+    weight: 2 lb.
+    type: Piercing
+
+
+
+One-handed:
+
+  - title: Battleaxe
+    cost: 10 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: x3
+    range: —
+    weight: 6 lb.
+    type: Slashing
+
+  - title: Flail
+    cost: 8 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: x2
+    range: —
+    weight: 5 lb.
+    type: Bludgeoning
+
+  - title: Longsword
+    cost: 15 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: —
+    weight: 4 lb.
+    type: Slashing
+
+  - title: Pick, heavy
+    cost: 8 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x4
+    range: —
+    weight: 6 lb.
+    type: Piercing
+
+  - title: Rapier
+    cost: 20 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: 18-20/x2
+    range: —
+    weight: 2 lb.
+    type: Piercing
+
+  - title: Scimitar
+    cost: 15 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: 18-20/x2
+    range: —
+    weight: 4 lb.
+    type: Slashing
+
+  - title: Shield, heavy
+    cost: special
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: x2
+    range: —
+    weight: special
+    type: Bludgeoning
+
+  - title: Spiked shield, heavy
+    cost: special
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x2
+    range: —
+    weight: special
+    type: Piercing
+
+  - title: Trident
+    cost: 15 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: x2
+    range: 10 ft.
+    weight: 4 lb.
+    type: Piercing
+
+  - title: Warhammer
+    cost: 12 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: x3
+    range: —
+    weight: 5 lb.
+    type: Bludgeoning
+
+
+
+Two-handed:
+
+  - title: Falchion
+    cost: 75 gp
+    damage_s: 1d6
+    damage_m: 2d4
+    critical: 18-20/x2
+    range: —
+    weight: 8 lb.
+    type: Slashing
+
+  - title: Glaive
+    cost: 8 gp
+    damage_s: 1d8
+    damage_m: 1d10
+    critical: x3
+    range: —
+    weight: 10 lb.
+    type: Slashing
+
+  - title: Greataxe
+    cost: 20 gp
+    damage_s: 1d10
+    damage_m: 1d12
+    critical: x3
+    range: —
+    weight: 12 lb.
+    type: Slashing
+
+  - title: Greatclub
+    cost: 5 gp
+    damage_s: 1d8
+    damage_m: 1d10
+    critical: x2
+    range: —
+    weight: 8 lb.
+    type: Bludgeoning
+
+  - title: Flail, heavy
+    cost: 15 gp
+    damage_s: 1d8
+    damage_m: 1d10
+    critical: 19-20/x2
+    range: —
+    weight: 10 lb.
+    type: Bludgeoning
+
+  - title: Greatsword
+    cost: 50 gp
+    damage_s: 1d10
+    damage_m: 2d6
+    critical: 19-20/x2
+    range: —
+    weight: 8 lb.
+    type: Slashing
+
+  - title: Guisarme
+    cost: 9 gp
+    damage_s: 1d6
+    damage_m: 2d4
+    critical: x3
+    range: —
+    weight: 12 lb.
+    type: Slashing
+
+  - title: Halberd
+    cost: 10 gp
+    damage_s: 1d8
+    damage_m: 1d10
+    critical: x3
+    range: —
+    weight: 12 lb.
+    type: Piercing or slashing
+
+  - title: Lance
+    cost: 10 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: x3
+    range: —
+    weight: 10 lb.
+    type: Piercing
+
+  - title: Ranseur
+    cost: 10 gp
+    damage_s: 1d6
+    damage_m: 2d4
+    critical: x3
+    range: —
+    weight: 12 lb.
+    type: Piercing
+
+  - title: Scythe
+    cost: 18 gp
+    damage_s: 1d6
+    damage_m: 2d4
+    critical: x4
+    range: —
+    weight: 10 lb.
+    type: Piercing or slashing
+
+
+
+Ranged:
+
+  - title: Longbow
+    cost: 75 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: x3
+    range: 100 ft.
+    weight: 3 lb.
+    type: Piercing
+
+  - title: Longbow, composite
+    cost: 100 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: x3
+    range: 110 ft.
+    weight: 3 lb.
+    type: Piercing
+
+  - title: Shortbow
+    cost: 30 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x3
+    range: 60 ft.
+    weight: 2 lb.
+    type: Piercing
+
+  - title: Shortbow, composite
+    cost: 75 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x3
+    range: 70 ft.
+    weight: 2 lb.
+    type: Piercing
+...

@@ -1,0 +1,511 @@
+---
+level-0:
+  - title: Create Water
+    description: Creates 2 gallons/level of pure water.
+  - title: Cure Minor Wounds
+    description: Cures 1 point of damage.
+  - title: Detect Magic
+    description: Detects spells and magic items within 60 ft.
+  - title: Detect Poison
+    description: Detects poison in one creature or object.
+  - title: Guidance
+    description: +1 on one attack roll, saving throw, or skill check.
+  - title: Inflict Minor Wounds
+    description: Touch attack, 1 point of damage.
+  - title: Light
+    description: Object shines like a torch.
+  - title: Mending
+    description: Makes minor repairs on an object.
+  - title: Purify Food and Drink
+    description: Purifies 1 cu. ft./level of food or water.
+  - title: Read Magic
+    description: Read scrolls and spellbooks.
+  - title: Resistance
+    description: Subject gains +1 on saving throws.
+  - title: Virtue
+    description: Subject gains 1 temporary hp.
+
+
+
+level-1:
+  - title: Bane
+    description: Enemies take –1 on attack rolls and saves against fear.
+  - title: Bless
+    description: Allies gain +1 on attack rolls and saves against fear.
+  - title: Bless Water
+    description: Makes holy water.
+  - title: Cause Fear
+    description: One creature of 5 HD or less flees for 1d4 rounds.
+  - title: Command
+    description: One subject obeys selected command for 1 round.
+  - title: Comprehend Languages
+    description: You understand all spoken and written languages.
+  - title: Cure Light Wounds
+    description: Cures 1d8 damage +1/level (max +5).
+  - title: Curse Water
+    description: Makes unholy water.
+  - title: Deathwatch
+    description: Reveals how near death subjects within 30 ft. are.
+  - title: Detect Chaos
+    description: Reveals creatures, spells, or objects of selected alignment.
+  - title: Detect Evil
+    description: Reveals creatures, spells, or objects of selected alignment.
+  - title: Detect Good
+    description: Reveals creatures, spells, or objects of selected alignment.
+  - title: Detect Law
+    description: Reveals creatures, spells, or objects of selected alignment.
+  - title: Detect Undead
+    description: Reveals undead within 60 ft.
+  - title: Divine Favor
+    description: You gain +1 per three levels on attack and damage rolls.
+  - title: Doom
+    description: One subject takes –2 on attack rolls, damage rolls, saves, and checks.
+  - title: Endure Elements
+    description: Exist comfortably in hot or cold environments.
+  - title: Entropic Shield
+    description: Ranged attacks against you have 20% miss chance.
+  - title: Hide from Undead
+    description: Undead can't perceive one subject/level.
+  - title: Inflict Light Wounds
+    description: Touch deals 1d8 damage +1/level (max +5).
+  - title: Magic Stone
+    description: Three stones gain +1 on attack, deal 1d6 +1 damage.
+  - title: Magic Weapon
+    description: Weapon gains +1 bonus.
+  - title: Obscuring Mist
+    description: Fog surrounds you.
+  - title: Protection from Chaos
+    description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+  - title: Protection from Evil
+    description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+  - title: Protection from Good
+    description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+  - title: Protection from Law
+    description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+  - title: Remove Fear
+    description: Suppresses fear or gives +4 on saves against fear for one subject + one per four levels.
+  - title: Sanctuary
+    description: Opponents can't attack you, and you can't attack.
+  - title: Shield of Faith
+    description: Aura grants +2 or higher deflection bonus.
+  - title: Summon Monster I
+    description: Calls extraplanar creature to fight for you.
+
+
+
+level-2:
+  - title: Aid
+    description: +1 on attack rolls and saves against fear, 1d8 temporary hp +1/level (max +10).
+  - title: Align Weapon
+    description: Weapon becomes good, evil, lawful, or chaotic.
+  - title: Augury
+    description: Learns whether an action will be good or bad.
+  - title: Bear's Endurance
+    description: Subject gains +4 to Con for 1 min./level.
+  - title: Bull's Strength
+    description: Subject gains +4 to Str for 1 min./level.
+  - title: Calm Emotions
+    description: Calms creatures, negating emotion effects.
+  - title: Consecrate
+    description: Fills area with positive energy, making undead weaker.
+  - title: Cure Moderate Wounds
+    description: Cures 2d8 damage +1/level (max +10).
+  - title: Darkness
+    description: 20-ft. radius of supernatural shadow.
+  - title: Death Knell
+    description: Kills dying creature; you gain 1d8 temporary hp, +2 to Str, and +1 level.
+  - title: Delay Poison
+    description: Stops poison from harming subject for 1 hour/level.
+  - title: Desecrate
+    description: Fills area with negative energy, making undead stronger.
+  - title: Eagle's Splendor
+    description: Subject gains +4 to Cha for 1 min./level.
+  - title: Enthrall
+    description: Captivates all within 100 ft. + 10 ft./level.
+  - title: Find Traps
+    description: Notice traps as a rogue does.
+  - title: Gentle Repose
+    description: Preserves one corpse.
+  - title: Hold Person
+    description: Paralyzes one humanoid for 1 round/level.
+  - title: Inflict Moderate Wounds
+    description: Touch attack, 2d8 damage +1/level (max +10).
+  - title: Make Whole
+    description: Repairs an object.
+  - title: Owl's Wisdom
+    description: Subject gains +4 to Wis for 1 min./level.
+  - title: Remove Paralysis
+    description: Frees one or more creatures from paralysis or slow effect.
+  - title: Resist Energy
+    description: Ignores 10 (or more) points of damage/attack from specified energy type.
+  - title: Restoration, Lesser
+    description: Dispels magical ability penalty or repairs 1d4 ability damage.
+  - title: Shatter
+    description: Sonic vibration damages objects or crystalline creatures.
+  - title: Shield Other
+    description: You take half of subject's damage.
+  - title: Silence
+    description: Negates sound in 20-ft. radius.
+  - title: Sound Burst
+    description: Deals 1d8 sonic damage to subjects; may stun them.
+  - title: Spiritual Weapon
+    description: Magic weapon attacks on its own.
+  - title: Status
+    description: Monitors condition, position of allies.
+  - title: Summon Monster II
+    description: Calls extraplanar creature to fight for you.
+  - title: Undetectable Alignment
+    description: Conceals alignment for 24 hours.
+  - title: Zone of Truth
+    description: Subjects within range cannot lie.
+
+
+
+level-3:
+  - title: Animate Dead
+    description: Creates undead skeletons and zombies.
+  - title: Bestow Curse
+    description: –6 to an ability score; –4 on attack rolls, saves, and checks; or 50% chance of losing each action.
+  - title: Blindness/Deafness
+    description: Makes subject blinded or deafened.
+  - title: Contagion
+    description: Infects subject with chosen disease.
+  - title: Continual Flame
+    description: Makes a permanent, heatless torch.
+  - title: Create Food and Water
+    description: Feeds three humans (or one horse)/level.
+  - title: Cure Serious Wounds
+    description: Cures 3d8 damage +1/level (max +15).
+  - title: Daylight
+    description: 60-ft. radius of bright light.
+  - title: Deeper Darkness
+    description: Object sheds supernatural shadow in 60-ft. radius.
+  - title: Dispel Magic
+    description: Cancels spells and magical effects.
+  - title: Glyph of Warding
+    description: Inscription harms those who pass it.
+  - title: Helping Hand
+    description: Ghostly hand leads subject to you.
+  - title: Inflict Serious Wounds
+    description: Touch attack, 3d8 damage +1/level (max +15).
+  - title: Invisibility Purge
+    description: Dispels invisibility within 5 ft./level.
+  - title: Locate Object
+    description: Senses direction toward object (specific or type).
+  - title: Magic Circle against Chaos
+    description: As protection spells, but 10-ft. radius and 10 min./level.
+  - title: Magic Circle against Evil
+    description: As protection spells, but 10-ft. radius and 10 min./level.
+  - title: Magic Circle against Good
+    description: As protection spells, but 10-ft. radius and 10 min./level.
+  - title: Magic Circle against Law
+    description: As protection spells, but 10-ft. radius and 10 min./level.
+  - title: Magic Vestment
+    description: Armor or shield gains +1 enhancement per four levels.
+  - title: Meld into Stone
+    description: You and your gear merge with stone.
+  - title: Obscure Object
+    description: Masks object against scrying.
+  - title: Prayer
+    description: Allies gain +1 bonus on most rolls, enemies take –1 penalty.
+  - title: Protection from Energy
+    description: Absorb 12 points/level of damage from one kind of energy.
+  - title: Remove Blindness/Deafness
+    description: Cures normal or magical conditions.
+  - title: Remove Curse
+    description: Frees object or person from curse.
+  - title: Remove Disease
+    description: Cures all diseases affecting subject.
+  - title: Searing Light
+    description: Ray deals 1d8/two levels damage, more against undead.
+  - title: Speak with Dead
+    description: Corpse answers one question/two levels.
+  - title: Stone Shape
+    description: Sculpts stone into any shape.
+  - title: Summon Monster III
+    description: Calls extraplanar creature to fight for you.
+  - title: Telepathic Bond, Lesser
+    description: As telepathic bond, but you and one other creature.
+  - title: Water Breathing
+    description: Subjects can breathe underwater.
+  - title: Water Walk
+    description: Subject treads on water as if solid.
+  - title: Wind Wall
+    description: Deflects arrows, smaller creatures, and gases.
+
+
+
+level-4:
+  - title: Air Walk
+    description: Subject treads on air as if solid (climb at 45-degree angle).
+  - title: Control Water
+    description: Raises or lowers bodies of water.
+  - title: Cure Critical Wounds
+    description: Cures 4d8 damage +1/level (max +20).
+  - title: Death Ward
+    description: Grants immunity to death spells and negative energy effects.
+  - title: Dimensional Anchor
+    description: Bars extradimensional movement.
+  - title: Discern Lies
+    description: Reveals deliberate falsehoods.
+  - title: Dismissal
+    description: Forces a creature to return to native plane.
+  - title: Divination
+    description: Provides useful advice for specific proposed actions.
+  - title: Divine Power
+    description: You gain attack bonus, +6 to Str, and 1 hp/level.
+  - title: Dweomer of Transference
+    description: Convert spellcasting into psionic power points.
+  - title: Freedom of Movement
+    description: Subject moves normally despite impediments.
+  - title: Giant Vermin
+    description: Turns centipedes, scorpions, or spiders into giant vermin.
+  - title: Imbue with Spell Ability
+    description: Transfer spells to subject.
+  - title: Inflict Critical Wounds
+    description: Touch attack, 4d8 damage +1/level (max +20).
+  - title: Magic Weapon, Greater
+    description: +1 bonus/four levels (max +5).
+  - title: Neutralize Poison
+    description: Immunizes subject against poison, detoxifies venom in or on subject.
+  - title: Planar Ally, Lesser
+    description: Exchange services with a 6 HD extraplanar creature.
+  - title: Poison
+    description: Touch deals 1d10 Con damage, repeats in 1 min.
+  - title: Repel Vermin
+    description: Insects, spiders, and other vermin stay 10 ft. away.
+  - title: Restoration
+    description: Restores level and ability score drains.
+  - title: Sending
+    description: Delivers short message anywhere, instantly.
+  - title: Spell Immunity
+    description: Subject is immune to one spell per four levels.
+  - title: Summon Monster IV
+    description: Calls extraplanar creature to fight for you.
+  - title: Tongues
+    description: Speak any language.
+
+
+
+level-5:
+  - title: Atonement
+    description: Removes burden of misdeeds from subject.
+  - title: Break Enchantment
+    description: Frees subjects from enchantments, alterations, curses, and petrification.
+  - title: Command, Greater
+    description: As command, but affects one subject/level.
+  - title: Commune
+    description: Deity answers one yes-or-no question/level.
+  - title: Cure Light Wounds, Mass
+    description: Cures 1d8 damage +1/level for many creatures.
+  - title: Dispel Chaos
+    description: +4 bonus against attacks.
+  - title: Dispel Evil
+    description: +4 bonus against attacks.
+  - title: Dispel Good
+    description: +4 bonus against attacks.
+  - title: Dispel Law
+    description: +4 bonus against attacks.
+  - title: Disrupting Weapon
+    description: Melee weapon destroys undead.
+  - title: Flame Strike
+    description: Smite foes with divine fire (1d6/level damage).
+  - title: Hallow
+    description: Designates location as holy.
+  - title: Inflict Light Wounds, Mass
+    description: Deals 1d8 damage +1/level to many creatures.
+  - title: Insect Plague
+    description: Locust swarms attack creatures.
+  - title: Mark of Justice
+    description: Designates action that will trigger curse on subject.
+  - title: Plane Shift
+    description: As many as eight subjects travel to another plane.
+  - title: Psychic Turmoil
+    description: Invisible field leeches psionic power points away.
+  - title: Raise Dead
+    description: Restores life to subject who died as long as one day/level ago.
+  - title: Righteous Might
+    description: Your size increases, and you gain combat bonuses.
+  - title: Scrying
+    description: Spies on subject from a distance.
+  - title: Slay Living
+    description: Touch attack kills subject.
+  - title: Spell Resistance
+    description: Subject gains SR 12 + level.
+  - title: Summon Monster V
+    description: Calls extraplanar creature to fight for you.
+  - title: Symbol of Pain
+    description: Triggered rune wracks nearby creatures with pain.
+  - title: Symbol of Sleep
+    description: Triggered rune puts nearby creatures into catatonic slumber.
+  - title: True Seeing
+    description: Lets you see all things as they really are.
+  - title: Unhallow
+    description: Designates location as unholy.
+  - title: Wall of Stone
+    description: Creates a stone wall that can be shaped.
+
+
+
+level-6:
+  - title: Animate Objects
+    description: Objects attack your foes.
+  - title: Antilife Shell
+    description: 10-ft. field hedges out living creatures.
+  - title: Banishment
+    description: Banishes 2 HD/level of extraplanar creatures.
+  - title: Bear's Endurance, Mass
+    description: As bear's endurance, affects one subject/ level.
+  - title: Blade Barrier
+    description: Wall of blades deals 1d6/level damage.
+  - title: Bull's Strength, Mass
+    description: As bull's strength, affects one subject/level.
+  - title: Create Undead
+    description: Create ghouls, ghasts, mummies, or mohrgs.
+  - title: Cure Moderate Wounds, Mass
+    description: Cures 2d8 damage +1/level for many creatures.
+  - title: Dispel Magic, Greater
+    description: As dispel magic, but up to +20 on check.
+  - title: Eagle's Splendor, Mass
+    description: As eagle's splendor, affects one subject/level.
+  - title: Find the Path
+    description: Shows most direct way to a location.
+  - title: Forbiddance
+    description: Blocks planar travel, damages creatures of different alignment.
+  - title: Geas/Quest
+    description: As lesser geas, plus it affects any creature.
+  - title: Glyph of Warding, Greater
+    description: As glyph of warding, but up to 10d8 damage or 6th-level spell.
+  - title: Harm
+    description: Deals 10 points/level damage to target.
+  - title: Heal
+    description: Cures 10 points/level of damage, all diseases and mental conditions.
+  - title: Heroes' Feast
+    description: Food for one creature/level cures and grants combat bonuses.
+  - title: Inflict Moderate Wounds, Mass
+    description: Deals 2d8 damage +1/level to many creatures.
+  - title: Owl's Wisdom, Mass
+    description: As owl's wisdom, affects one subject/level.
+  - title: Planar Ally
+    description: As lesser planar ally, but up to 12 HD.
+  - title: Summon Monster VI
+    description: Calls extraplanar creature to fight for you.
+  - title: Symbol of Fear
+    description: Triggered rune panics nearby creatures.
+  - title: Symbol of Persuasion
+    description: Triggered rune charms nearby creatures.
+  - title: Undeath to Death
+    description: Destroys 1d4 HD/level undead (max 20d4).
+  - title: Wind Walk
+    description: You and your allies turn vaporous and travel fast.
+  - title: Word of Recall
+    description: Teleports you back to designated place.
+
+
+
+level-7:
+  - title: Blasphemy
+    description: Kills, paralyzes, weakens, or dazes nonevil subjects.
+  - title: Control Weather
+    description: Changes weather in local area.
+  - title: Cure Serious Wounds, Mass
+    description: Cures 3d8 damage +1/level for many creatures.
+  - title: Destruction
+    description: Kills subject and destroys remains.
+  - title: Dictum
+    description: Kills, paralyzes, slows, or deafens nonlawful subjects.
+  - title: Ethereal Jaunt
+    description: You become ethereal for 1 round/level.
+  - title: Holy Word
+    description: Kills, paralyzes, blinds, or deafens nongood subjects.
+  - title: Inflict Serious Wounds, Mass
+    description: Deals 3d8 damage +1/level to many creatures.
+  - title: Psychic Turmoil, Greater
+    description: As psychic turmoil, but you gain power points as temporary hp.
+  - title: Refuge
+    description: Alters item to transport its possessor to you.
+  - title: Regenerate
+    description: Subject's severed limbs grow back, cures 4d8 damage +1/level (max +35).
+  - title: Repulsion
+    description: Creatures can't approach you.
+  - title: Restoration, Greater
+    description: As restoration, plus restores all levels and ability scores.
+  - title: Resurrection
+    description: Fully restore dead subject.
+  - title: Scrying, Greater
+    description: As scrying, but faster and longer.
+  - title: Summon Monster VII
+    description: Calls extraplanar creature to fight for you.
+  - title: Symbol of Stunning
+    description: Triggered rune stuns nearby creatures.
+  - title: Symbol of Weakness
+    description: Triggered rune weakens nearby creatures.
+  - title: Word of Chaos
+    description: Kills, confuses, stuns, or deafens nonchaotic subjects.
+
+
+
+level-8:
+  - title: Antimagic Field
+    description: Negates magic within 10 ft.
+  - title: Brain Spider
+    description: Listen to thoughts of up to eight other creatures.
+  - title: Cloak of Chaos
+    description: +4 to AC, +4 resistance, and SR 25 against lawful spells.
+  - title: Create Greater Undead
+    description: Create shadows, wraiths, spectres, or devourers.
+  - title: Cure Critical Wounds, Mass
+    description: Cures 4d8 damage +1/level for many creatures.
+  - title: Dimensional Lock
+    description: Teleportation and interplanar travel blocked for one day/level.
+  - title: Discern Location
+    description: Reveals exact location of creature or object.
+  - title: Earthquake
+    description: Intense tremor shakes 80-ft.-radius.
+  - title: Fire Storm
+    description: Deals 1d6/level fire damage.
+  - title: Holy Aura
+    description: +4 to AC, +4 resistance, and SR 25 against evil spells.
+  - title: Inflict Critical Wounds, Mass
+    description: Deals 4d8 damage +1/level to many creatures.
+  - title: Planar Ally, Greater
+    description: As lesser planar ally, but up to 18 HD.
+  - title: Shield of Law
+    description: +4 to AC, +4 resistance, and SR 25 against chaotic spells.
+  - title: Spell Immunity, Greater
+    description: As spell immunity, but up to 8th-level spells.
+  - title: Summon Monster VIII
+    description: Calls extraplanar creature to fight for you.
+  - title: Symbol of Death
+    description: Triggered rune slays nearby creatures.
+  - title: Symbol of Insanity
+    description: Triggered rune renders nearby creatures insane.
+  - title: Unholy Aura
+    description: +4 to AC, +4 resistance, and SR 25 against good spells.
+
+
+
+level-9:
+  - title: Astral Projection
+    description: Projects you and companions onto Astral Plane.
+  - title: Energy Drain
+    description: Subject gains 2d4 negative levels.
+  - title: Etherealness
+    description: Travel to Ethereal Plane with companions.
+  - title: Gate
+    description: Connects two planes for travel or summoning.
+  - title: Heal, Mass
+    description: As heal, but with several subjects.
+  - title: Implosion
+    description: Kills one creature/round.
+  - title: Miracle
+    description: Requests a deity's intercession.
+  - title: Soul Bind
+    description: Traps newly dead soul to prevent resurrection.
+  - title: Storm of Vengeance
+    description: Storm rains acid, lightning, and hail.
+  - title: Summon Monster IX
+    description: Calls extraplanar creature to fight for you.
+  - title: True Resurrection
+    description: As resurrection, plus remains aren't needed.
+...

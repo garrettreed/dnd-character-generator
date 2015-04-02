@@ -1,0 +1,61 @@
+---
+- title: Contact 
+  attribute: wisdom
+  mod: 0 
+  desc: Access to psionic attack forms; Psionicist receives free but wild talents purchase
+
+- title: Gem Cutting 
+  attribute: dexterity
+  mod: -2
+  desc: Knowledge and ability to cut gems from raw stones
+
+- title: Harness Subconscious
+  attribute: wisdom
+  mod: -1
+  desc: Temporarily increase psionic power
+
+- title: Hypnotism 
+  attribute: charisma
+  mod: -2
+  desc: Place another into a relaxed state susceptible to suggestion
+
+- title: Meditative Focus
+  attribute: wisdom
+  mod: 1
+  desc: Focus psionic power in one discipline, gaining +2 bonus in that discipline
+
+- title: Mental Armor
+  attribute: wisdom
+  mod: -2
+  desc: Improves mental armor class; psionicists improve by 2, all others by 1
+
+- title: Mental Resistance 
+  attribute: wisdom
+  mod: -1
+  desc: Improves saving through vs. magical or psionic mind attacks by +2
+
+- title: Reading/Writing 
+  attribute: intelligence
+  mod: 1
+  desc: Ability to read and write a language
+
+- title: Rejuvenation
+  attribute: wisdom
+  mod: -1
+  desc: Recover psionic power more quickly than normal
+
+- title: Religion
+  attribute: wisdom
+  mod: 0 
+  desc: Knowledge of the various religions of a given area, culture, or race
+
+- title: Scribe
+  attribute: dexterity
+  mod: 1
+  desc: Transfer, copy, or transcribe books, scrolls, or dictation quickly and efficiently
+
+- title: Speed Reading 
+  attribute: intelligence
+  mod: -1
+  desc: Read already known languages up to 10x faster than normal
+...

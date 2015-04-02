@@ -1,0 +1,187 @@
+---
+Light:
+
+  - title: Kama
+    cost: 2 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x2
+    range: —
+    weight: 2 lb.
+    type: Slashing
+
+  - title: Nunchaku
+    cost: 2 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x2
+    range: —
+    weight: 2 lb.
+    type: Bludgeoning
+
+  - title: Sai
+    cost: 1 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: x2
+    range: 10 ft.
+    weight: 1 lb.
+    type: Bludgeoning
+
+  - title: Siangham
+    cost: 3 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: x2
+    range: —
+    weight: 1 lb.
+    type: Piercing
+
+
+
+One-handed:
+
+  - title: Sword, bastard
+    cost: 35 gp
+    damage_s: 1d8
+    damage_m: 1d10
+    critical: 19-20/x2
+    range: —
+    weight: 6 lb.
+    type: Slashing
+
+  - title: Waraxe, dwarven
+    cost: 30 gp
+    damage_s: 1d8
+    damage_m: 1d10
+    critical: x3
+    range: —
+    weight: 8 lb.
+    type: Slashing
+
+  - title: Whip
+    cost: 1 gp
+    damage_s: 1d2
+    damage_m: 1d3
+    critical: x2
+    range: —
+    weight: 2 lb.
+    type: Slashing
+
+
+
+Two-handed:
+
+  - title: Axe, orc double
+    cost: 60 gp
+    damage_s: 1d6/1d6
+    damage_m: 1d8/1d8
+    critical: x3
+    range: —
+    weight: 15 lb.
+    type: Slashing
+
+  - title: Chain, spiked
+    cost: 25 gp
+    damage_s: 1d6
+    damage_m: 2d4
+    critical: x2
+    range: —
+    weight: 10 lb.
+    type: Piercing
+
+  - title: Flail, dire
+    cost: 90 gp
+    damage_s: 1d6/1d6
+    damage_m: 1d8/1d8
+    critical: x2
+    range: —
+    weight: 10 lb.
+    type: Bludgeoning
+
+  - title: Hammer, gnome hooked
+    cost: 20 gp
+    damage_s: 1d6/1d4
+    damage_m: 1d8/1d6
+    critical: x3/x4
+    range: —
+    weight: 6 lb.
+    type: Bludgeoning/Piercing
+
+  - title: Sword, two-bladed
+    cost: 100 gp
+    damage_s: 1d6/1d6
+    damage_m: 1d8/1d8
+    critical: 19-20/x2
+    range: —
+    weight: 10 lb.
+    type: Slashing
+
+  - title: Urgrosh, dwarven
+    cost: 50 gp
+    damage_s: 1d6/1d4
+    damage_m: 1d8/1d6
+    critical: x3
+    range: —
+    weight: 12 lb.
+    type: Slashing or piercing
+
+
+
+Ranged:
+
+  - title: Bolas
+    cost: 5 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: x2
+    range: 10 ft.
+    weight: 2 lb.
+    type: Bludgeoning
+
+  - title: Crossbow, hand
+    cost: 100 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: 19-20/x2
+    range: 30 ft.
+    weight: 2 lb.
+    type: Piercing
+
+  - title: Crossbow, repeating heavy
+    cost: 400 gp
+    damage_s: 1d8
+    damage_m: 1d10
+    critical: 19-20/x2
+    range: 120 ft.
+    weight: 12 lb.
+    type: Piercing
+
+  - title: Crossbow, repeating light
+    cost: 250 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 80 ft.
+    weight: 6 lb.
+    type: Piercing
+
+  - title: Net
+    cost: 20 gp
+    damage_s: —
+    damage_m: —
+    critical: —
+    range: 10 ft.
+    weight: 6 lb.
+    type: —
+
+  - title: Shuriken (5)
+    cost: 1 gp
+    damage_s: 1
+    damage_m: 1d2
+    critical: x2
+    range: 10 ft.
+    weight: 1/2 lb.
+    type: Piercing
+
+...

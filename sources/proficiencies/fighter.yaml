@@ -1,0 +1,271 @@
+---
+- title: Alertness 
+  attribute: wisdom
+  mod: 1
+  desc: Instinctively notice signs of trouble in an area
+
+- title: Animal Lore 
+  attribute: intelligence
+  mod: 0 
+  desc: In depth knowledge of animal behavior
+
+- title: Arena Acting
+  attribute: charisma
+  mod: -1
+  desc: Dupe single opponent into believing injury, thus gaining +3 to hit & damage on next attack
+
+- title: Armor Optimization
+  attribute: dexterity
+  mod: -2
+  desc: Successful check lowers AC by –1 for duration of single combat
+
+- title: Armorer 
+  attribute: intelligence
+  mod: -2
+  desc: Ability to successfully manufacture and repair armor and shields
+
+- title: Armorer, Crude
+  attribute: intelligence
+  mod: -1
+  desc: Ability to successfully craft armor or shields from hides, furs, shells and wood
+
+- title: Artillery 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge and ability to use siege equipment such as catapult, trebuchet, ballista, etc.
+
+- title: Awareness 
+  attribute: wisdom
+  mod: 0 
+  desc: Light sleeper, easily roused, attuned to surroundings
+
+- title: Blind-Fighting
+  attribute: nil
+  mod: nil 
+  desc: Ability to fight in blind conditions, suffering only –2 to hit rather than –4
+
+- title: Blind Shooting
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to fire missiles at unseen targets
+
+- title: Bowyer/Fletcher 
+  attribute: dexterity
+  mod: -1
+  desc: Ability to make long bows and composite bows and arrows
+
+- title: Bowyer/Fletcher, Crude
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to make short bows and arrows
+
+- title: Camouflage
+  attribute: wisdom
+  mod: 0 
+  desc: Hide using natural or man-made materials
+
+- title: Charioteering 
+  attribute: dexterity
+  mod: 2
+  desc: Ability to safely guide a chariot
+
+- title: Close-quarters Fighting 
+  attribute: dexterity
+  mod: 0 
+  desc: 2 bonus to attack in close quarters when using bludgeoning or piercing weapons
+
+- title: Dirty Fighting
+  attribute: dexterity
+  mod: -3
+  desc: Can gain an extra attack at +2 to hit; failed check means opponent gets extra attack
+
+- title: Dragon Lore 
+  attribute: wisdom
+  mod: -4
+  desc: Determine age of dragons, type of dragon, differentiate between types, etc.
+
+- title: Endurance 
+  attribute: constitution
+  mod: 0 
+  desc: Perform strenuous activity twice as long as normal
+
+- title: Enemy Reading 
+  attribute: wisdom
+  mod: -2
+  desc: Successful skill check gives +1 to AC after observing opponent
+
+- title: Fast Healer 
+  attribute: constitution
+  mod: -2
+  desc: Automatically heal 1 point of damage in 2-12 turns, plus heal 1 extra HP overnight
+
+- title: Forage
+  attribute: intelligence
+  mod: -1
+  desc: Skill in finding useful items in the wilderness
+
+- title: Gunsmithing 
+  attribute: intelligence
+  mod: -2
+  desc: Ability to make and repair smokepowder weapons
+
+- title: Horde Summoning 
+  attribute: charisma
+  mod: -2
+  desc: Summon a horde of like-minded followers to attain a goal; Prerequisite – 10th level
+
+- title: Hunting 
+  attribute: wisdom
+  mod: -1
+  desc: Ability to stalk and bring down game animals and fowl
+
+- title: Interrogation 
+  attribute: wisdom
+  mod: -2
+  desc: Ability to gain information from someone through tough questioning
+
+- title: Intimidation
+  attribute: str/cha
+  mod: Special 
+  desc: Ability to intimidate someone using either brains or brawn
+
+- title: Jousting
+  attribute: dexterity
+  mod: 2
+  desc: Successful skill check gives +2 bonus to attacks for duration of joust
+
+- title: Law 
+  attribute: wisdom
+  mod: 0 
+  desc: Knowledge of the laws of a specific region
+
+- title: Leadership
+  attribute: charisma
+  mod: 0 
+  desc: Add character level to Charisma for determining reaction adjustments in homeland
+
+- title: Light Sleeping
+  attribute: constitution
+  mod: -1
+  desc: Gain full nights rest in only 1 hour, including healing; can only be used 1x week
+
+- title: Military Science
+  attribute: charisma
+  mod: 0 
+  desc: Theory and practical knowledge of how to train and lead troops; +2 to troop combat skills
+
+- title: Military Tactics
+  attribute: intelligence
+  mod: 0 
+  desc: Interpretation of enemy troop movements and ability to out-maneuver
+
+- title: Mountaineering
+  attribute: nil
+  mod: nil 
+  desc: Ability to climb mountains with the aid of ropes, spikes, etc.
+
+- title: Natural Fighting
+  attribute: strength
+  mod: 1  
+  desc: Successful skill check allows +1 bonus to damage from unarmed attacks
+
+- title: Naval Combat
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of naval combat, including ship-to-ship, boarding, and sieges
+
+- title: Quick Draw
+  attribute: dexterity
+  mod: 0 
+  desc: Lower initiative by –2 on initial attack, must specify melee or ranged quick draw
+
+- title: Running 
+  attribute: constitution
+  mod: -6  
+  desc: Ability to move at double normal running speed for up to one full day
+
+- title: Set Snares
+  attribute: dexterity
+  mod: -1
+  desc: Ability to make and set snare traps
+
+- title: Spelunking
+  attribute: intelligence
+  mod: -2
+  desc: Thorough understanding of caves and underground passages
+
+- title: Stage Fighting
+  attribute: charisma
+  mod: -1
+  desc: Ability to perform believable fake fighting; +1 bonus is Acting is also known
+
+- title: Survival
+  attribute: intelligence
+  mod: 0 
+  desc: Basic survival knowledge of a specified terrain type
+
+- title: Tactics 
+  attribute: intelligence
+  mod: -1
+  desc: Gain +1 to hit or to initiative after spending 1 round examining opponent
+
+- title: Taunting
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to taunt enemy into attacking at –2 to AC and –2 to hit
+
+- title: Tracking
+  attribute: wisdom
+  mod: -6
+  desc: Ability to track someone (Rangers receive free & do not suffer the –6 modifier)
+
+- title: Trail Marking 
+  attribute: wisdom
+  mod: 0 
+  desc: Notching trees, piling stones, etc. to mark a trail through wilderness
+
+- title: Trail Signs 
+  attribute: intelligence
+  mod: -1
+  desc: Ability to read symbolic messages left along a trail or road
+
+- title: Tribal History
+  attribute: charisma
+  mod: 0 
+  desc: Storehouse of knowledge of a specific barbaric tribe (human or otherwise)
+
+- title: Vision Quest
+  attribute: wisdom
+  mod: -3
+  desc: Seeking of visions to answer major life questions, usually used by barbarians
+
+- title: Weakness Identification 2 
+  attribute: sdom
+  mod: -2
+  desc: Successful check allows double-damage for one round if called shots are taken
+
+- title: Weapon Improvisation
+  attribute: wisdom
+  mod: -1
+  desc: Ability to scrounge simple weapon that delivers 1d6+1/1d3+1 damage
+
+- title: Weapon Sharpening 
+  attribute: intelligence
+  mod: -1
+  desc: Sharpen weapons to receive +1 to hit and damage for first 3 attacks
+
+- title: Weaponsmithing
+  attribute: intelligence
+  mod: -3
+  desc: Ability to manufacture and repair weapons
+
+- title: Weaponsmithing, Crude 
+  attribute: wisdom
+  mod: -3
+  desc: Ability to manufacture simple weapons out of natural materials
+
+- title: Wild Fighting 
+  attribute: constitution
+  mod: 0 
+  desc: Successful check allows 1 extra attack and +3 to damage, but –3 to hit and to AC, 2x day
+...

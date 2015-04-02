@@ -1,0 +1,821 @@
+---
+- title: Acting	
+  attribute: charisma
+  mod: -1
+  desc: Can portray various roles (+1 bonus if Disguise used also)
+
+- title: Adobe Making	
+  attribute: strength
+  mod: 0
+  desc: Ability to make adobe bricks
+
+- title: Alertness	
+  attribute: wisdom
+  mod: 1
+  desc: Can instinctively detect trouble
+
+- title: Allure	
+  attribute: charisma
+  mod: 0
+  desc: Attract romantic attention
+
+- title: Agriculture, Farming
+  attribute: intelligence
+  mod: 0
+  desc: Basic farming knowledge
+
+- title: Agriculture, Gardening
+  attribute: intelligence
+  mod: 0
+  desc: Knowledge of simple gardening
+
+- title: Ambidexterity
+  attribute: nil
+  mod: nil
+  desc: Equally skilled with either hand, fight with both hands (0,-2 to hit)
+
+- title: Animal Affinity
+  attribute: wisdom
+  mod: -2
+  desc: Ability to modify reactions of one specified type of animal
+
+- title: Animal Handling
+  attribute: wisdom
+  mod: -1
+  desc: Can control beasts of burden
+
+- title: Animal Rending
+  attribute: dexterity
+  mod: 2
+  desc: Can butcher and prepare meat and skin and prepare hides
+
+- title: Animal Training
+  attribute: wisdom
+  mod: 0
+  desc: Ability to train one specified type of creature
+
+- title: Artistic Ability
+  attribute: wisdom
+  mod: 0
+  desc: Proficient in one specific artistic field (painting, music, etc.)
+
+- title: Athletics
+  attribute: dexterity
+  mod: -1
+  desc: Proficient in one specific athletic ability (run, jump, chariot)
+
+- title: Bargain
+  attribute: wisdom
+  mod: 0
+  desc: Lower purchase prices or raise sale prices by 10%
+
+- title: Barkeeping/Innkeeping
+  attribute: intelligence
+  mod: 0
+  desc: The knowledge and ability to manage a bar, tavern, or inn.
+
+- title: Bartending
+  attribute: wisdom
+  mod: -1
+  desc: Knowledge of various drinks and conversational patterns.
+
+- title: Bartering
+  attribute: intelligence
+  mod: -2
+  desc: Judge values and trade items of similar value (no magic, less than 50 gp)
+
+- title: Basket Making
+  attribute: dexterity
+  mod: 0
+  desc: Ability to make baskets from wood or other plant matter
+
+- title: Bee-keeping
+  attribute: wisdom
+  mod: 0
+  desc: Knowledge of bees and honey harvesting process
+
+- title: Begging
+  attribute: charisma
+  mod: Special
+  desc: Skilled at begging
+
+- title: Blacksmithing
+  attribute: strength
+  mod: 0
+  desc: Can make iron tools and implements
+
+- title: Blazoning
+  attribute: intelligence
+  mod: 1
+  desc: Ability to correctly depict heraldic devices on armor, shields, etc.; Heraldry adds +1
+
+- title: Boasting
+  attribute: charisma
+  mod: 3
+  desc: Boasting of the deeds of ones lord, master, or leader
+
+- title: Boat Piloting
+  attribute: wisdom
+  mod: 1
+  desc: Ability to pilot boats and rafts through rough water
+
+- title: Boatwright
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of and ability to build boats up to 60’ long
+
+- title: Botany
+  attribute: intelligence
+  mod: -1
+  desc: Identify plants (also gives +2 to Herbalism and Agriculture checks)
+
+- title: Brewing
+  attribute: intelligence
+  mod: 0
+  desc: Can brew beers and strong drinks
+
+- title: Canoe Making
+  attribute: intelligence
+  mod: 2
+  desc: Can construct small watercraft
+
+- title: Canoeing
+  attribute: dexterity
+  mod: 0
+  desc: Ability to maneuver and propel a canoe
+
+- title: Carpentry
+  attribute: strength
+  mod: 0
+  desc: Basic woodworking skills
+
+- title: Cartography
+  attribute: intelligence
+  mod: -2 
+  desc: Skilled at mapmaking (can produce quality maps)
+
+- title: Chandler
+  attribute: intelligence
+  mod: 0
+  desc: Knowledge and skill of candle making
+
+- title: Chanting
+  attribute: charisma
+  mod: 2
+  desc: Keep time through chanting
+
+- title: Cheesemaking
+  attribute: intelligence
+  mod: 0
+  desc: Ability to make good quality cheeses
+
+- title: City Commerce I
+  attribute: wisdom
+  mod: -1
+  desc: Know legal business of a specific city (when market opens, etc.)
+
+- title: City Commerce II
+  attribute: wisdom
+  mod: -2
+  desc: Know black markets of a specific city
+
+- title: City Lore I
+  attribute: intelligence
+  mod: 1
+  desc: Knowledge of important people and places of specific city
+
+- title: City Lore II
+  attribute: intelligence
+  mod: -2
+  desc: Basic knowledge of history, defenses, sewers of specific city
+
+- title: City Lore III
+  attribute: charisma
+  mod: -1
+  desc: Ability to recall or find out rumors about a specific city
+
+- title: City Lore
+  attribute: 4
+  mod: INTELLIGENCE
+  desc: -4	Know secrets of important people and places in a specific city
+
+- title: Clothesmaking, Crude
+  attribute: intelligence
+  mod: -1
+  desc: Ability to make crude clothing from furs, leaves, etc.
+
+- title: Cobbling
+  attribute: dexterity
+  mod: 0
+  desc: Make and repair basic footwear
+
+- title: Connoisseur
+  attribute: wisdom
+  mod: -2
+  desc: Judge specific wines, foods, beers, paintings, etc.
+
+- title: Cold Immunity
+  attribute: constitution
+  mod: -2
+  desc: Comfortable in very cold temps, +2 to save vs. cold
+
+- title: Cooking
+  attribute: intelligence
+  mod: 0
+  desc: Expert cook
+
+- title: Cooper
+  attribute: intelligence
+  mod: -1
+  desc: Skilled in making barrels, tubs, and casks
+
+- title: Copperworking
+  attribute: intelligence
+  mod: -1
+  desc: Ability to manufacture items from beaten copper
+
+- title: Craft Instrument
+  attribute: dexterity
+  mod: -2
+  desc: Make or repair a specific musical instrument type
+
+- title: Crowd Working
+  attribute: charisma
+  mod: 0
+  desc: Ability to adjust the reaction of a crowd
+
+- title: Dairyman
+  attribute: intelligence
+  mod: 0
+  desc: Knowledge of cattle raising and milk and dairy product production
+
+- title: Dancing
+  attribute: dexterity
+  mod: 0
+  desc: Knowledge and ability to perform several dances
+
+- title: Danger Sense
+  attribute: wisdom
+  mod: 1
+  desc: Avoid traps or ambushes on successful check
+
+- title: Debate
+  attribute: intelligence
+  mod: 0
+  desc: Ability to influence reactions through calm, thoughtful debate
+
+- title: Deep Diving
+  attribute: wisdom
+  mod: -2 
+  desc: Dive deeper than other divers and hold breath longer
+
+- title: Direction Sense
+  attribute: wisdom
+  mod: 1
+  desc: Determine direction of travel (must specify above or below ground)
+
+- title: Disease Resistance
+  attribute: constitution
+  mod: -2
+  desc: Successful skill check allows +3 to saves to resist disease
+
+- title: Distance Sense
+  attribute: wisdom
+  mod: 0
+  desc: Estimate distance travelled in a given day
+
+- title: Dramatist
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of dramas and comedies (+1 if Artistic Ability: Drama)
+
+- title: Drinking
+  attribute: constitution
+  mod: 0
+  desc: Drink twice as much alcohol before becoming intoxicated
+
+- title: Dyer
+  attribute: intelligence
+  mod: -1
+  desc: Ability to make dyes and to dye clothing, etc.
+
+- title: Eating
+  attribute: constitution
+  mod: 0
+  desc: Consume twice as much food as normal without getting ill
+
+- title: Empathy
+  attribute: wisdom
+  mod: -2
+  desc: Intuitive understanding of emotions, motivations, and intentions of others
+
+- title: Estimator
+  attribute: wisdom
+  mod: -3
+  desc: Can guess number, weight, or distance to within 10%
+
+- title: Etiquette
+  attribute: charisma
+  mod: 0
+  desc: Understanding of proper, civilized behavior
+
+- title: Excavation
+  attribute: wisdom
+  mod: -1
+  desc: Knowledge of careful unearthing of a site or ruin
+
+- title: Falconry
+  attribute: wisdom
+  mod: -1
+  desc: Specialized Animal Training: Falconry (owls can be trained at –2)
+
+- title: Fashion
+  attribute: wisdom
+  mod: 1
+  desc: Know what clothing is “in style”, 2d20 days to learn new region
+
+- title: Fasting
+  attribute: constitution
+  mod: -1
+  desc: Go long periods without food, check each week, failure loses STR
+
+- title: Finesmithing
+  attribute: dexterity
+  mod: -3
+  desc: Ability to manufacture jewelry; Prerequisite - Whitesmithing
+
+- title: Fire-Building
+  attribute: wisdom
+  mod: -1
+  desc: Ability to start fires, even with wet wood or with strong winds
+
+- title: Fishing
+  attribute: wisdom
+  mod: -1
+  desc: Ability to catch and clean fish
+
+- title: Flintknapping
+  attribute: dexterity
+  mod: -1
+  desc: Ability to make weapons or tools from flint or chert
+
+- title: Flower Arranging
+  attribute: wisdom
+  mod: 0
+  desc: Ability to arrange flowers and plants
+
+- title: Folklore
+  attribute: charisma
+  mod: 0
+  desc: Know myths or legends of one geographic area or race (+1 if Local History)
+
+- title: Fungi Recognition
+  attribute: intelligence
+  mod: 3
+  desc: Ability to identify various fungi
+
+- title: Gaming
+  attribute: charisma
+  mod: 0
+  desc: Knowledge of most games of chance (cards, dice, draughts, etc.)
+
+- title: Gem Identification
+  attribute: intelligence
+  mod: 1
+  desc: Basic knowledge of gemstones (not value or special properties)
+
+- title: Geography
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of the geography of a specific region or country
+
+- title: Geology
+  attribute: intelligence
+  mod: -1
+  desc: Know stones, metals, & minerals; +2 to Mining; +2 to Gem Identification
+
+- title: Glassblowing
+  attribute: dexterity
+  mod: 0
+  desc: Manufacture glass containers, jars, or bottles
+
+- title: Glassworking
+  attribute: dexterity
+  mod: 0
+  desc: Ability to manufacture decorative glass items (+1 if Glassblowing skill known)
+
+- title: Gold Casting
+  attribute: intelligence
+  mod: -1
+  desc: Can form wax and clay molds to cast molten gold
+
+- title: Grooming, Animal
+  attribute: wisdom
+  mod: 0
+  desc: Can groom and clean a specific animal type with exceptional results
+
+- title: Haggling
+  attribute: wisdom
+  mod: 0
+  desc: Ability to get a better deal on items purchased
+
+- title: Heat Immunity
+  attribute: constitution
+  mod: -2
+  desc: Comfortable in very warm temps, +1 to saving throws vs. fire/heat
+
+- title: Heat Protection
+  attribute: intelligence
+  mod: 0
+  desc: Use clothing and pacing to reduce heat stress and use ½ normal daily water
+
+- title: Heraldry
+  attribute: intelligence
+  mod: 0
+  desc: Identify heraldic devices and insignia
+
+- title: Hiding
+  attribute: intelligence
+  mod: -1
+  desc: Can find best places to hide
+
+- title: Keen Eye Site
+  attribute: nil
+  mod: nil
+  desc: Normal vision range is doubled, +1 to hit with missiles at long range
+
+- title: Keen Hearing
+  attribute: nil
+  mod: nil
+  desc: Increased hearing range, +1 to avoid surprise, +10% to Hear Noise
+
+- title: Keen Smell
+  attribute: nil
+  mod: nil
+  desc: Powerful sense of smell, +1 to avoid surprise, +2 to Hunting skill
+
+- title: Keen Taste
+  attribute: nil
+  mod: nil
+  desc: Powerful sense of taste, WIS check +3 detects foreign substances in food
+
+- title: Keen Touch
+  attribute: nil
+  mod: nil
+  desc: Unusually sensitive tactile senses, +5% to Pick Pockets
+
+- title: Landscape Gardening
+  attribute: wisdom
+  mod: -1
+  desc: Knowledge and ability to arrange gardens and lawns in eye-pleasing configurations
+
+- title: Languages, Modern
+  attribute: intelligence
+  mod: 0
+  desc: Speak a specific language still in use
+
+- title: Leather Working
+  attribute: intelligence
+  mod: 0
+  desc: Ability to exceptionally tan hides and make goods and clothing
+
+- title: Linguistics
+  attribute: intelligence
+  mod: 0
+  desc: Quick-learn the basics of a new language; Prerequisite – full knowledge of 3 others
+
+- title: Lumberjack
+  attribute: wisdom
+  mod: 1
+  desc: Knowledge and skill of felling timber in a safe, efficient manner
+
+- title: Massage
+  attribute: dexterity
+  mod: 0
+  desc: Work and heal muscles on another, +2 to Endurance checks, +1 HP regained overnight
+
+- title: Merchant/Storekeep
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of economics and accounting and how to run a store or company
+
+- title: Mining
+  attribute: wisdom
+  mod: -3
+  desc: In depth knowledge of ores and mining procedures
+
+- title: Monster Lore
+  attribute: intelligence
+  mod: 0
+  desc: Basic knowledge of various types of common or well-known monsters (orcs, dragons, etc.)
+
+- title: Mosaic
+  attribute: wisdom
+  mod: 0
+  desc: Ability to inlay stone in picture patterns to decorate walls and floors
+
+- title: Musical Instrument
+  attribute: dexterity
+  mod: -1
+  desc: Ability to proficiently play a specific musical instrument type
+
+- title: Navigation
+  attribute: intelligence
+  mod: -2
+  desc: The ability to navigate across seas and lakes using the stars as a guide
+
+- title: Navigation, Underground
+  attribute: intelligence
+  mod: 0
+  desc: Know direction and safest passages underground; +1 to Underground Direction Sense
+
+- title: Obscure Knowledge
+  attribute: intelligence
+  mod: 1
+  desc: Familiar with tiny bits of information from many different subjects
+
+- title: Observation
+  attribute: intelligence
+  mod: 0
+  desc: Exceptionally acute powers of observance
+
+- title: Obsidian Working
+  attribute: intelligence
+  mod: -1
+  desc: Similar to Flintknapping (above) except used with obsidian
+
+- title: Oratory
+  attribute: charisma
+  mod: -1
+  desc: Influence crowd reaction through powerful speech
+
+- title: Orienteering
+  attribute: intelligence
+  mod: -2
+  desc: Cannot get lost as long as sky is visible or map possessed; Direction Sense gives +1 bonus
+
+- title: Origami
+  attribute: dexterity
+  mod: 0
+  desc: Ability to make small, pleasing sculptures from paper or parchment
+
+- title: Painting
+  attribute: dexterity
+  mod: -1
+  desc: Skilled at rendering images with oils, brushes and canvas
+
+- title: Perfect Memory, Aural
+  attribute: intelligence
+  mod: -2
+  desc: Recall memory of sounds (voices, animal cries, musical instruments, etc.)
+
+- title: Perfect Memory, Visual
+  attribute: intelligence
+  mod: -2
+  desc: Recall memory of visuals (faces, banners, street names, etc.)
+
+- title: Persuasion
+  attribute: charisma
+  mod: 0
+  desc: Use powerful speech to influence reaction on one individual NPC
+
+- title: Philosophy
+  attribute: wisdom
+  mod: -2
+  desc: Knowledge of current and past philosophies
+
+- title: Planar Direction Sense
+  attribute: wisdom
+  mod: 1
+  desc: Ability to determine direction on other planes of existence
+
+- title: Planar Sense
+  attribute: wisdom
+  mod: -1
+  desc: Ability to determine what plane of existence the user is currently on
+
+- title: Planar Survival
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of how to survive on a pre-specified plane of existence (not Prime Material)
+
+- title: Poetry
+  attribute: intelligence
+  mod: -2
+  desc: Skill in reciting and/or writing poetry
+
+- title: Politics
+  attribute: charisma
+  mod: 0
+  desc: Knowledge of the function and form of bureaucracy
+
+- title: Portal Feel
+  attribute: intelligence
+  mod: -3 
+  desc: Ability to sense the location of nearby hidden portals/gates
+
+- title: Pottery
+  attribute: dexterity
+  mod: -2
+  desc: Ability to manufacture useful and sturdy clay containers
+
+- title: Prospecting
+  attribute: dexterity
+  mod: -1
+  desc: Ability to find gold or silver (or other precious metals) by sifting or panning
+
+- title: Racial Lore
+  attribute: intelligence
+  mod: -1
+  desc: Basic knowledge of the “goodly” races (humans, elves, dwarves, gnomes, halflings)
+
+- title: Relic Dating
+  attribute: intelligence
+  mod: -2
+  desc: Ability to judge the age of ancient items; Ancient History gives +1 bonus
+
+- title: Rhetoric
+  attribute: charisma
+  mod: 0
+  desc: Skillful use of language; +2 bonus to Persuasion, Acting, Debate, & Crowd Working
+
+- title: Riding, Airborne
+  attribute: wisdom
+  mod: -2
+  desc: Ability to ride and fight from a specified type of flying mount
+
+- title: Riding, Land-based
+  attribute: wisdom
+  mod: 3
+  desc: Ability to ride and fight from a specified type of mount
+
+- title: Riding, Sea-based
+  attribute: dexterity
+  mod: -2
+  desc: Ability to ride and fight from a specified type of water-based mount
+
+- title: Rope Making
+  attribute: dexterity
+  mod: 0
+  desc: Ability to manufacture rope from animal or plant matter
+
+- title: Rope Use
+  attribute: dexterity
+  mod: 0
+  desc: Skilled knowledge of rope use; +10% to climbing attempts with rope
+
+- title: Rowing
+  attribute: constitution
+  mod: -1
+  desc: Ability to skillfully maneuver and propel oar-powered vessels
+
+- title: Scrounging
+  attribute: intelligence
+  mod: 0
+  desc: Ability to find useful items in the refuse of towns and cities
+
+- title: Sculpting
+  attribute: dexterity
+  mod: 0
+  desc: Can render realistic figures from stone and clay
+
+- title: Seamanship
+  attribute: dexterity
+  mod: 1
+  desc: Familiarity with the operation of large boats and ships
+
+- title: Seamstress/Tailor
+  attribute: dexterity
+  mod: -1
+  desc: Ability to design, sew, and repair clothing
+
+- title: Seduction
+  attribute: charisma
+  mod: -2
+  desc: Ability to seduce someone; can improve reactions rolls by +1
+
+- title: Shipwright
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of the design, construction, and repair of ships and large boats
+
+- title: Sign Language
+  attribute: intelligence
+  mod: 2
+  desc: Knowledge of meaning of hand signals and gestures
+
+- title: Signaling
+  attribute: intelligence
+  mod: -2
+  desc: Ability to send messages over great distances, must specify method (smoke signals, etc.)
+
+- title: Silk Making
+  attribute: dexterity
+  mod: -2
+  desc: Ability to manufacture usable silk from the silk of silkworms
+
+- title: Singing
+  attribute: charisma
+  mod: 0
+  desc: Competent and expert singing ability; NOTE – bards receive this skill free
+
+- title: Slow Respiration
+  attribute: nil
+  mod: nil
+  desc: Ability to slow respiration to point where only 10% of normal air is needed
+
+- title: Smelting
+  attribute: intelligence
+  mod: -2
+  desc: Ability to procure usable metals from raw ores
+
+- title: Sound Analysis
+  attribute: wisdom
+  mod: 0
+  desc: Ability to gauge cavern/dungeon room size by analyzing echoes
+
+- title: Stewardship
+  attribute: wisdom
+  mod: 0
+  desc: Administrative skills and knowledge to run a large estate
+
+- title: Stonemasonry
+  attribute: strength
+  mod: -2
+  desc: Ability to build stone structures
+
+- title: Storytelling
+  attribute: charisma
+  mod: 0
+  desc: Ability to spin entertaining tales and yarns; NOTE – bards receive this skill free
+
+- title: Swimming
+  attribute: strength
+  mod: 0
+  desc: Ability to swim; those without this skill CANNOT swim
+
+- title: Tattooing
+  attribute: dexterity
+  mod: 0
+  desc: Ability to create permanent body art
+
+- title: Teamster
+  attribute: strength
+  mod: 0
+  desc: Experience with how to load/pack wagons, boats, ships, rafts, & pack animals
+
+- title: Time Sense 
+  attribute: wisdom
+  mod: 0
+  desc: Possess an internal clock that works even
+
+- title: Wainwright
+  attribute: intelligence
+  mod: 0
+  desc: Skill at building or repairing wagons and carts
+
+- title: Water Finding
+  attribute: intelligence
+  mod: 0
+  desc: Ability to find water in arid and semi-arid areas
+
+- title: Waterproofing
+  attribute: intelligence
+  mod: -1
+  desc: Can render leather, cloth, and wood waterproof using beeswax, sap, pitch, etc.
+
+- title: Weather Sense
+  attribute: wisdom
+  mod: -1
+  desc: Ability to forecast coming weather
+
+- title: Weaving
+  attribute: intelligence
+  mod: -1
+  desc: Ability to create garments, tapestries, or draperies from wool, linen, or cotton
+
+- title: Whistling/Humming
+  attribute: dexterity
+  mod: 2
+  desc: Can whistle or hum skillfully; can use whistling as a communication method
+
+- title: Whitesmithing
+  attribute: dexterity
+  mod: -2
+  desc: Ability to work soft metals such as gold or silver into simple shapes, such as rings
+
+- title: Wheelwright
+  attribute: intelligence
+  mod: -1
+  desc: Skill in making or repairing wagon wheels
+
+- title: Winemaking
+  attribute: intelligence
+  mod: 0
+  desc: Knowledge of winemaking and ability to produce exceptional wines
+
+- title: Woodworking
+  attribute: dexterity
+  mod: 0
+  desc: Ability to carve or whittle wood and manufacture functional, decorative wooden items
+...

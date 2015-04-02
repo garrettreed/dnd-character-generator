@@ -1,0 +1,377 @@
+---
+level-0:
+	- title: Create Water
+    description: Creates 2 gallons/level of pure water.
+	- title: Cure Minor Wounds
+    description: Cures 1 point of damage.
+	- title: Detect Magic
+    description: Detects spells and magic items within 60 ft.
+	- title: Detect Poison
+    description: Detects poison in one creature or object.
+	- title: Flare
+    description: Dazzles one creature (–1 penalty on attack rolls).
+	- title: Guidance
+    description: +1 on one attack roll, saving throw, or skill check.
+	- title: Know Direction
+    description: You discern north.
+	- title: Light
+    description: Object shines like a torch.
+	- title: Mending
+    description: Makes minor repairs on an object.
+	- title: Purify Food and Drink
+    description: Purifies 1 cu. ft./level of food or water.
+	- title: Read Magic
+    description: Read scrolls and spellbooks.
+	- title: Resistance
+    description: Subject gains +1 bonus on saving throws.
+	- title: Virtue
+    description: Subject gains 1 temporary hp.
+
+
+
+level-1:
+	- title: Calm Animals
+    description: Calms (2d4 + level) HD of animals.
+	- title: Charm Animal
+    description: Makes one animal your friend.
+	- title: Cure Light Wounds
+    description: Cures 1d8 damage +1/level (max +5).
+	- title: Detect Animals or Plants
+    description: Detects kinds of animals or plants.
+	- title: Detect Snares and Pits
+    description: Reveals natural or primitive traps.
+	- title: Endure Elements
+    description: Exist comfortably in hot or cold environments.
+	- title: Entangle
+    description: Plants entangle everyone in 40-ft.-radius.
+	- title: Faerie Fire
+    description: Outlines subjects with light, canceling blur, concealment, and the like.
+	- title: Goodberry
+    description: 2d4 berries each cure 1 hp (max 8 hp/24 hours).
+	- title: Hide from Animals
+    description: Animals can’t perceive one subject/level.
+	- title: Jump
+    description: Subject gets bonus on Jump checks.
+	- title: Longstrider
+    description: Your speed increases by 10 ft.
+	- title: Magic Fang
+    description: One natural weapon of subject creature gets +1 on attack and damage rolls.
+	- title: Magic Stone
+    description: Three stones gain +1 on attack rolls, deal 1d6+1 damage.
+	- title: Obscuring Mist
+    description: Fog surrounds you.
+	- title: Pass without Trace
+    description: One subject/level leaves no tracks.
+	- title: Produce Flame
+    description: 1d6 damage +1/level, touch or thrown.
+	- title: Shillelagh
+    description: Cudgel or quarterstaff becomes +1 weapon (1d10 damage) for 1 min./level.
+	- title: Speak with Animals
+    description: You can communicate with animals.
+	- title: Summon Nature's Ally I
+    description: Calls creature to fight.
+
+
+
+level-2:
+	- title: Animal Messenger
+    description: Sends a Tiny animal to a specific place.
+	- title: Animal Trance
+    description: Fascinates 2d6 HD of animals.
+	- title: Barkskin
+    description: Grants +2 (or higher) enhancement to natural armor.
+	- title: Bear's Endurance
+    description: Subject gains +4 to Con for 1 min./level.
+	- title: Bull's Strength
+    description: Subject gains +4 to Str for 1 min./level.
+	- title: Cat's Grace
+    description: Subject gains +4 to Dex for 1 min./level.
+	- title: Chill Metal
+    description: Cold metal damages those who touch it.
+	- title: Delay Poison
+    description: Stops poison from harming subject for 1 hour/level.
+	- title: Fire Trap
+    description: Opened object deals 1d4 +1/level damage.
+	- title: Flame Blade
+    description: Touch attack deals 1d8 +1/two levels damage.
+	- title: Flaming Sphere
+    description: Creates rolling ball of fire, 2d6 damage, lasts 1 round/level.
+	- title: Fog Cloud
+    description: Fog obscures vision.
+	- title: Gust of Wind
+    description: Blows away or knocks down smaller creatures.
+	- title: Heat Metal
+    description: Make metal so hot it damages those who touch it.
+	- title: Hold Animal
+    description: Paralyzes one animal for 1 round/level.
+	- title: Owl's Wisdom
+    description: Subject gains +4 to Wis for 1 min./level.
+	- title: Reduce Animal
+    description: Shrinks one willing animal.
+	- title: Resist Energy
+    description: Ignores 10 (or more) points of damage/attack from specified energy type.
+	- title: Restoration, Lesser
+    description: Dispels magical ability penalty or repairs 1d4 ability damage.
+	- title: Soften Earth and Stone
+    description: Turns stone to clay or dirt to sand or mud.
+	- title: Spider Climb
+    description: Grants ability to walk on walls and ceilings.
+	- title: Summon Nature's Ally II
+    description: Calls creature to fight.
+	- title: Summon Swarm
+    description: Summons swarm of bats, rats, or spiders.
+	- title: Tree Shape
+    description: You look exactly like a tree for 1 hour/level.
+	- title: Warp Wood
+    description: Bends wood (shaft, handle, door, plank).
+	- title: Wood Shape
+    description: Rearranges wooden objects to suit you.
+
+
+
+level-3:
+	- title: Call Lightning
+    description: Calls down lightning bolts (3d6 per bolt) from sky.
+	- title: Contagion
+    description: Infects subject with chosen disease.
+	- title: Cure Moderate Wounds
+    description: Cures 2d8 damage +1/level (max +10).
+	- title: Daylight
+    description: 60-ft. radius of bright light.
+	- title: Diminish Plants
+    description: Reduces size or blights growth of normal plants.
+	- title: Dominate Animal
+    description: Subject animal obeys silent mental commands.
+	- title: Magic Fang, Greater
+    description: One natural weapon of subject creature gets +1/four levels on attack and damage rolls (max +5).
+	- title: Meld into Stone
+    description: You and your gear merge with stone.
+	- title: Neutralize Poison
+    description: Immunizes subject against poison, detoxifies venom in or on subject.
+	- title: Plant Growth
+    description: Grows vegetation, improves crops.
+	- title: Poison
+    description: Touch deals 1d10 Con damage, repeats in 1 min.
+	- title: Protection from Energy
+    description: Absorb 12 points/level of damage from one kind of energy.
+	- title: Quench
+    description: Extinguishes nonmagical fires or one magic item.
+	- title: Remove Disease
+    description: Cures all diseases affecting subject.
+	- title: Sleet Storm
+    description: Hampers vision and movement.
+	- title: Snare
+    description: Creates a magic booby trap.
+	- title: Speak with Plants
+    description: You can talk to normal plants and plant creatures.
+	- title: Spike Growth
+    description: Creatures in area take 1d4 damage, may be slowed.
+	- title: Stone Shape
+    description: Sculpts stone into any shape.
+	- title: Summon Nature's Ally III
+    description: Calls creature to fight.
+	- title: Water Breathing
+    description: Subjects can breathe underwater.
+	- title: Wind Wall
+    description: Deflects arrows, smaller creatures, and gases.
+
+
+
+level-4:
+	- title: Air Walk
+    description: Subject treads on air as if solid (climb at 45-degree angle).
+	- title: Antiplant Shell
+    description: Keeps animated plants at bay.
+	- title: Blight
+    description: Withers one plant or deals 1d6/level damage to plant creature.
+	- title: Command Plants
+    description: Sway the actions of one or more plant creatures.
+	- title: Control Water
+    description: Raises or lowers bodies of water.
+	- title: Cure Serious Wounds
+    description: Cures 3d8 damage +1/level (max +15).
+	- title: Dispel Magic
+    description: Cancels spells and magical effects.
+	- title: Flame Strike
+    description: Smite foes with Divine fire (1d6/level damage).
+	- title: Freedom of Movement
+    description: Subject moves normally despite impediments.
+	- title: Giant Vermin
+    description: Turns centipedes, scorpions, or spiders into giant vermin.
+	- title: Ice Storm
+    description: Hail deals 5d6 damage in cylinder 40 ft. across.
+	- title: Reincarnate
+    description: Brings dead subject back in a random body.
+	- title: Repel Vermin
+    description: Insects, spiders, and other vermin stay 10 ft. away.
+	- title: Rusting Grasp
+    description: Your touch corrodes iron and alloys.
+	- title: Scrying
+    description: Spies on subject from a distance.
+	- title: Spike Stones
+    description: Creatures in area take 1d8 damage, may be slowed.
+	- title: Summon Nature's Ally IV
+    description: Calls creature to fight.
+
+
+
+level-5:
+	- title: Animal Growth
+    description: One animal/two levels doubles in size.
+	- title: Atonement
+    description: Removes burden of misdeeds from subject.
+	- title: Awaken
+    description: Animal or tree gains human intellect.
+	- title: Baleful Polymorph
+    description: Transforms subject into harmless animal.
+	- title: Call Lightning Storm
+    description: As call lightning, but 5d6 damage per bolt.
+	- title: Commune with Nature
+    description: Learn about terrain for 1 mile/level.
+	- title: Control Winds
+    description: Change wind direction and speed.
+	- title: Cure Critical Wounds
+    description: Cures 4d8 damage +1/level (max +20).
+	- title: Death Ward
+    description: Grants immunity to all death spells and negative energy effects.
+	- title: Hallow
+    description: Designates location as holy.
+	- title: Insect Plague
+    description: Locust swarms attack creatures.
+	- title: Stoneskin
+    description: Ignore 10 points of damage per attack.
+	- title: Summon Nature's Ally V
+    description: Calls creature to fight.
+	- title: Transmute Mud to Rock
+    description: Transforms two 10-ft. cubes per level.
+	- title: Transmute Rock to Mud
+    description: Transforms two 10-ft. cubes per level.
+	- title: Tree Stride
+    description: Step from one tree to another far away.
+	- title: Unhallow
+    description: Designates location as unholy.
+	- title: Wall of Fire
+    description: Deals 2d4 fire damage out to 10 ft. and 1d4 out to 20 ft. Passing through wall deals 2d6 damage +1/level.
+	- title: Wall of Thorns
+    description: Thorns damage anyone who tries to pass.
+
+
+
+level-6:
+	- title: Antilife Shell
+    description: 10-ft.-radius field hedges out living creatures.
+	- title: Bear's Endurance, Mass
+    description: As bear's endurance, affects one subject/ level.
+	- title: Bull's Strength, Mass
+    description: As bull's strength, affects one subject/level.
+	- title: Cat's Grace, Mass
+    description: As cat's grace, affects one subject/level.
+	- title: Cure Light Wounds, Mass
+    description: Cures 1d8 damage +1/level for many creatures.
+	- title: Dispel Magic, Greater
+    description: As dispel magic, but +20 on check.
+	- title: Find the Path
+    description: Shows most direct way to a location.
+	- title: Fire Seeds
+    description: Acorns and berries become grenades and bombs.
+	- title: Ironwood
+    description: Magic wood is strong as steel.
+	- title: Liveoak
+    description: Oak becomes treant guardian.
+	- title: Move Earth
+    description: Digs trenches and builds hills.
+	- title: Owl's Wisdom, Mass
+    description: As owl's wisdom, affects one subject/level.
+	- title: Repel Wood
+    description: Pushes away wooden objects.
+	- title: Spellstaff
+    description: Stores one spell in wooden quarterstaff.
+	- title: Stone Tell
+    description: Talk to natural or worked stone.
+	- title: Summon Nature's Ally VI
+    description: Calls creature to fight.
+	- title: Transport via Plants
+    description: Move instantly from one plant to another of the same kind.
+	- title: Wall of Stone
+    description: Creates a stone wall that can be shaped.
+
+
+
+level-7:
+	- title: Animate Plants
+    description: One or more plants animate and fight for you.
+	- title: Changestaff
+    description: Your staff becomes a treant on command.
+	- title: Control Weather
+    description: Changes weather in local area.
+	- title: Creeping Doom
+    description: Swarms of centipedes attack at your command.
+	- title: Cure Moderate Wounds, Mass
+    description: Cures 2d8 damage +1/level for many creatures.
+	- title: Fire Storm
+    description: Deals 1d6/level fire damage.
+	- title: Heal
+    description: Cures 10 points/level of damage, all diseases and mental conditions.
+	- title: Scrying, Greater
+    description: As scrying, but faster and longer.
+	- title: Summon Nature's Ally VII
+    description: Calls creature to fight.
+	- title: Sunbeam
+    description: Beam blinds and deals 4d6 damage.
+	- title: Transmute Metal to Wood
+    description: Metal within 40 ft. becomes wood.
+	- title: True Seeing
+    description: Lets you see all things as they really are.
+	- title: Wind Walk
+    description: You and your allies turn vaporous and travel fast.
+
+
+
+level-8:
+	- title: Animal Shapes
+    description: One ally/level polymorphs into chosen animal.
+	- title: Control Plants
+    description: Control actions of one or more plant creatures.
+	- title: Cure Serious Wounds, Mass
+    description: Cures 3d8 damage +1/level for many creatures.
+	- title: Earthquake
+    description: Intense tremor shakes 80-ft.-radius.
+	- title: Finger of Death
+    description: Kills one subject.
+	- title: Repel Metal or Stone
+    description: Pushes away metal and stone.
+	- title: Reverse Gravity
+    description: Objects and creatures fall upward.
+	- title: Summon Nature's Ally VIII
+    description: Calls creature to fight.
+	- title: Sunburst
+    description: Blinds all within 10 ft., deals 6d6 damage.
+	- title: Whirlwind
+    description: Cyclone deals damage and can pick up creatures.
+	- title: Word of Recall
+    description: Teleports you back to designated place.
+
+
+
+level-9:
+	- title: Antipathy
+    description: Object or location affected by spell repels certain creatures.
+	- title: Cure Critical Wounds, Mass
+    description: Cures 4d8 damage +1/level for many creatures.
+	- title: Elemental Swarm
+    description: Summons multiple elementals.
+	- title: Foresight
+    description: “Sixth sense” warns of impending danger.
+	- title: Regenerate
+    description: Subject’s severed limbs grow back, cures 4d8 damage +1/level (max +35).
+	- title: Shambler
+    description: Summons 1d4+2 shambling mounds to fight for you.
+	- title: Shapechange
+    description: Transforms you into any creature, and change forms once per round.
+	- title: Storm of Vengeance
+    description: Storm rains acid, lightning, and hail.
+	- title: Summon Nature's Ally IX
+    description: Calls creature to fight.
+	- title: Sympathy
+    description: Object or location attracts certain creatures.
+...

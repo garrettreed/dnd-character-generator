@@ -1,0 +1,25 @@
+---
+fighter:
+  - Barbarian
+  - Fighter
+  - Warrior
+  - Paladin
+  - Ranger
+
+mage:
+  - Conjurer
+  - Sorcerer
+  - Necromancer
+  - Wizard
+
+rogue:
+  - Assassin
+  - Bard
+  - Thief
+
+monk:
+  - Cleric
+  - Druid
+  - Monk
+  - Shaman
+...

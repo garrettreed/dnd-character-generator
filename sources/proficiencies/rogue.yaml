@@ -1,0 +1,356 @@
+---
+- title: Alertness 
+  attribute: wisdom
+  mod: 1
+  desc: Instinctively notice signs of trouble in an area
+
+- title: Analyze Information 
+  attribute: intelligence
+  mod: -2
+  desc: Put together clues and details to solve puzzles or mysteries
+
+- title: Ancient History 
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of a specific region in the distant past
+
+- title: Animal Noise
+  attribute: wisdom
+  mod: -1  
+  desc: Ability to imitate the noises of animals
+
+- title: Appraising
+  attribute: intelligence
+  mod: 0 
+  desc: Estimate values of gems, jewelry, art, etc.
+
+- title: Appraising, Bulk
+  attribute: intelligence
+  mod: -1
+  desc: Estimate cargo in ship by way it sits in water, or on wagon by way animals pull
+
+- title: Assimilation
+  attribute: intelligence
+  mod: 0 
+  desc: Quick study a culture in order to blend in better
+
+- title: Awareness 
+  attribute: wisdom
+  mod: 0 
+  desc: Light sleeper, easily roused, attuned to surroundings
+
+- title: Begging 
+  attribute: charisma
+  mod: Special 
+  desc: Ability to beg money, or simply to pose as a beggar
+
+- title: Black-marketing 
+  attribute: wisdom
+  mod: -2
+  desc: Knowledge of illegal goods and good trafficking
+
+- title: Blind-Fighting
+  attribute: nil
+  mod: nil 
+  desc: Ability to fight in blind conditions, suffering only –2 to hit rather than –4
+
+- title: Blind Shooting
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to fire missiles at unseen targets
+
+- title: Body Language 
+  attribute: wisdom
+  mod: -2
+  desc: Interpret subtle changes in the behavior and posture of another
+
+- title: Bribery 
+  attribute: charisma
+  mod: 0 
+  desc: Ability to bribe someone
+
+- title: Bureaucracy 
+  attribute: intelligence
+  mod: 0 
+  desc: Working knowledge of city or country governmental protocol
+
+- title: Camouflage
+  attribute: wisdom
+  mod: 0 
+  desc: Hide using natural or man-made materials
+
+- title: Close-quarters Fighting 2 
+  attribute: xterity
+  mod: 0 
+  desc: 2 bonus to attack in close quarters when using bludgeoning or piercing weapons
+
+- title: Cryptography
+  attribute: intelligence
+  mod: -1
+  desc: Knowledge of encrypting and decrypting codes
+
+- title: Dark Sense
+  attribute: wisdom
+  mod: -2
+  desc: Sense objects & empty space in total darkness, complete concentration required
+
+- title: Deceiving 
+  attribute: intelligence
+  mod: -3
+  desc: Persuade another while actually lying, also can detect deception (not truth)
+
+- title: Detect Signing
+  attribute: intelligence
+  mod: 1
+  desc: Ability to detect when others are using sign language
+
+- title: Diplomacy 
+  attribute: charisma
+  mod: -1
+  desc: Skill in diplomatic procedures and protocol
+
+- title: Dirty Fighting
+  attribute: dexterity
+  mod: -3
+  desc: Can gain an extra attack at +2 to hit; failed check means opponent gets extra attack
+
+- title: Disguise
+  attribute: charisma
+  mod: -1
+  desc: Ability to alter appearance; +1 bonus if Acting skill known and used
+
+- title: Enamour 
+  attribute: charisma
+  mod: -2
+  desc: Ability to trick someone into falling in love with skill user, requires 1 week to use
+
+- title: Endurance 
+  attribute: constitution
+  mod: 0 
+  desc: Perform strenuous activity twice as long as normal
+
+- title: Escape
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to slip from ropes or other bonds
+
+- title: Fast-Talking
+  attribute: charisma
+  mod: Special 
+  desc: The art of distraction and conning, ability to run successful scams
+
+- title: Feign Death 
+  attribute: constitution
+  mod: -1
+  desc: Ability to place self in cataleptic state indistinguishable from death
+
+- title: Feign/Detect Sleep
+  attribute: intelligence
+  mod: 0 
+  desc: Ability to successfully feign sleep or to detect those faking sleep
+
+- title: Forage
+  attribute: intelligence
+  mod: -1
+  desc: Skill in finding useful items in the wilderness
+
+- title: Forgery 
+  attribute: dexterity
+  mod: -1  
+  desc: Create and detect false documents and writings
+
+- title: Fortune Telling 
+  attribute: charisma
+  mod: 2
+  desc: Ability to successfully tell fake fortunes
+
+- title: Gem Cutting 
+  attribute: dexterity
+  mod: -2
+  desc: Knowledge and ability to cut gems from raw stones
+
+- title: Grooming
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to make another look his or her best
+
+- title: Herbalism 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of plants and fungus, their abilities, and how to use them
+
+- title: Hold Breath 
+  attribute: constitution
+  mod: 0 
+  desc: Hold breath for rounds equal to CON x ½, rounded down
+
+- title: Hunting 
+  attribute: wisdom
+  mod: -1
+  desc: Ability to stalk and bring down game animals and fowl
+
+- title: Information Gathering 
+  attribute: intelligence
+  mod: Special 
+  desc: Ability to gather information
+
+- title: Interrogation 
+  attribute: wisdom
+  mod: -2
+  desc: Ability to gain information from someone through tough questioning
+
+- title: Intimidation
+  attribute: str/cha
+  mod: Special 
+  desc: Ability to intimidate someone using either brains or brawn
+
+- title: Investigation 
+  attribute: intelligence
+  mod: -2
+  desc: Art of discovering the truth through careful examination of the facts
+
+- title: Juggling
+  attribute: dexterity
+  mod: -1
+  desc: Ability to juggle or to catch small thrown weapons/objects on successful attack vs. AC 0
+
+- title: Jumping 
+  attribute: strength
+  mod: 0 
+  desc: Ability to make long or high leaps
+
+- title: Light Sleeping
+  attribute: constitution
+  mod: -1
+  desc: Gain full nights rest in only 1 hour, including healing; can only be used 1x week
+
+- title: Local History 
+  attribute: charisma
+  mod: 0 
+  desc: In depth knowledge of the history of a specific region or country
+
+- title: Locksmithing
+  attribute: dexterity
+  mod: 0 
+  desc: Can make and repair various locks
+
+- title: Looting 
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to grab the best, most valuable loot in the quickest time
+
+- title: Pest Control
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to keep an area clear of rats and other pests
+
+- title: Poison Resistance 
+  attribute: constitution
+  mod: -1
+  desc: Successful skill check allows saving throw vs. poison at +2
+
+- title: Quick Draw
+  attribute: dexterity
+  mod: 0 
+  desc: Lower initiative by –2 on initial attack, must specify melee or ranged quick draw
+
+- title: Quick Study 
+  attribute: intelligence
+  mod: -3  
+  desc: Learn enough about a skill or profession to fool others after one week study
+
+- title: Reading Lips
+  attribute: intelligence
+  mod: -2
+  desc: Can understand the speech of those seen but not heard
+
+- title: Reading/Writing 
+  attribute: intelligence
+  mod: 1
+  desc: Ability to read and write a language
+
+- title: Sabotage
+  attribute: intelligence
+  mod: -1
+  desc: Plan or cause the malfunction of a machine or the collapse of a building
+
+- title: Set Snares
+  attribute: dexterity
+  mod: -1
+  desc: Ability to make and set snare traps
+
+- title: Slight of Hand
+  attribute: dexterity
+  mod: -2
+  desc: Experienced in the art of subtle hand movements
+
+- title: Spycraft
+  attribute: dexterity
+  mod: -1
+  desc: The basic skills of spying, including hand gestures, trailing, dead drops, etc.
+
+- title: Stage Fighting
+  attribute: charisma
+  mod: -1
+  desc: Ability to perform believable fake fighting; +1 bonus is Acting is also known
+
+- title: Survival
+  attribute: intelligence
+  mod: 0 
+  desc: Basic survival knowledge of a specified terrain type
+
+- title: Taunting
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to taunt enemy into attacking at –2 to AC and –2 to hit
+
+- title: Tightrope Walking 
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to walk along narrow surfaces, including rope
+
+- title: Toxicology
+  attribute: intelligence
+  mod: 0 
+  desc: Knowledge of herbs and plants poisons can be made from, but no other herb lore known
+
+- title: Tracking
+  attribute: wisdom
+  mod: -6
+  desc: Ability to track someone (Scouts receive free & do not suffer the –6 modifier)
+
+- title: Trailing
+  attribute: dexterity
+  mod: Special 
+  desc: Ability to track someone in a city or crowded environment
+
+- title: Trail Signs 
+  attribute: intelligence
+  mod: -1
+  desc: Ability to read symbolic messages left along a trail or road
+
+- title: Tumbling
+  attribute: dexterity
+  mod: 0 
+  desc: Entertain with tumbles, add +4 to AC in combat, unarmed attacks at +2
+
+- title: Ventriloquism 
+  attribute: intelligence
+  mod: -2
+  desc: Ability to throw voice
+
+- title: Voice Mimicry 
+  attribute: charisma
+  mod: 0 
+  desc: Art of imitating someone else’s voice perfectly
+
+- title: Weapon Improvisation
+  attribute: wisdom
+  mod: -1
+  desc: Ability to scrounge simple weapon that delivers 1d6+1/1d3+1 damage
+
+- title: Weapon Sharpening 
+  attribute: intelligence
+  mod: -1
+  desc: Sharpen weapons to receive +1 to hit and damage for first 3 attacks
+...

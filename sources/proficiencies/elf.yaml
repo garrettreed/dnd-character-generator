@@ -1,0 +1,56 @@
+---
+- title: Animal Lore 
+  attribute: intelligence
+  mod: 0 
+  desc: In depth knowledge of animal behavior
+
+- title: Animal Noise
+  attribute: wisdom
+  mod: -1  
+  desc: Ability to imitate the noises of animals
+
+- title: Blind Shooting
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to fire missiles at unseen targets
+
+- title: Camouflage
+  attribute: wisdom
+  mod: 0 
+  desc: Hide using natural or man-made materials
+
+- title: Herbalism 
+  attribute: intelligence
+  mod: -2
+  desc: Knowledge of plants and fungus, their abilities, and how to use them
+
+- title: Keen Eye Site 
+  attribute: nil
+  mod: nil 
+  desc: Normal vision range is doubled, +1 to hit with missiles at long range
+
+- title: Knotwards 
+  attribute: intelligence
+  mod: -3
+  desc: Imbue knotted ropes with spell-like abilities similar to cantrips; Prerequisite – Rope Use
+
+- title: Tightrope Walking 
+  attribute: dexterity
+  mod: 0 
+  desc: Ability to walk along narrow surfaces, including rope
+
+- title: Tracking
+  attribute: wisdom
+  mod: 0 
+  desc: Ability to track someone
+
+- title: Veterinary Healing
+  attribute: wisdom
+  mod: -3
+  desc: Ability to heal 1d3 HP to animals with bandages and pressure
+
+- title: Woodsongs 
+  attribute: wisdom
+  mod: -3
+  desc: 2 bonus to all die rolls in wilderness for 2d4 hours; Prerequisite – Singing
+...
