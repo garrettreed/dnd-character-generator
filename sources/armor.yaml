@@ -1,5 +1,5 @@
 ---
-Light:
+light:
 
   - title: Padded
     cost: 5 gp
@@ -39,7 +39,7 @@ Light:
 
 
 
-Medium:
+medium:
 
   - title: Hide
     cost: 15 gp
@@ -79,7 +79,7 @@ Medium:
 
 
 
-Heavy:
+heavy:
 
   - title: Splint mail
     cost: 200 gp
@@ -119,7 +119,7 @@ Heavy:
 
 
 
-Shields:
+shields:
 
   - title: Buckler
     cost: 15 gp
@@ -177,7 +177,7 @@ Shields:
 
 
 
-Extras:
+extras:
 
   - title: Armor spikes
     cost: +50 gp

@@ -5,10 +5,16 @@ module DND
   class Numbers
 
 
+    # This is the number of sets of numbers.
+    # If the class is initialized with a :sets => 1, then
+    # it will return an array. Else, an array of arrays.
+    def self.def_sets; 1 end
+    # This is the number of numbers.
+    def self.def_quant; 6 end
+    # This is the upper limit of the randomness.
     def self.bound_high; 18 end
-    def self.bound_low;   6 end
-    def self.def_quant;   6 end
-    def self.def_sets;    1 end
+    # This is the lower limit of the randomness.
+    def self.bound_low; 6 end
 
     def self.def_lims
       {
@@ -39,7 +45,7 @@ module DND
                                 :quant => 1,
                                 :high => 20,
                                 :low => 10
-                              }).set
+                              }).set[0]
     end
 
     def self.gp( n = 1 )
@@ -48,7 +54,7 @@ module DND
                                 :quant => 1,
                                 :high => 500,
                                 :low => 1
-                              }).set
+                              }).set[0]
     end
 
 

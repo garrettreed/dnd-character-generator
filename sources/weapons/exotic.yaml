@@ -1,5 +1,5 @@
 ---
-Light:
+light:
 
   - title: Kama
     cost: 2 gp
@@ -39,7 +39,7 @@ Light:
 
 
 
-One-handed:
+single:
 
   - title: Sword, bastard
     cost: 35 gp
@@ -70,7 +70,7 @@ One-handed:
 
 
 
-Two-handed:
+double:
 
   - title: Axe, orc double
     cost: 60 gp
@@ -128,7 +128,7 @@ Two-handed:
 
 
 
-Ranged:
+ranged:
 
   - title: Bolas
     cost: 5 gp

@@ -1,5 +1,5 @@
 ---
-Light:
+light:
 
   - title: Axe, throwing
     cost: 8 gp
@@ -93,7 +93,7 @@ Light:
 
 
 
-One-handed:
+single:
 
   - title: Battleaxe
     cost: 10 gp
@@ -187,7 +187,7 @@ One-handed:
 
 
 
-Two-handed:
+double:
 
   - title: Falchion
     cost: 75 gp
@@ -290,7 +290,7 @@ Two-handed:
 
 
 
-Ranged:
+ranged:
 
   - title: Longbow
     cost: 75 gp

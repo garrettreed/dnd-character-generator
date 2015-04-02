@@ -24,8 +24,8 @@ module DND
 
 
     def self.required_files
-      # charsheet.rb character.rb
-      %w{ utils.rb numbers.rb }
+      # charsheet.rb
+      %w{ utils.rb numbers.rb character.rb }
     end
 
 

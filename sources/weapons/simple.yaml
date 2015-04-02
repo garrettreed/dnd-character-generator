@@ -1,5 +1,5 @@
 ---
-Unarmed:
+unarmed:
 
   - title: Gauntlet
     cost: 2 gp
@@ -21,13 +21,14 @@ Unarmed:
 
 
 
-Light:
+light:
 
   - title: Dagger
     cost: 2 gp
     damage_s: 1d3
     damage_m: 1d4
-    critical: 19-20/x2  range: 10 ft.
+    critical: 19-20/x2
+    range: 10 ft.
     weight: 1 lb.
     type: Piercing or slashing
 
@@ -69,7 +70,7 @@ Light:
 
 
 
-One-handed:
+single:
 
   - title: Club
     cost: —
@@ -109,7 +110,7 @@ One-handed:
 
 
 
-Two-handed: 
+double: 
 
   - title: Longspear
     cost: 5 gp
@@ -140,7 +141,7 @@ Two-handed:
 
 
 
-Ranged:
+ranged:
 
   - title: Crossbow, heavy
     cost: 50 gp
