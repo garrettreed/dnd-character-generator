@@ -79,8 +79,8 @@
   mod: 0
   desc: "Hide using natural or man-made materials"
 
-- title: "Close-quarters Fighting 2"
-  attribute: xterity
+- title: "Close-quarters Fighting"
+  attribute: dexterity
   mod: 0
   desc: "2 bonus to attack in close quarters when using bludgeoning or piercing weapons"
 

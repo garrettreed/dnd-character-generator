@@ -114,7 +114,7 @@
   mod: -2
   desc: "5% bonus to learn illusion spells, identify spells from residual energy"
 
-- title: "Invoc./Evocation Theory 2"
+- title: "Invoc./Evocation Theory"
   attribute: telligence
   mod: -2
   desc: "5% bonus to learn invocation/evocation spells, identify spells from residual energy"

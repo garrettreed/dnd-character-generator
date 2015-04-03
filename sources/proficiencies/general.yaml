@@ -169,35 +169,45 @@
   mod: 0
   desc: "Ability to make good quality cheeses"
 
-- title: "City Commerce I"
+- title: "City Commerce"
   attribute: wisdom
   mod: -1
   desc: "Know legal business of a specific city (when market opens, etc.)"
 
-- title: "City Commerce II"
-  attribute: wisdom
-  mod: -2
-  desc: "Know black markets of a specific city"
+# - title: "City Commerce I"
+#   attribute: wisdom
+#   mod: -1
+#   desc: "Know legal business of a specific city (when market opens, etc.)"
 
-- title: "City Lore I"
+# - title: "City Commerce II"
+#   attribute: wisdom
+#   mod: -2
+#   desc: "Know black markets of a specific city"
+
+- title: "City Lore"
   attribute: intelligence
   mod: 1
   desc: "Knowledge of important people and places of specific city"
 
-- title: "City Lore II"
-  attribute: intelligence
-  mod: -2
-  desc: "Basic knowledge of history, defenses, sewers of specific city"
+# - title: "City Lore I"
+#   attribute: intelligence
+#   mod: 1
+#   desc: "Knowledge of important people and places of specific city"
 
-- title: "City Lore III"
-  attribute: charisma
-  mod: -1
-  desc: "Ability to recall or find out rumors about a specific city"
+# - title: "City Lore II"
+#   attribute: intelligence
+#   mod: -2
+#   desc: "Basic knowledge of history, defenses, sewers of specific city"
 
-- title: "City Lore"
-  attribute: 4
-  mod: INTELLIGENCE
-  desc: "-4	Know secrets of important people and places in a specific city"
+# - title: "City Lore III"
+#   attribute: charisma
+#   mod: -1
+#   desc: "Ability to recall or find out rumors about a specific city"
+
+# - title: "City Lore IV"
+#   attribute: 4
+#   mod: intelligence
+#   desc: "-4	Know secrets of important people and places in a specific city"
 
 - title: "Clothesmaking: Crude"
   attribute: intelligence

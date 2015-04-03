@@ -239,8 +239,8 @@
   mod: -3
   desc: "Seeking of visions to answer major life questions, usually used by barbarians"
 
-- title: "Weakness Identification 2"
-  attribute: sdom
+- title: "Weakness Identification"
+  attribute: wissdom
   mod: -2
   desc: "Successful check allows double-damage for one round if called shots are taken"
 
