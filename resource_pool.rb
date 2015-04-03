@@ -11,7 +11,7 @@ module DND
     def self.classes_file; "sources/classes.yaml" end
     def self.names_file; "sources/names_2.yaml" end
     def self.items_file; "sources/items_2.yaml" end
-    def self.races_file; "sources/races_2.yaml" end
+    def self.races_file; "sources/races.yaml" end
     def self.traits_file; "sources/traits.yaml" end
 
 
@@ -44,10 +44,10 @@ module DND
 
 
     def initialize
-      @alignments, @armor, @classes, @names, @items, @races, @traits, @spells, @proficiencies, @weapons = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
+      @alignments, @armors, @classes, @names, @items, @races, @traits, @spells, @proficiencies, @weapons = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
     end
 
-    attr_accessor :alignments, :armor, :classes, :names, :items, :races, :traits, :spells, :proficiencies, :weapons
+    attr_accessor :alignments, :armors, :classes, :names, :items, :races, :traits, :spells, :proficiencies, :weapons
 
 
 
@@ -55,8 +55,8 @@ module DND
       self.alignments = YAML.load_file(DND::ResourcePool.alignments_file)
     end
 
-    def load_armor
-      self.armor = YAML.load_file(DND::ResourcePool.armor_file)
+    def load_armors
+      self.armors = YAML.load_file(DND::ResourcePool.armor_file)
     end
 
     def load_classes

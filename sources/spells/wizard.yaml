@@ -1,979 +1,979 @@
 ---
-level-0:
+level0:
 
   abjur:
     - title: Resistance
-      description: Subject gains +1 on saving throws.
+      desc: "Subject gains +1 on saving throws."
 
   conj:
     - title: Acid Splash
-      description: Orb deals 1d3 acid damage.
+      desc: "Orb deals 1d3 acid damage."
 
   div:
     - title: Detect Poison
-      description: Detects poison in one creature or small object.
+      desc: "Detects poison in one creature or small object."
     - title: Detect Magic
-      description: Detects spells and magic items within 60 ft.
+      desc: "Detects spells and magic items within 60 ft."
     - title: Read Magic
-      description: Read scrolls and spellbooks.
+      desc: "Read scrolls and spellbooks."
 
   ench:
     - title: Daze
-      description: Humanoid creature of 4 HD or less loses next action.
+      desc: "Humanoid creature of 4 HD or less loses next action."
 
   evoc:
     - title: Dancing Lights
-      description: Creates torches or other lights.
+      desc: "Creates torches or other lights."
     - title: Flare
-      description: Dazzles one creature (–1 on attack rolls).
+      desc: "Dazzles one creature (–1 on attack rolls)."
     - title: Light
-      description: Object shines like a torch.
+      desc: "Object shines like a torch."
     - title: Ray of Frost
-      description: Ray deals 1d3 cold damage.
+      desc: "Ray deals 1d3 cold damage."
 
   illus:
     - title: Ghost Sound
-      description: Figment sounds.
+      desc: "Figment sounds."
 
   necro:
     - title: Disrupt Undead
-      description: Deals 1d6 damage to one undead.
+      desc: "Deals 1d6 damage to one undead."
     - title: Touch of Fatigue
-      description: Touch attack fatigues target.
+      desc: "Touch attack fatigues target."
 
   trans:
     - title: Mage Hand
-      description: 5-pound telekinesis.
+      desc: "5-pound telekinesis."
     - title: Mending
-      description: Makes minor repairs on an object.
+      desc: "Makes minor repairs on an object."
     - title: Message
-      description: Whispered conversation at distance.
+      desc: "Whispered conversation at distance."
     - title: Open/Close
-      description: Opens or closes small or light things.
+      desc: "Opens or closes small or light things."
 
   univ:
     - title: Arcane Mark
-      description: Inscribes a personal rune (visible or invisible).
+      desc: "Inscribes a personal rune (visible or invisible)."
     - title: Prestidigitation
-      description: Performs minor tricks.
+      desc: "Performs minor tricks."
 
 
 
-level-1:
+level1:
 
   abjur:
     - title: Alarm
-      description: Wards an area for 2 hours/level.
+      desc: "Wards an area for 2 hours/level."
     - title: Endure Elements
-      description: Exist comfortably in hot or cold environments.
+      desc: "Exist comfortably in hot or cold environments."
     - title: Hold Portal
-      description: Holds door shut.
+      desc: "Holds door shut."
     - title: Protection from Chaos
-      description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+      desc: "+2 to AC and saves, counter mind control, hedge out elementals and outsiders."
     - title: Protection from Evil
-      description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+      desc: "+2 to AC and saves, counter mind control, hedge out elementals and outsiders."
     - title: Protection from Good
-      description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+      desc: "+2 to AC and saves, counter mind control, hedge out elementals and outsiders."
     - title: Protection from Law
-      description: +2 to AC and saves, counter mind control, hedge out elementals and outsiders.
+      desc: "+2 to AC and saves, counter mind control, hedge out elementals and outsiders."
     - title: Shield
-      description: Invisible disc gives +4 to AC, blocks magic missiles for 1 min/level.
+      desc: "Invisible disc gives +4 to AC, blocks magic missiles for 1 min/level."
 
   conj:
     - title: Grease
-      description: Makes 10-ft. square or one object slippery.
+      desc: "Makes 10-ft. square or one object slippery."
     - title: Mage Armor
-      description: Gives subject +4 armor bonus.
+      desc: "Gives subject +4 armor bonus."
     - title: Mount
-      description: Summons riding horse for 2 hours/level.
+      desc: "Summons riding horse for 2 hours/level."
     - title: Obscuring Mist
-      description: Fog surrounds you.
+      desc: "Fog surrounds you."
     - title: Summon Monster I
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
     - title: Unseen Servant
-      description: Invisible force obeys your commands.
+      desc: "Invisible force obeys your commands."
 
   div:
     - title: Comprehend Languages
-      description: You understand all spoken and written languages.
+      desc: "You understand all spoken and written languages."
     - title: Detect Secret Doors
-      description: Reveals hidden doors within 60 ft.
+      desc: "Reveals hidden doors within 60 ft."
     - title: Detect Undead
-      description: Reveals undead within 60 ft.
+      desc: "Reveals undead within 60 ft."
     - title: Identify
-      description: Determines properties of magic item.
+      desc: "Determines properties of magic item."
     - title: True Strike
-      description: +20 on your next attack roll.
+      desc: "+20 on your next attack roll."
 
   ench:
     - title: Charm Person
-      description: Makes one person your friend.
+      desc: "Makes one person your friend."
     - title: Hypnotism
-      description: Fascinates 2d4 HD of creatures.
+      desc: "Fascinates 2d4 HD of creatures."
     - title: Sleep
-      description: Puts 4 HD of creatures into magical slumber.
+      desc: "Puts 4 HD of creatures into magical slumber."
 
   evoc:
     - title: Burning Hands
-      description: 1d4/level fire damage (max 5d4).
+      desc: "1d4/level fire damage (max 5d4)."
     - title: Floating Disk
-      description: Creates 3-ft.-diameter horizontal disk that holds 100 lb./level.
+      desc: "Creates 3-ft.-diameter horizontal disk that holds 100 lb./level."
     - title: Magic Missile
-      description: 1d4+1 damage; +1 missile per two levels above 1st (max 5).
+      desc: "1d4+1 damage; +1 missile per two levels above 1st (max 5)."
     - title: Shocking Grasp
-      description: Touch delivers 1d6/level electricity damage (max 5d6).
+      desc: "Touch delivers 1d6/level electricity damage (max 5d6)."
 
   illus:
     - title: Color Spray
-      description: Knocks unconscious, blinds, and/or stuns weak creatures.
+      desc: "Knocks unconscious, blinds, and/or stuns weak creatures."
     - title: Disguise Self
-      description: Changes your appearance.
+      desc: "Changes your appearance."
     - title: Magic Aura
-      description: Alters object's magic aura.
+      desc: "Alters object's magic aura."
     - title: Silent Image
-      description: Creates minor illusion of your design.
+      desc: "Creates minor illusion of your design."
     - title: Ventriloquism
-      description: Throws voice for 1 min./level.
+      desc: "Throws voice for 1 min./level."
 
   necro:
     - title: Cause Fear
-      description: One creature of 5 HD or less flees for 1d4 rounds.
+      desc: "One creature of 5 HD or less flees for 1d4 rounds."
     - title: Chill Touch
-      description: One touch/level deals 1d6 damage and possibly 1 Str damage.
+      desc: "One touch/level deals 1d6 damage and possibly 1 Str damage."
     - title: Ray of Enfeeblement
-      description: Ray deals 1d6 +1 per two levels Str damage.
+      desc: "Ray deals 1d6 +1 per two levels Str damage."
 
   trans:
     - title: Animate Rope
-      description: Makes a rope move at your command.
+      desc: "Makes a rope move at your command."
     - title: Enlarge Person
-      description: Humanoid creature doubles in size.
+      desc: "Humanoid creature doubles in size."
     - title: Erase
-      description: Mundane or magical writing vanishes.
+      desc: "Mundane or magical writing vanishes."
     - title: Expeditious Retreat
-      description: Your speed increases by 30 ft.
+      desc: "Your speed increases by 30 ft."
     - title: Feather Fall
-      description: Objects or creatures fall slowly.
+      desc: "Objects or creatures fall slowly."
     - title: Jump
-      description: Subject gets bonus on Jump checks.
+      desc: "Subject gets bonus on Jump checks."
     - title: Magic Weapon
-      description: Weapon gains +1 bonus.
+      desc: "Weapon gains +1 bonus."
     - title: Reduce Person
-      description: Humanoid creature halves in size.
+      desc: "Humanoid creature halves in size."
 
 
 
-level-2:
+level2:
 
   abjur:
     - title: Arcane Lock
-      description: Magically locks a portal or chest.
+      desc: "Magically locks a portal or chest."
     - title: Obscure Object
-      description: Masks object against scrying.
+      desc: "Masks object against scrying."
     - title: Protection from Arrows
-      description: Subject immune to most ranged attacks.
+      desc: "Subject immune to most ranged attacks."
     - title: Resist Energy
-      description: Ignores first 10 (or more) points of damage/attack from specified energy type.
+      desc: "Ignores first 10 (or more) points of damage/attack from specified energy type."
 
   conj:
     - title: Acid Arrow
-      description: Ranged touch attack; 2d4 damage for 1 round +1 round/three levels.
+      desc: "Ranged touch attack; 2d4 damage for 1 round +1 round/three levels."
     - title: Fog Cloud
-      description: Fog obscures vision.
+      desc: "Fog obscures vision."
     - title: Glitterdust
-      description: Blinds creatures, outlines invisible creatures.
+      desc: "Blinds creatures, outlines invisible creatures."
     - title: Summon Monster II
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
     - title: Summon Swarm
-      description: Summons swarm of bats, rats, or spiders.
+      desc: "Summons swarm of bats, rats, or spiders."
     - title: Web
-      description: Fills 20-ft.-radius spread with sticky spiderwebs.
+      desc: "Fills 20-ft.-radius spread with sticky spiderwebs."
 
   div:
     - title: Detect Thoughts
-      description: Allows “listening” to surface thoughts.
+      desc: "Allows “listening” to surface thoughts."
     - title: Locate Object
-      description: Senses direction toward object (specific or type).
+      desc: "Senses direction toward object (specific or type)."
     - title: See Invisibility
-      description: Reveals invisible creatures or objects.
+      desc: "Reveals invisible creatures or objects."
 
   ench:
     - title: Daze Monster
-      description: Living creature of 6 HD or less loses next action.
+      desc: "Living creature of 6 HD or less loses next action."
     - title: Hideous Laughter
-      description: Subject loses actions for 1 round/level.
+      desc: "Subject loses actions for 1 round/level."
     - title: Touch of Idiocy
-      description: Subject takes 1d6 points of Int, Wis, and Cha damage.
+      desc: "Subject takes 1d6 points of Int, Wis, and Cha damage."
 
   evoc:
     - title: Continual Flame
-      description: Makes a permanent, heatless torch.
+      desc: "Makes a permanent, heatless torch."
     - title: Darkness
-      description: 20-ft. radius of supernatural shadow.
+      desc: "20-ft. radius of supernatural shadow."
     - title: Flaming Sphere
-      description: Creates rolling ball of fire, 2d6 damage, lasts 1 round/level.
+      desc: "Creates rolling ball of fire, 2d6 damage, lasts 1 round/level."
     - title: Gust of Wind
-      description: Blows away or knocks down smaller creatures.
+      desc: "Blows away or knocks down smaller creatures."
     - title: Scorching Ray
-      description: Ranged touch attack deals 4d6 fire damage, +1 ray/four levels (max 3).
+      desc: "Ranged touch attack deals 4d6 fire damage, +1 ray/four levels (max 3)."
     - title: Shatter
-      description: Sonic vibration damages objects or crystalline creatures.
+      desc: "Sonic vibration damages objects or crystalline creatures."
 
   illus:
     - title: Blur
-      description: Attacks miss subject 20% of the time.
+      desc: "Attacks miss subject 20% of the time."
     - title: Hypnotic Pattern
-      description: Fascinates (2d4 + level) HD of creatures.
+      desc: "Fascinates (2d4 + level) HD of creatures."
     - title: Invisibility
-      description: Subject is invisible for 1 min./level or until it attacks.
+      desc: "Subject is invisible for 1 min./level or until it attacks."
     - title: Magic Mouth
-      description: Speaks once when triggered.
+      desc: "Speaks once when triggered."
     - title: Minor Image
-      description: As silent image, plus some sound.
+      desc: "As silent image, plus some sound."
     - title: Mirror Image
-      description: Creates decoy duplicates of you (1d4 +1 per three levels, max 8).
+      desc: "Creates decoy duplicates of you (1d4 +1 per three levels, max 8)."
     - title: Misdirection
-      description: Misleads divinations for one creature or object.
+      desc: "Misleads divinations for one creature or object."
     - title: Phantom Trap
-      description: Makes item seem trapped.
+      desc: "Makes item seem trapped."
 
   necro:
     - title: Blindness/Deafness
-      description: Makes subject blinded or deafened.
+      desc: "Makes subject blinded or deafened."
     - title: Command Undead
-      description: Undead creature obeys your commands.
+      desc: "Undead creature obeys your commands."
     - title: False Life
-      description: Gain 1d10 temporary hp +1/level (max +10).
+      desc: "Gain 1d10 temporary hp +1/level (max +10)."
     - title: Ghoul Touch
-      description: Paralyzes one subject, which exudes stench that makes those nearby sickened.
+      desc: "Paralyzes one subject, which exudes stench that makes those nearby sickened."
     - title: Scare
-      description: Panics creatures of less than 6 HD.
+      desc: "Panics creatures of less than 6 HD."
     - title: Spectral Hand
-      description: Creates disembodied glowing hand to deliver touch attacks.
+      desc: "Creates disembodied glowing hand to deliver touch attacks."
 
   trans:
     - title: Alter Self
-      description: Assume form of a similar creature.
+      desc: "Assume form of a similar creature."
     - title: Bear's Endurance
-      description: Subject gains +4 to Con for 1 min./level.
+      desc: "Subject gains +4 to Con for 1 min./level."
     - title: Bull's Strength
-      description: Subject gains +4 to Str for 1 min./level.
+      desc: "Subject gains +4 to Str for 1 min./level."
     - title: Cat's Grace
-      description: Subject gains +4 to Dex for 1 min./level.
+      desc: "Subject gains +4 to Dex for 1 min./level."
     - title: Darkvision
-      description: See 60 ft. in total darkness.
+      desc: "See 60 ft. in total darkness."
     - title: Eagle's Splendor
-      description: Subject gains +4 to Cha for 1 min./level.
+      desc: "Subject gains +4 to Cha for 1 min./level."
     - title: Fox's Cunning
-      description: Subject gains +4 Int for 1 min./level.
+      desc: "Subject gains +4 Int for 1 min./level."
     - title: Knock
-      description: Opens locked or magically sealed door.
+      desc: "Opens locked or magically sealed door."
     - title: Levitate
-      description: Subject moves up and down at your direction.
+      desc: "Subject moves up and down at your direction."
     - title: Owl's Wisdom
-      description: Subject gains +4 to Wis for 1 min./level.
+      desc: "Subject gains +4 to Wis for 1 min./level."
     - title: Pyrotechnics
-      description: Turns fire into blinding light or choking smoke.
+      desc: "Turns fire into blinding light or choking smoke."
     - title: Rope Trick
-      description: As many as eight creatures hide in extradimensional space.
+      desc: "As many as eight creatures hide in extradimensional space."
     - title: Spider Climb
-      description: Grants ability to walk on walls and ceilings.
+      desc: "Grants ability to walk on walls and ceilings."
     - title: Whispering Wind
-      description: Sends a short message 1 mile/level.
+      desc: "Sends a short message 1 mile/level."
 
 
 
-level-3:
+level3:
 
   abjur:
     - title: Dispel Magic
-      description: Cancels magical spells and effects.
+      desc: "Cancels magical spells and effects."
     - title: Explosive Runes
-      description: Deals 6d6 damage when read.
+      desc: "Deals 6d6 damage when read."
     - title: Magic Circle against Chaos
-      description: As protection spells, but 10-ft. radius and 10 min./level.
+      desc: "As protection spells, but 10-ft. radius and 10 min./level."
     - title: Magic Circle against Evil
-      description: As protection spells, but 10-ft. radius and 10 min./level.
+      desc: "As protection spells, but 10-ft. radius and 10 min./level."
     - title: Magic Circle against Good
-      description: As protection spells, but 10-ft. radius and 10 min./level.
+      desc: "As protection spells, but 10-ft. radius and 10 min./level."
     - title: Magic Circle against Law
-      description: As protection spells, but 10-ft. radius and 10 min./level.
+      desc: "As protection spells, but 10-ft. radius and 10 min./level."
     - title: Nondetection
-      description: Hides subject from divination, scrying.
+      desc: "Hides subject from divination, scrying."
     - title: Protection from Energy
-      description: Absorb 12 points/level of damage from one kind of energy.
+      desc: "Absorb 12 points/level of damage from one kind of energy."
 
   conj:
     - title: Phantom Steed
-      description: Magic horse appears for 1 hour/level.
+      desc: "Magic horse appears for 1 hour/level."
     - title: Sepia Snake Sigil
-      description: Creates text symbol that immobilizes reader.
+      desc: "Creates text symbol that immobilizes reader."
     - title: Sleet Storm
-      description: Hampers vision and movement.
+      desc: "Hampers vision and movement."
     - title: Stinking Cloud
-      description: Nauseating vapors, 1 round/level.
+      desc: "Nauseating vapors, 1 round/level."
     - title: Summon Monster III
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
 
   div:
     - title: Arcane Sight
-      description: Magical auras become visible to you.
+      desc: "Magical auras become visible to you."
     - title: Clairaudience/Clairvoyance
-      description: Hear or see at a distance for 1 min./level.
-    - title: Telepathic Bond, Lesser
-      description: As telepathic bond, but you and one other creature.
+      desc: "Hear or see at a distance for 1 min./level."
+    - title: Lesser Telepathic Bond
+      desc: "As telepathic bond, but you and one other creature."
     - title: Tongues
-      description: Speak any language.
+      desc: "Speak any language."
 
   ench:
     - title: Deep Slumber
-      description: Puts 10 HD of creatures to sleep.
+      desc: "Puts 10 HD of creatures to sleep."
     - title: Heroism
-      description: Gives +2 bonus on attack rolls, saves, skill checks.
+      desc: "Gives +2 bonus on attack rolls, saves, skill checks."
     - title: Hold Person
-      description: Paralyzes one humanoid for 1 round/level.
+      desc: "Paralyzes one humanoid for 1 round/level."
     - title: Rage
-      description: Subjects gains +2 to Str and Con, +1 on Will saves, –2 to AC.
+      desc: "Subjects gains +2 to Str and Con, +1 on Will saves, –2 to AC."
     - title: Suggestion
-      description: Compels subject to follow stated course of action.
+      desc: "Compels subject to follow stated course of action."
 
   evoc:
     - title: Blacklight
-      description: 20-ft. radius of darkness.
+      desc: "20-ft. radius of darkness."
     - title: Daylight
-      description: 60-ft. radius of bright light.
+      desc: "60-ft. radius of bright light."
     - title: Fireball
-      description: 1d6 damage per level, 20-ft. radius.
+      desc: "1d6 damage per level, 20-ft. radius."
     - title: Lightning Bolt
-      description: Electricity deals 1d6/level damage.
+      desc: "Electricity deals 1d6/level damage."
     - title: Tiny Hut
-      description: Creates shelter for ten creatures.
+      desc: "Creates shelter for ten creatures."
     - title: Wind Wall
-      description: Deflects arrows, smaller creatures, and gases.
+      desc: "Deflects arrows, smaller creatures, and gases."
 
   illus:
     - title: Displacement
-      description: Attacks miss subject 50%.
+      desc: "Attacks miss subject 50%."
     - title: Illusory Script
-      description: Only intended reader can decipher.
+      desc: "Only intended reader can decipher."
     - title: Invisibility Sphere
-      description: Makes everyone within 10 ft. invisible.
+      desc: "Makes everyone within 10 ft. invisible."
     - title: Major Image
-      description: As silent image, plus sound, smell and thermal effects.
+      desc: "As silent image, plus sound, smell and thermal effects."
 
   necro:
     - title: Gentle Repose
-      description: Preserves one corpse.
+      desc: "Preserves one corpse."
     - title: Halt Undead
-      description: Immobilizes undead for 1 round/level.
+      desc: "Immobilizes undead for 1 round/level."
     - title: Ray of Exhaustion
-      description: Ray makes subject exhausted.
+      desc: "Ray makes subject exhausted."
     - title: Vampiric Touch
-      description: Touch deals 1d6/two levels damage; caster gains damage as hp.
+      desc: "Touch deals 1d6/two levels damage; caster gains damage as hp."
 
   trans:
     - title: Blink
-      description: You randomly vanish and reappear for 1 round/level.
+      desc: "You randomly vanish and reappear for 1 round/level."
     - title: Flame Arrow
-      description: Arrows deal +1d6 fire damage.
+      desc: "Arrows deal +1d6 fire damage."
     - title: Fly
-      description: Subject flies at speed of 60 ft.
+      desc: "Subject flies at speed of 60 ft."
     - title: Gaseous Form
-      description: Subject becomes insubstantial and can fly slowly.
+      desc: "Subject becomes insubstantial and can fly slowly."
     - title: Haste
-      description: One creature/level moves faster, +1 on attack rolls, AC, and Reflex saves.
+      desc: "One creature/level moves faster, +1 on attack rolls, AC, and Reflex saves."
     - title: Keen Edge
-      description: Doubles normal weapon's threat range.
-    - title: Magic Weapon, Greater
-      description: +1/four levels (max +5).
+      desc: "Doubles normal weapon's threat range."
+    - title: Greater Magic Weapon
+      desc: "+1/four levels (max +5)."
     - title: Secret Page
-      description: Changes one page to hide its real content.
+      desc: "Changes one page to hide its real content."
     - title: Shrink Item
-      description: Object shrinks to one-sixteenth size.
+      desc: "Object shrinks to one-sixteenth size."
     - title: Slow
-      description: One subject/level takes only one action/round, –1 to AC, reflex saves, and attack rolls.
+      desc: "One subject/level takes only one action/round, –1 to AC, reflex saves, and attack rolls."
     - title: Water Breathing
-      description: Subjects can breathe underwater.
+      desc: "Subjects can breathe underwater."
 
 
 
-level-4:
+level4:
 
   abjur:
     - title: Dimensional Anchor
-      description: Bars extradimensional movement.
+      desc: "Bars extradimensional movement."
     - title: Fire Trap
-      description: Opened object deals 1d4 damage +1/level.
-    - title: Globe of Invulnerability, Lesser
-      description: Stops 1st- through 3rd-level spell effects.
+      desc: "Opened object deals 1d4 damage +1/level."
+    - title: Lesser Globe of Invulnerability
+      desc: "Stops 1st- through 3rd-level spell effects."
     - title: Remove Curse
-      description: Frees object or person from curse.
+      desc: "Frees object or person from curse."
     - title: Stoneskin
-      description: Ignore 10 points of damage per attack.
+      desc: "Ignore 10 points of damage per attack."
 
   conj:
     - title: Black Tentacles
-      description: Tentacles grapple all within 20 ft. spread.
+      desc: "Tentacles grapple all within 20 ft. spread."
     - title: Dimension Door
-      description: Teleports you short distance.
+      desc: "Teleports you short distance."
     - title: Minor Creation
-      description: Creates one cloth or wood object.
+      desc: "Creates one cloth or wood object."
     - title: Secure Shelter
-      description: Creates sturdy cottage.
+      desc: "Creates sturdy cottage."
     - title: Solid Fog
-      description: Blocks vision and slows movement.
+      desc: "Blocks vision and slows movement."
     - title: Summon Monster IV
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
 
   div:
     - title: Arcane Eye
-      description: Invisible floating eye moves 30 ft./round.
+      desc: "Invisible floating eye moves 30 ft./round."
     - title: Detect Scrying
-      description: Alerts you of magical eavesdropping.
+      desc: "Alerts you of magical eavesdropping."
     - title: Locate Creature
-      description: Indicates direction to familiar creature.
+      desc: "Indicates direction to familiar creature."
     - title: Scrying
-      description: Spies on subject from a distance.
+      desc: "Spies on subject from a distance."
 
   ench:
     - title: Charm Monster
-      description: Makes monster believe it is your ally.
+      desc: "Makes monster believe it is your ally."
     - title: Confusion
-      description: Subjects behave oddly for 1 round/level.
+      desc: "Subjects behave oddly for 1 round/level."
     - title: Crushing Despair
-      description: Subjects take –2 on attack rolls, damage rolls, saves, and checks.
-    - title: Geas, Lesser
-      description: Commands subject of 7 HD or less.
+      desc: "Subjects take –2 on attack rolls, damage rolls, saves, and checks."
+    - title: Lesser Geas
+      desc: "Commands subject of 7 HD or less."
 
   evoc:
     - title: Dweomer of Transference
-      description: Convert spellcasting into psionic power points.
+      desc: "Convert spellcasting into psionic power points."
     - title: Fire Shield
-      description: Creatures attacking you take fire damage; you're protected from heat or cold.
+      desc: "Creatures attacking you take fire damage; you're protected from heat or cold."
     - title: Ice Storm
-      description: Hail deals 5d6 damage in cylinder 40 ft. across.
+      desc: "Hail deals 5d6 damage in cylinder 40 ft. across."
     - title: Resilient Sphere
-      description: Force globe protects but traps one subject.
+      desc: "Force globe protects but traps one subject."
     - title: Shout
-      description: Deafens all within cone and deals 5d6 sonic damage.
+      desc: "Deafens all within cone and deals 5d6 sonic damage."
     - title: Wall of Fire
-      description: Deals 2d4 fire damage out to 10 ft. and 1d4 out to 20 ft. Passing through wall deals 2d6 damage +1/level.
+      desc: "Deals 2d4 fire damage out to 10 ft. and 1d4 out to 20 ft. Passing through wall deals 2d6 damage +1/level."
     - title: Wall of Ice
-      description: Ice plane creates wall with 15 hp +1/level, or hemisphere can trap creatures inside.
+      desc: "Ice plane creates wall with 15 hp +1/level, or hemisphere can trap creatures inside."
 
   illus:
     - title: Hallucinatory Terrain
-      description: Makes one type of terrain appear like another (field into forest, or the like).
+      desc: "Makes one type of terrain appear like another (field into forest, or the like)."
     - title: Illusory Wall
-      description: Wall, floor, or ceiling looks real, but anything can pass through.
-    - title: Invisibility, Greater
-      description: As invisibility, but subject can attack and stay invisible.
+      desc: "Wall, floor, or ceiling looks real, but anything can pass through."
+    - title: Greater Invisibility
+      desc: "As invisibility, but subject can attack and stay invisible."
     - title: Phantasmal Killer
-      description: Fearsome illusion kills subject or deals 3d6 damage.
+      desc: "Fearsome illusion kills subject or deals 3d6 damage."
     - title: Rainbow Pattern
-      description: Lights fascinate 24 HD of creatures.
+      desc: "Lights fascinate 24 HD of creatures."
     - title: Shadow Conjuration
-      description: Mimics Conjuration below 4th level, but only 20% real.
+      desc: "Mimics Conjuration below 4th level, but only 20% real."
 
   necro:
     - title: Animate Dead
-      description: Creates undead skeletons and zombies.
+      desc: "Creates undead skeletons and zombies."
     - title: Bestow Curse
-      description: –6 to an ability score; –4 on attack rolls, saves, and checks; or 50% chance of losing each action.
+      desc: "–6 to an ability score; –4 on attack rolls, saves, and checks; or 50% chance of losing each action."
     - title: Contagion
-      description: Infects subject with chosen disease.
+      desc: "Infects subject with chosen disease."
     - title: Enervation
-      description: Subject gains 1d4 negative levels.
+      desc: "Subject gains 1d4 negative levels."
     - title: Fear
-      description: Subjects within cone flee for 1 round/level.
+      desc: "Subjects within cone flee for 1 round/level."
 
   trans:
-    - title: Enlarge Person, Mass
-      description: Enlarges several creatures.
+    - title: Mass Enlarge Person
+      desc: "Enlarges several creatures."
     - title: Mnemonic Enhancer
-      description: Wizard only. Prepares extra spells or retains one just cast.
+      desc: "Wizard only. Prepares extra spells or retains one just cast."
     - title: Polymorph
-      description: Gives one willing subject a new form.
-    - title: Reduce Person, Mass
-      description: Reduces several creatures.
+      desc: "Gives one willing subject a new form."
+    - title: Mass Reduce Person
+      desc: "Reduces several creatures."
     - title: Stone Shape
-      description: Sculpts stone into any shape.
+      desc: "Sculpts stone into any shape."
 
 
 
-level-5:
+level5:
 
   abjur:
     - title: Break Enchantment
-      description: Frees subjects from enchantments, alterations, curses, and petrification.
+      desc: "Frees subjects from enchantments, alterations, curses, and petrification."
     - title: Dismissal
-      description: Forces a creature to return to native plane.
+      desc: "Forces a creature to return to native plane."
     - title: Mage's Private Sanctum
-      description: Prevents anyone from viewing or scrying an area for 24 hours.
+      desc: "Prevents anyone from viewing or scrying an area for 24 hours."
     - title: Psychic Turmoil
-      description: Invisible field leeches psionic power points away.
+      desc: "Invisible field leeches psionic power points away."
 
   conj:
     - title: Cloudkill
-      description: Kills 3 HD or less; 4–6 HD save or die, 6+ HD take Con damage.
+      desc: "Kills 3 HD or less; 4–6 HD save or die, 6+ HD take Con damage."
     - title: Mage's Faithful Hound
-      description: Phantom dog can guard, attack.
+      desc: "Phantom dog can guard, attack."
     - title: Major Creation
-      description: As minor creation, plus stone and metal.
-    - title: Planar Binding, Lesser
-      description: Traps extraplanar creature of 6 HD or less until it performs a task.
+      desc: "As minor creation, plus stone and metal."
+    - title: Lesser Planar Binding
+      desc: "Traps extraplanar creature of 6 HD or less until it performs a task."
     - title: Secret Chest
-      description: Hides expensive chest on Ethereal Plane; you retrieve it at will.
+      desc: "Hides expensive chest on Ethereal Plane; you retrieve it at will."
     - title: Summon Monster V
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
     - title: Teleport
-      description: Instantly transports you as far as 100 miles/level.
+      desc: "Instantly transports you as far as 100 miles/level."
     - title: Wall of Stone
-      description: Creates a stone wall that can be shaped.
+      desc: "Creates a stone wall that can be shaped."
 
   div:
     - title: Contact Other Plane
-      description: Lets you ask question of extraplanar entity.
+      desc: "Lets you ask question of extraplanar entity."
     - title: Prying Eyes
-      description: 1d4 +1/level floating eyes scout for you.
+      desc: "1d4 +1/level floating eyes scout for you."
     - title: Telepathic Bond
-      description: Link lets allies communicate.
+      desc: "Link lets allies communicate."
 
   ench:
     - title: Dominate Person
-      description: Controls humanoid telepathically.
+      desc: "Controls humanoid telepathically."
     - title: Feeblemind
-      description: Subject's Int and Cha drop to 1.
+      desc: "Subject's Int and Cha drop to 1."
     - title: Hold Monster
-      description: As hold person, but any creature.
+      desc: "As hold person, but any creature."
     - title: Mind Fog
-      description: Subjects in fog get –10 to Wis and Will checks.
+      desc: "Subjects in fog get –10 to Wis and Will checks."
     - title: Symbol of Sleep
-      description: Triggered rune puts nearby creatures into catatonic slumber.
+      desc: "Triggered rune puts nearby creatures into catatonic slumber."
 
   evoc:
     - title: Cone of Cold
-      description: 1d6/level cold damage.
+      desc: "1d6/level cold damage."
     - title: Interposing Hand
-      description: Hand provides cover against one opponent.
+      desc: "Hand provides cover against one opponent."
     - title: Sending
-      description: Delivers short message anywhere, instantly.
+      desc: "Delivers short message anywhere, instantly."
     - title: Wall of Force
-      description: Wall is immune to damage.
+      desc: "Wall is immune to damage."
 
   illus:
     - title: Dream
-      description: Sends message to anyone sleeping.
+      desc: "Sends message to anyone sleeping."
     - title: False Vision
-      description: Fools scrying with an illusion.
+      desc: "Fools scrying with an illusion."
     - title: Mirage Arcana
-      description: As hallucinatory terrain, plus structures.
+      desc: "As hallucinatory terrain, plus structures."
     - title: Nightmare
-      description: Sends vision dealing 1d10 damage, fatigue.
+      desc: "Sends vision dealing 1d10 damage, fatigue."
     - title: Persistent Image
-      description: As major image, but no concentration required.
+      desc: "As major image, but no concentration required."
     - title: Seeming
-      description: Changes appearance of one person per two levels.
+      desc: "Changes appearance of one person per two levels."
     - title: Shadow Evocation
-      description: Mimics evocation below 5th level, but only 20% real.
+      desc: "Mimics evocation below 5th level, but only 20% real."
 
   necro:
     - title: Blight
-      description: Withers one plant or deals 1d6/level damage to plant creature.
+      desc: "Withers one plant or deals 1d6/level damage to plant creature."
     - title: Magic Jar
-      description: Enables possession of another creature.
+      desc: "Enables possession of another creature."
     - title: Symbol of Pain
-      description: Triggered rune wracks nearby creatures with pain.
+      desc: "Triggered rune wracks nearby creatures with pain."
     - title: Waves of Fatigue
-      description: Several targets become fatigued.
+      desc: "Several targets become fatigued."
 
   trans:
     - title: Animal Growth
-      description: One animal/two levels doubles in size.
+      desc: "One animal/two levels doubles in size."
     - title: Baleful Polymorph
-      description: Transforms subject into harmless animal.
+      desc: "Transforms subject into harmless animal."
     - title: Fabricate
-      description: Transforms raw materials into finished items.
+      desc: "Transforms raw materials into finished items."
     - title: Overland Flight
-      description: You fly at a speed of 40 ft. and can hustle over long distances.
+      desc: "You fly at a speed of 40 ft. and can hustle over long distances."
     - title: Passwall
-      description: Creates passage through wood or stone wall.
+      desc: "Creates passage through wood or stone wall."
     - title: Telekinesis
-      description: Moves object, attacks creature, or hurls object or creature.
+      desc: "Moves object, attacks creature, or hurls object or creature."
     - title: Transmute Mud to Rock
-      description: Transforms two 10-ft. cubes per level.
+      desc: "Transforms two 10-ft. cubes per level."
     - title: Transmute Rock to Mud
-      description: Transforms two 10-ft. cubes per level.
+      desc: "Transforms two 10-ft. cubes per level."
 
   univ:
     - title: Permanency
-      description: Makes certain spells permanent.
+      desc: "Makes certain spells permanent."
 
 
 
-level-6:
+level6:
 
   abjur:
     - title: Antimagic Field
-      description: Negates magic within 10 ft.
-    - title: Dispel Magic, Greater
-      description: As dispel magic, but +20 on check.
+      desc: "Negates magic within 10 ft."
+    - title: Greater Dispel Magic
+      desc: "As dispel magic, but +20 on check."
     - title: Globe of Invulnerability
-      description: As lesser globe of invulnerability, plus 4th-level spell effects.
+      desc: "As lesser globe of invulnerability, plus 4th-level spell effects."
     - title: Guards and Wards
-      description: Array of magic effects protect area.
+      desc: "Array of magic effects protect area."
     - title: Repulsion
-      description: Creatures can't approach you.
+      desc: "Creatures can't approach you."
 
   conj:
     - title: Acid Fog
-      description: Fog deals acid damage.
+      desc: "Fog deals acid damage."
     - title: Planar Binding
-      description: As lesser planar binding, but up to 12 HD.
+      desc: "As lesser planar binding, but up to 12 HD."
     - title: Summon Monster VI
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
     - title: Wall of Iron
-      description: 30 hp/four levels; can topple onto foes.
+      desc: "30 hp/four levels; can topple onto foes."
 
   div:
     - title: Analyze Dweomer
-      description: Reveals magical aspects of subject.
+      desc: "Reveals magical aspects of subject."
     - title: Legend Lore
-      description: You learn tales about a person, place, or thing.
+      desc: "You learn tales about a person, place, or thing."
     - title: Probe Thoughts
-      description: Read subject's memories, one question/ round.
+      desc: "Read subject's memories, one question/ round."
     - title: True Seeing
-      description: Lets you see all things as they really are.
+      desc: "Lets you see all things as they really are."
 
   ench:
     - title: Geas/Quest
-      description: As lesser geas, plus it affects any creature.
-    - title: Heroism, Greater
-      description: Gives +4 bonus on attack rolls, saves, skill checks; immunity to fear; temporary hp.
-    - title: Suggestion, Mass
-      description: As suggestion, plus one subject/level.
+      desc: "As lesser geas, plus it affects any creature."
+    - title: Greater Heroism
+      desc: "Gives +4 bonus on attack rolls, saves, skill checks; immunity to fear; temporary hp."
+    - title: Mass Suggestion
+      desc: "As suggestion, plus one subject/level."
     - title: Symbol of Persuasion
-      description: Triggered rune charms nearby creatures.
+      desc: "Triggered rune charms nearby creatures."
 
   evoc:
     - title: Chain Lightning
-      description: 1d6/level damage; 1 secondary bolt/level each deals half damage.
+      desc: "1d6/level damage; 1 secondary bolt/level each deals half damage."
     - title: Contingency
-      description: Sets trigger condition for another spell.
+      desc: "Sets trigger condition for another spell."
     - title: Forceful Hand
-      description: Hand pushes creatures away.
+      desc: "Hand pushes creatures away."
     - title: Freezing Sphere
-      description: Freezes water or deals cold damage.
+      desc: "Freezes water or deals cold damage."
 
   illus:
     - title: Mislead
-      description: Turns you invisible and creates illusory double.
+      desc: "Turns you invisible and creates illusory double."
     - title: Permanent Image
-      description: Includes sight, sound, and smell.
+      desc: "Includes sight, sound, and smell."
     - title: Programmed Image
-      description: As major image, plus triggered by event.
+      desc: "As major image, plus triggered by event."
     - title: Shadow Walk
-      description: Step into shadow to travel rapidly.
+      desc: "Step into shadow to travel rapidly."
     - title: Veil
-      description: Changes appearance of group of creatures.
+      desc: "Changes appearance of group of creatures."
 
   necro:
     - title: Circle of Death
-      description: Kills 1d4/level HD of creatures.
+      desc: "Kills 1d4/level HD of creatures."
     - title: Create Undead
-      description: Creates ghouls, ghasts, mummies, or mohrgs.
+      desc: "Creates ghouls, ghasts, mummies, or mohrgs."
     - title: Eyebite
-      description: Target becomes panicked, sickened, and comatose.
+      desc: "Target becomes panicked, sickened, and comatose."
     - title: Symbol of Fear
-      description: Triggered rune panics nearby creatures.
+      desc: "Triggered rune panics nearby creatures."
     - title: Undeath to Death
-      description: Destroys 1d4/level HD of undead (max 20d4).
+      desc: "Destroys 1d4/level HD of undead (max 20d4)."
 
   trans:
-    - title: Bear's Endurance, Mass
-      description: As bear's endurance, affects one subject/level.
-    - title: Bull's Strength, Mass
-      description: As bull's strength, affects one subject/level.
-    - title: Cat's Grace, Mass
-      description: As cat's grace, affects one subject/level.
+    - title: Mass Bear's Endurance
+      desc: "As bear's endurance, affects one subject/level."
+    - title: Mass Bull's Strength
+      desc: "As bull's strength, affects one subject/level."
+    - title: Mass Cat's Grace
+      desc: "As cat's grace, affects one subject/level."
     - title: Control Water
-      description: Raises or lowers bodies of water.
+      desc: "Raises or lowers bodies of water."
     - title: Disintegrate
-      description: Makes one creature or object vanish.
-    - title: Eagle's Splendor, Mass
-      description: As eagle's splendor, affects one subject/level.
+      desc: "Makes one creature or object vanish."
+    - title: Mass Eagle's Splendor
+      desc: "As eagle's splendor, affects one subject/level."
     - title: Flesh to Stone
-      description: Turns subject creature into statue.
-    - title: Fox's Cunning, Mass
-      description: As fox's cunning, affects one subject/level.
+      desc: "Turns subject creature into statue."
+    - title: Mass Fox's Cunning
+      desc: "As fox's cunning, affects one subject/level."
     - title: Hardening
-      description: Increases hardness by one/two levels.
+      desc: "Increases hardness by one/two levels."
     - title: Mage's Lucubration
-      description: Wizard only. Recalls spell of 5th level or lower.
+      desc: "Wizard only. Recalls spell of 5th level or lower."
     - title: Mental Pinnacle
-      description: You gain the mental powers of a psion.
+      desc: "You gain the mental powers of a psion."
     - title: Move Earth
-      description: Digs trenches and build hills.
-    - title: Owl's Wisdom, Mass
-      description: As owl's wisdom, affects one subject/level.
+      desc: "Digs trenches and build hills."
+    - title: Mass Owl's Wisdom
+      desc: "As owl's wisdom, affects one subject/level."
     - title: Stone to Flesh
-      description: Restores petrified creature.
+      desc: "Restores petrified creature."
     - title: Transformation
-      description: You gain combat bonuses.
+      desc: "You gain combat bonuses."
 
 
 
-level-7:
+level7:
 
   abjur:
     - title: Banishment
-      description: Banishes 2 HD/level of extraplanar creatures.
-    - title: Psychic Turmoil, Greater
-      description: As psychic turmoil, but you gain power points as temporary hit points.
+      desc: "Banishes 2 HD/level of extraplanar creatures."
+    - title: Greater Psychic Turmoil
+      desc: "As psychic turmoil, but you gain power points as temporary hit points."
     - title: Sequester
-      description: Subject is invisible to sight and scrying; renders creature comatose.
+      desc: "Subject is invisible to sight and scrying; renders creature comatose."
     - title: Spell Turning
-      description: Reflect 1d4+6 spell levels back at caster.
+      desc: "Reflect 1d4+6 spell levels back at caster."
 
   conj:
     - title: Instant Summons
-      description: Prepared object appears in your hand.
+      desc: "Prepared object appears in your hand."
     - title: Mage's Magnificent Mansion
-      description: Door leads to extradimensional mansion.
+      desc: "Door leads to extradimensional mansion."
     - title: Phase Door
-      description: Creates an invisible passage through wood or stone.
+      desc: "Creates an invisible passage through wood or stone."
     - title: Plane Shift
-      description: As many as eight subjects travel to another plane.
+      desc: "As many as eight subjects travel to another plane."
     - title: Summon Monster VII
-      description: Calls extraplanar creature to fight for you.
-    - title: Teleport, Greater
-      description: As teleport, but no range limit and no off-target arrival.
+      desc: "Calls extraplanar creature to fight for you."
+    - title: Greater Teleport
+      desc: "As teleport, but no range limit and no off-target arrival."
     - title: Teleport Object
-      description: As teleport, but affects a touched object.
+      desc: "As teleport, but affects a touched object."
 
   div:
-    - title: Arcane Sight, Greater
-      description: As arcane sight, but also reveals magic effects on creatures and objects.
-    - title: Scrying, Greater
-      description: As scrying, but faster and longer.
+    - title: Greater Arcane Sight
+      desc: "As arcane sight, but also reveals magic effects on creatures and objects."
+    - title: Greater Scrying
+      desc: "As scrying, but faster and longer."
     - title: Vision
-      description: As legend lore, but quicker and strenuous.
+      desc: "As legend lore, but quicker and strenuous."
 
   ench:
-    - title: Hold Person, Mass
-      description: As hold person, but all within 30 ft.
+    - title: Mass Hold Person
+      desc: "As hold person, but all within 30 ft."
     - title: Insanity
-      description: Subject suffers continuous confusion.
+      desc: "Subject suffers continuous confusion."
     - title: Power Word Blind
-      description: Blinds creature with 200 hp or less.
+      desc: "Blinds creature with 200 hp or less."
     - title: Symbol of Stunning
-      description: Triggered rune stuns nearby creatures.
+      desc: "Triggered rune stuns nearby creatures."
 
   evoc:
     - title: Delayed Blast Fireball
-      description: 1d6/level fire damage; you can postpone blast for 5 rounds.
+      desc: "1d6/level fire damage; you can postpone blast for 5 rounds."
     - title: Forcecage
-      description: Cube or cage of force imprisons all inside.
+      desc: "Cube or cage of force imprisons all inside."
     - title: Grasping Hand
-      description: Hand provides cover, pushes, or grapples.
+      desc: "Hand provides cover, pushes, or grapples."
     - title: Mage's Sword
-      description: Floating magic blade strikes opponents.
+      desc: "Floating magic blade strikes opponents."
     - title: Prismatic Spray
-      description: Rays hit subjects with variety of effects.
+      desc: "Rays hit subjects with variety of effects."
 
   illus:
-    - title: Invisibility, Mass
-      description: As invisibility, but affects all in range.
+    - title: Mass Invisibility
+      desc: "As invisibility, but affects all in range."
     - title: Project Image
-      description: Illusory double can talk and cast spells.
-    - title: Shadow Conjuration, Greater
-      description: As shadow conjuration, but up to 6th level and 60% real.
+      desc: "Illusory double can talk and cast spells."
+    - title: Greater Shadow Conjuration
+      desc: "As shadow conjuration, but up to 6th level and 60% real."
     - title: Simulacrum
-      description: Creates partially real double of a creature.
+      desc: "Creates partially real double of a creature."
 
   necro:
     - title: Control Undead
-      description: Undead don't attack you while under your command.
+      desc: "Undead don't attack you while under your command."
     - title: Finger of Death
-      description: Kills one subject.
+      desc: "Kills one subject."
     - title: Symbol of Weakness
-      description: Triggered rune weakens nearby creatures.
+      desc: "Triggered rune weakens nearby creatures."
     - title: Waves of Exhaustion
-      description: Several targets become exhausted.
+      desc: "Several targets become exhausted."
 
   trans:
     - title: Control Weather
-      description: Changes weather in local area.
+      desc: "Changes weather in local area."
     - title: Ethereal Jaunt
-      description: You become ethereal for 1 round/level.
+      desc: "You become ethereal for 1 round/level."
     - title: Reverse Gravity
-      description: Objects and creatures fall upward.
+      desc: "Objects and creatures fall upward."
     - title: Statue
-      description: Subject can become a statue at will.
+      desc: "Subject can become a statue at will."
 
   univ:
     - title: Limited Wish
-      description: Alters reality—within spell limits.
+      desc: "Alters reality—within spell limits."
 
 
 
-level-8:
+level8:
 
   abjur:
     - title: Dimensional Lock
-      description: Teleportation and interplanar travel blocked for one day/level.
+      desc: "Teleportation and interplanar travel blocked for one day/level."
     - title: Mind Blank
-      description: Subject is immune to mental/emotional magic and scrying.
+      desc: "Subject is immune to mental/emotional magic and scrying."
     - title: Prismatic Wall
-      description: Wall's colors have array of effects.
+      desc: "Wall's colors have array of effects."
     - title: Protection from Spells
-      description: Confers +8 resistance bonus.
+      desc: "Confers +8 resistance bonus."
 
   conj:
     - title: Incendiary Cloud
-      description: Cloud deals 4d6 fire damage/round.
+      desc: "Cloud deals 4d6 fire damage/round."
     - title: Maze
-      description: Traps subject in extradimensional maze.
-    - title: Planar Binding, Greater
-      description: As lesser planar binding, but up to 18 HD.
+      desc: "Traps subject in extradimensional maze."
+    - title: Greater Planar Binding
+      desc: "As lesser planar binding, but up to 18 HD."
     - title: Summon Monster VIII
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
     - title: Trap the Soul
-      description: Imprisons subject within gem.
+      desc: "Imprisons subject within gem."
 
   div:
     - title: Discern Location
-      description: Reveals exact location of creature or object.
+      desc: "Reveals exact location of creature or object."
     - title: Moment of Prescience
-      description: You gain insight bonus on single attack roll, check, or save.
-    - title: Prying Eyes, Greater
-      description: As prying eyes, but eyes have true seeing.
+      desc: "You gain insight bonus on single attack roll, check, or save."
+    - title: Greater Prying Eyes
+      desc: "As prying eyes, but eyes have true seeing."
 
   ench:
     - title: Antipathy
-      description: Object or location affected by spell repels certain creatures.
+      desc: "Object or location affected by spell repels certain creatures."
     - title: Binding
-      description: Utilizes an array of techniques to imprison a creature.
-    - title: Charm Monster, Mass
-      description: As charm monster, but all within 30 ft.
+      desc: "Utilizes an array of techniques to imprison a creature."
+    - title: Mass Charm Monster
+      desc: "As charm monster, but all within 30 ft."
     - title: Demand
-      description: As sending, plus you can send suggestion.
+      desc: "As sending, plus you can send suggestion."
     - title: Irresistible Dance
-      description: Forces subject to dance.
+      desc: "Forces subject to dance."
     - title: Maddening Scream
-      description: Forces subject to scream and drop defenses.
+      desc: "Forces subject to scream and drop defenses."
     - title: Power Word Stun
-      description: Stuns creature with 150 hp or less.
+      desc: "Stuns creature with 150 hp or less."
     - title: Symbol of Insanity
-      description: Triggered rune renders nearby creatures insane.
+      desc: "Triggered rune renders nearby creatures insane."
     - title: Sympathy
-      description: Object or location attracts certain creatures.
+      desc: "Object or location attracts certain creatures."
 
   evoc:
     - title: Clenched Fist
-      description: Large hand provides cover, pushes, or attacks your foes.
+      desc: "Large hand provides cover, pushes, or attacks your foes."
     - title: Polar Ray
-      description: Ranged touch attack deals 1d6/level cold damage.
-    - title: Shout, Greater
-      description: Devastating yell deals 10d6 sonic damage; stuns creatures, damages objects.
+      desc: "Ranged touch attack deals 1d6/level cold damage."
+    - title: Greater Shout
+      desc: "Devastating yell deals 10d6 sonic damage; stuns creatures, damages objects."
     - title: Sunburst
-      description: Blinds all within 10 ft., deals 6d6 damage.
+      desc: "Blinds all within 10 ft., deals 6d6 damage."
     - title: Telekinetic Sphere
-      description: As resilient sphere, but you move sphere telekinetically.
+      desc: "As resilient sphere, but you move sphere telekinetically."
 
   illus:
     - title: Scintillating Pattern
-      description: Twisting colors confuse, stun, or render unconscious.
+      desc: "Twisting colors confuse, stun, or render unconscious."
     - title: Screen
-      description: Illusion hides area from vision, scrying.
-    - title: Shadow Evocation, Greater
-      description: As shadow evocation, but up to 7th level and 60% real.
+      desc: "Illusion hides area from vision, scrying."
+    - title: Greater Shadow Evocation
+      desc: "As shadow evocation, but up to 7th level and 60% real."
 
   necro:
-  - title: Clone
-      description: Duplicate awakens when original dies.
+    - title: Clone
+      desc: "Duplicate awakens when original dies."
     - title: Create Greater Undead
-      description: Create shadows, wraiths, spectres, or devourers.
+      desc: "Create shadows, wraiths, spectres, or devourers."
     - title: Horrid Wilting
-      description: Deals 1d6/level damage within 30 ft.
+      desc: "Deals 1d6/level damage within 30 ft."
     - title: Symbol of Death
-      description: Triggered rune slays nearby creatures.
+      desc: "Triggered rune slays nearby creatures."
 
   trans:
     - title: Iron Body
-      description: Your body becomes living iron.
+      desc: "Your body becomes living iron."
     - title: Polymorph Any Object
-      description: Changes any subject into anything else.
+      desc: "Changes any subject into anything else."
     - title: Temporal Stasis
-      description: Puts subject into suspended animation.
+      desc: "Puts subject into suspended animation."
 
 
 
-level-9:
+level9:
 
   abjur:
     - title: Freedom
-      description: Releases creature from imprisonment.
+      desc: "Releases creature from imprisonment."
     - title: Imprisonment
-      description: Entombs subject beneath the earth.
+      desc: "Entombs subject beneath the earth."
     - title: Mage's Disjunction
-      description: Dispels magic, disenchants magic items.
+      desc: "Dispels magic, disenchants magic items."
     - title: Prismatic Sphere
-      description: As prismatic wall, but surrounds on all sides.
+      desc: "As prismatic wall, but surrounds on all sides."
 
   conj:
     - title: Gate
-      description: Connects two planes for travel or summoning.
+      desc: "Connects two planes for travel or summoning."
     - title: Refuge
-      description: Alters item to transport its possessor to you.
+      desc: "Alters item to transport its possessor to you."
     - title: Summon Monster I
-      description: Calls extraplanar creature to fight for you.
+      desc: "Calls extraplanar creature to fight for you."
     - title: Teleportation Circle
-      description: Circle teleports any creature inside to designated spot.
+      desc: "Circle teleports any creature inside to designated spot."
 
   div:
     - title: Foresight
-      description: “Sixth sense” warns of impending danger.
+      desc: "“Sixth sense” warns of impending danger."
 
   ench:
     - title: Dominate Monster
-      description: As dominate person, but any creature.
-    - title: Hold Monster, Mass
-      description: As hold monster, but all within 30 ft.
+      desc: "As dominate person, but any creature."
+    - title: Mass Hold Monster
+      desc: "As hold monster, but all within 30 ft."
     - title: Power Word Kill
-      description: Kills one creature with 100 hp or less.
+      desc: "Kills one creature with 100 hp or less."
 
   evoc:
     - title: Crushing Hand
-      description: Large hand provides cover, pushes, or crushes your foes.
+      desc: "Large hand provides cover, pushes, or crushes your foes."
     - title: Meteor Swarm
-      description: Four exploding spheres each deal 6d6 fire damage.
+      desc: "Four exploding spheres each deal 6d6 fire damage."
 
   illus:
     - title: Shades
-      description: As shadow conjuration, but up to 8th level and 80% real.
+      desc: "As shadow conjuration, but up to 8th level and 80% real."
     - title: Weird
-      description: As phantasmal killer, but affects all within 30 ft.
+      desc: "As phantasmal killer, but affects all within 30 ft."
 
   necro:
     - title: Astral Projection
-      description: Projects you and companions onto Astral Plane.
+      desc: "Projects you and companions onto Astral Plane."
     - title: Energy Drain
-      description: Subject gains 2d4 negative levels.
+      desc: "Subject gains 2d4 negative levels."
     - title: Soul Bind
-      description: Traps newly dead soul to prevent resurrection.
+      desc: "Traps newly dead soul to prevent resurrection."
     - title: Wail of the Banshee
-      description: Kills one creature/level.
+      desc: "Kills one creature/level."
 
   trans:
     - title: Etherealness
-      description: Travel to Ethereal Plane with companions.
+      desc: "Travel to Ethereal Plane with companions."
     - title: Shapechange
-      description: Transforms you into any creature, and change forms once per round.
+      desc: "Transforms you into any creature, and change forms once per round."
     - title: Time Stop
-      description: You act freely for 1d4+1 rounds.
+      desc: "You act freely for 1d4+1 rounds."
 
   univ:
     - title: Wish
-      description: As limited wish, but with fewer limits.
+      desc: "As limited wish, but with fewer limits."
 ...

@@ -41,7 +41,7 @@ light:
 
 single:
 
-  - title: Sword, bastard
+  - title: Bastard Sword
     cost: 35 gp
     damage_s: 1d8
     damage_m: 1d10
@@ -50,7 +50,7 @@ single:
     weight: 6 lb.
     type: Slashing
 
-  - title: Waraxe, dwarven
+  - title: Dwarven Waraxe
     cost: 30 gp
     damage_s: 1d8
     damage_m: 1d10
@@ -72,7 +72,7 @@ single:
 
 double:
 
-  - title: Axe, orc double
+  - title: Orc Double Axe
     cost: 60 gp
     damage_s: 1d6/1d6
     damage_m: 1d8/1d8
@@ -81,7 +81,7 @@ double:
     weight: 15 lb.
     type: Slashing
 
-  - title: Chain, spiked
+  - title: Spiked Chain
     cost: 25 gp
     damage_s: 1d6
     damage_m: 2d4
@@ -90,7 +90,7 @@ double:
     weight: 10 lb.
     type: Piercing
 
-  - title: Flail, dire
+  - title: Dire Flail
     cost: 90 gp
     damage_s: 1d6/1d6
     damage_m: 1d8/1d8
@@ -99,7 +99,7 @@ double:
     weight: 10 lb.
     type: Bludgeoning
 
-  - title: Hammer, gnome hooked
+  - title: Gnome Hooked Hammer
     cost: 20 gp
     damage_s: 1d6/1d4
     damage_m: 1d8/1d6
@@ -108,7 +108,7 @@ double:
     weight: 6 lb.
     type: Bludgeoning/Piercing
 
-  - title: Sword, two-bladed
+  - title: Two-bladed Sword
     cost: 100 gp
     damage_s: 1d6/1d6
     damage_m: 1d8/1d8
@@ -117,7 +117,7 @@ double:
     weight: 10 lb.
     type: Slashing
 
-  - title: Urgrosh, dwarven
+  - title: Dwarven Urgrosh
     cost: 50 gp
     damage_s: 1d6/1d4
     damage_m: 1d8/1d6
@@ -139,7 +139,7 @@ ranged:
     weight: 2 lb.
     type: Bludgeoning
 
-  - title: Crossbow, hand
+  - title: Hand Crossbow
     cost: 100 gp
     damage_s: 1d3
     damage_m: 1d4
@@ -148,7 +148,7 @@ ranged:
     weight: 2 lb.
     type: Piercing
 
-  - title: Crossbow, repeating heavy
+  - title: Repeating Heavy Crossbow
     cost: 400 gp
     damage_s: 1d8
     damage_m: 1d10
@@ -157,7 +157,7 @@ ranged:
     weight: 12 lb.
     type: Piercing
 
-  - title: Crossbow, repeating light
+  - title: Repeating Light Crossbow
     cost: 250 gp
     damage_s: 1d6
     damage_m: 1d8

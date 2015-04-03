@@ -79,8 +79,14 @@ module DND
 
         # For characters.
         elsif act.include? 'char'
-          howmany = (num.nil?) ? DND::Charsheets.def_quant : num
-          self.act = Proc.new { DND::Character.new(howmany) }
+          howmany = (num.nil?) ? DND::Character.def_quant : num
+          self.act = Proc.new do
+            chars = DND::Character.crew(howmany)
+            chars.each do |char|
+              char.print
+              puts "\n"
+            end
+          end
 
         # For stats.
         elsif act.include? 'stat'
@@ -117,9 +123,7 @@ module DND
 end
 
 
-# n = Numbers.new
-# puts n.numbers(6, 18, 6).join(' ')
-# puts n.numbers(1, 20, 10).join(' ')
-# puts n.numbers(1, 300, 0).join(' ')
 
+
+# Run it.
 DND::Hub.with ARGV

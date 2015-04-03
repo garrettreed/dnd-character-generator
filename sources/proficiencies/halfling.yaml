@@ -1,36 +1,36 @@
 ---
-- title: Eating
+- title: "Eating"
   attribute: constitution
-  mod: 0 
-  desc: Consume twice as much food as normal without getting ill
+  mod: 0
+  desc: "Consume twice as much food as normal without getting ill"
 
-- title: Healthy Cooking 
+- title: "Healthy Cooking"
   attribute: wisdom
-  mod: 0 
-  desc: Prepare stew that adds +1 HP gained by rest; Prerequisites – Healing, Herbalism, Cooking
+  mod: 0
+  desc: "Prepare stew that adds +1 HP gained by rest; Prerequisites – Healing, Herbalism, Cooking"
 
-- title: Hiding
+- title: "Hiding"
   attribute: intelligence
   mod: -1
-  desc: Can find best places to hide
+  desc: "Can find best places to hide"
 
-- title: Keen Taste
+- title: "Keen Taste"
   attribute: nil
-  mod: nil 
-  desc: Powerful sense of taste, WIS check +3 detects foreign substances in food
+  mod: nil
+  desc: "Powerful sense of taste, WIS check +3 detects foreign substances in food"
 
-- title: Medicinal Cooking 
+- title: "Medicinal Cooking"
   attribute: wisdom
   mod: -2
-  desc: Cook stew that adds 2 HP gained by rest or heals diseases; Prerequisites – Healthy Cooking
+  desc: "Cook stew that adds 2 HP gained by rest or heals diseases; Prerequisites – Healthy Cooking"
 
-- title: Slight of Hand
+- title: "Slight of Hand"
   attribute: dexterity
   mod: -2
-  desc: Experienced in the art of subtle hand movements
+  desc: "Experienced in the art of subtle hand movements"
 
-- title: Taunting
+- title: "Taunting"
   attribute: wisdom
-  mod: 0 
-  desc: Ability to taunt enemy into attacking at –2 to AC and –2 to hit
+  mod: 0
+  desc: "Ability to taunt enemy into attacking at –2 to AC and –2 to hit"
 ...

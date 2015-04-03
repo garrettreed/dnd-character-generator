@@ -1,41 +1,41 @@
 ---
-- title: Alchemy 
+- title: "Alchemy"
   attribute: intelligence
   mod: -3
-  desc: Can brew and identify potions or toxins (must specify one)
+  desc: "Can brew and identify potions or toxins (must specify one)"
 
-- title: Finesmithing
+- title: "Finesmithing"
   attribute: dexterity
   mod: -3
-  desc: Ability to manufacture jewelry; Prerequisite - Whitesmithing
+  desc: "Ability to manufacture jewelry; Prerequisite - Whitesmithing"
 
-- title: Gem Cutting 
+- title: "Gem Cutting"
   attribute: dexterity
   mod: -2
-  desc: Knowledge and ability to cut gems from raw stones
+  desc: "Knowledge and ability to cut gems from raw stones"
 
-- title: Gem Identification
+- title: "Gem Identification"
   attribute: intelligence
   mod: 1
-  desc: Basic knowledge of gemstones (not value or special properties)
+  desc: "Basic knowledge of gemstones (not value or special properties)"
 
-- title: Keen Touch
+- title: "Keen Touch"
   attribute: nil
-  mod: nil 
-  desc: Unusually sensitive tactile senses, +5% to Pick Pockets
+  mod: nil
+  desc: "Unusually sensitive tactile senses, +5% to Pick Pockets"
 
-- title: Mining
+- title: "Mining"
   attribute: wisdom
-  mod: 0 
-  desc: In depth knowledge of ores and mining procedures
+  mod: 0
+  desc: "In depth knowledge of ores and mining procedures"
 
-- title: Slight of Hand
+- title: "Slight of Hand"
   attribute: dexterity
   mod: -2
-  desc: Experienced in the art of subtle hand movements
+  desc: "Experienced in the art of subtle hand movements"
 
-- title: Whitesmithing 
+- title: "Whitesmithing"
   attribute: dexterity
   mod: -2
-  desc: Ability to work soft metals such as gold or silver into simple shapes, such as rings
+  desc: "Ability to work soft metals such as gold or silver into simple shapes, such as rings"
 ...

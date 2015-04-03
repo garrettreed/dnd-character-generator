@@ -10,7 +10,7 @@ unarmed:
     weight: 1 lb.
     type: Bludgeoning
 
-  - title: Unarmed strike
+  - title: Unarmed Strike
     cost: —
     damage_s: 1d2
     damage_m: 1d3
@@ -32,7 +32,7 @@ light:
     weight: 1 lb.
     type: Piercing or slashing
 
-  - title: Dagger, punching
+  - title: Punching Dagger
     cost: 2 gp
     damage_s: 1d3
     damage_m: 1d4
@@ -41,7 +41,7 @@ light:
     weight: 1 lb.
     type: Piercing
 
-  - title: Gauntlet, spiked
+  - title: Spiked Gauntlet
     cost: 5 gp
     damage_s: 1d3
     damage_m: 1d4
@@ -50,7 +50,7 @@ light:
     weight: 1 lb.
     type: Piercing
 
-  - title: Mace, light
+  - title: Light Mace
     cost: 5 gp
     damage_s: 1d4
     damage_m: 1d6
@@ -81,7 +81,7 @@ single:
     weight: 3 lb.
     type: Bludgeoning
 
-  - title: Mace, heavy
+  - title: Heavy Mace
     cost: 12 gp
     damage_s: 1d6
     damage_m: 1d8
@@ -143,7 +143,7 @@ double:
 
 ranged:
 
-  - title: Crossbow, heavy
+  - title: Heavy Crossbow
     cost: 50 gp
     damage_s: 1d8
     damage_m: 1d10
@@ -152,7 +152,7 @@ ranged:
     weight: 8 lb.
     type: Piercing
 
-  - title: Crossbow, light
+  - title: Light Crossbow
     cost: 35 gp
     damage_s: 1d6
     damage_m: 1d8
