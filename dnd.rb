@@ -24,8 +24,7 @@ module DND
 
 
     def self.required_files
-      # charsheet.rb
-      %w{ utils.rb numbers.rb character.rb }
+      %w{ utils.rb numbers.rb character.rb charsheet.rb }
     end
 
 
@@ -74,7 +73,7 @@ module DND
 
         # For character sheets.
         if act.include? 'sheet'
-          howmany = (num.nil?) ? DND::Charsheets.def_quant : num
+          howmany = (num.nil?) ? DND::CharSheet.def_quant : num
           self.act = Proc.new { DND::CharSheet.new(howmany) }
 
         # For characters.

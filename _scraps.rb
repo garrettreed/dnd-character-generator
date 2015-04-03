@@ -32,3 +32,32 @@
     #     raise Exception.new "WTF: '#{title}', '#{value}'"
     #   end
     # end
+
+
+
+
+
+        f = File.open Charsheets.file_to_read
+        f.each do |line|
+          line = line.chomp
+          if line.empty?
+            self.chars.push self.wrap_char
+            if self.chars.count == 4
+              self.write_file
+              self.get_new_sheet
+            else
+              self.get_new_char
+            end
+          else
+            self.parse_line line
+          end
+        end
+
+
+
+
+    def parse_line( line )
+      if m = line.match(/^([a-z]+): (.*)$/)
+        self.char.parse_attr(m[1], m[2])
+      end
+    end

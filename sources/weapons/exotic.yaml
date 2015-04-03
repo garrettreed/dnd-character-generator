@@ -74,8 +74,8 @@ double:
 
   - title: Orc Double Axe
     cost: 60 gp
-    damage_s: 1d6/1d6
-    damage_m: 1d8/1d8
+    damage_s: 1d6
+    damage_m: 1d8
     critical: x3
     range: —
     weight: 15 lb.
@@ -92,8 +92,8 @@ double:
 
   - title: Dire Flail
     cost: 90 gp
-    damage_s: 1d6/1d6
-    damage_m: 1d8/1d8
+    damage_s: 1d6
+    damage_m: 1d8
     critical: x2
     range: —
     weight: 10 lb.
@@ -101,8 +101,8 @@ double:
 
   - title: Gnome Hooked Hammer
     cost: 20 gp
-    damage_s: 1d6/1d4
-    damage_m: 1d8/1d6
+    damage_s: 1d6
+    damage_m: 1d8
     critical: x3/x4
     range: —
     weight: 6 lb.
@@ -110,8 +110,8 @@ double:
 
   - title: Two-bladed Sword
     cost: 100 gp
-    damage_s: 1d6/1d6
-    damage_m: 1d8/1d8
+    damage_s: 1d6
+    damage_m: 1d8
     critical: 19-20/x2
     range: —
     weight: 10 lb.
@@ -119,8 +119,8 @@ double:
 
   - title: Dwarven Urgrosh
     cost: 50 gp
-    damage_s: 1d6/1d4
-    damage_m: 1d8/1d6
+    damage_s: 1d6
+    damage_m: 1d8
     critical: x3
     range: —
     weight: 12 lb.

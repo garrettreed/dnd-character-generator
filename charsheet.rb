@@ -5,7 +5,7 @@ module DND
   class CharSheet
 
 
-    def self.default_quantity
+    def self.def_quant
       20
     end
 
@@ -16,7 +16,7 @@ module DND
 
 
     def self.file_to_write( n = 1 )
-      "char-sheet-#{n}.html"
+      "char-sheets-#{n}.html"
     end
 
 
@@ -26,56 +26,36 @@ module DND
 
 
 
-    def initialize( quantity = 20 )
-      @quantity = quantity
+
+    def initialize( quant = 20 )
+      @quant = quant
       @char, @chars, @fcount = nil, [ ], 1
       self.make
     end
 
-    attr_reader :quantity
+    attr_reader :quant
     attr_accessor :char, :chars, :fcount
 
 
+
     def make
-      self.quantity.times do
-        self.get_new_char
-        f = File.open Charsheets.file_to_read
-        f.each do |line|
-          line = line.chomp
-          if line.empty?
-            self.chars.push self.wrap_char
-            if self.chars.count == 4
-              self.write_file
-              self.get_new_sheet
-            else
-              self.get_new_char
-            end
-          else
-            self.parse_line line
-          end
+      self.get_new_sheet
+
+      crew = DND::Character.crew self.quant
+      crew.each do |char|
+        self.char = char
+        self.chars.push self.wrap_char
+
+        if self.chars.count == 4
+          self.write_file
+          self.get_new_sheet
         end
       end
     end
 
 
-
-    def get_new_char
-      self.char = Character.new
-    end
-
-
-
     def get_new_sheet
-      self.chars = [ ]
-      self.get_new_char
-    end
-
-
-
-    def parse_line( line )
-      if m = line.match(/^([a-z]+): (.*)$/)
-        self.char.parse_attr(m[1], m[2])
-      end
+      self.char, self.chars = nil, [ ]
     end
 
 
@@ -90,32 +70,32 @@ module DND
 		<div class="vitals">
 			<div class="alignment">#{self.char.alignment}</div>
 			<div class="race">#{self.char.race}</div>
-			<div class="class">#{self.char.class}</div>
+			<div class="class">#{self.char.type}</div>
 		</div>
 
 		<div class="stats-line">
 			<div class="stat-block">
-				<div class="stat-val">#{self.char.stats[0]}</div>
+				<div class="stat-val">#{self.char.stats['str']}</div>
 				<div class="stat-hdr">str</div>
 			</div>
 			<div class="stat-block">
-				<div class="stat-val">#{self.char.stats[1]}</div>
+				<div class="stat-val">#{self.char.stats['con']}</div>
 				<div class="stat-hdr">con</div>
 			</div>
 			<div class="stat-block">
-				<div class="stat-val">#{self.char.stats[2]}</div>
+				<div class="stat-val">#{self.char.stats['agi']}</div>
 				<div class="stat-hdr">agi</div>
 			</div>
 			<div class="stat-block">
-				<div class="stat-val">#{self.char.stats[3]}</div>
+				<div class="stat-val">#{self.char.stats['int']}</div>
 				<div class="stat-hdr">int</div>
 			</div>
 			<div class="stat-block">
-				<div class="stat-val">#{self.char.stats[4]}</div>
+				<div class="stat-val">#{self.char.stats['wis']}</div>
 				<div class="stat-hdr">wis</div>
 			</div>
 			<div class="stat-block" pad="right">
-				<div class="stat-val">#{self.char.stats[5]}</div>
+				<div class="stat-val">#{self.char.stats['cha']}</div>
 				<div class="stat-hdr">cha</div>
 			</div>
 			<div class="stat-block">
@@ -135,15 +115,15 @@ module DND
 
 		<div class="attrs-block">
 			<img class="list-icon" id="profs-icon" src="icons/icon_2672/icon_2672.png" />
-			#{self.attr_block self.char.profs}
+			#{self.attr_block self.char.profs_str}
 		</div>
 HTML
 
-      if self.char.spells
+      if !self.char.spells.empty?
         ret << <<HTML
 		<div class="attrs-block">
 			<img class="list-icon" id="magis-icon" src="icons/icon_26143/icon_26143.svg " />
-			#{self.attr_block self.char.spells}
+			#{self.attr_block self.char.spells_str}
 		</div>
 HTML
       end
@@ -151,12 +131,12 @@ HTML
       ret << <<HTML
 		<div class="attrs-block">
 			<img class="list-icon" id="wpons-icon" src="icons/icon_1161/icon_1161.png" />
-			#{self.attr_block self.char.weapon}
+			#{self.attr_block self.char.weapon_str}
 		</div>
 
 		<div class="attrs-block">
 			<img class="list-icon" id="armrs-icon" src="icons/icon_5826/icon_5826.png" />
-			#{self.attr_block self.char.armor}
+			#{self.attr_block self.char.armor_str}
 		</div>
 
 		<div class="attrs-block">
@@ -180,7 +160,7 @@ HTML
     def attr_block( attr )
       attr = attr.nil? ? '' : attr
       ret = "<p>#{attr}</p><hr />"
-      ret << "<hr />" if attr.length > 37
+      ret << "<hr />" if attr.length > 36
       return ret
     end
 
@@ -199,24 +179,19 @@ HTML
   <body>
 		<div id="carapace">
 			<div class="block-row">
-				#{top.join(Charsheets.block_joint)}
+				#{top.join(DND::CharSheet.block_joint)}
 			</div>
 			<div class="block-row">
-				#{bot.join(Charsheets.block_joint)}
+				#{bot.join(DND::CharSheet.block_joint)}
 			</div>
 		</div>
 	</body>
 </html>
 HTML
 
-      f = File.write(Charsheets.file_to_write(self.fcount), out)
+      f = File.write(DND::CharSheet.file_to_write(self.fcount), out)
       self.fcount += 1
     end
 
   end
 end
-
-
-Charsheets.new(20)
-
-

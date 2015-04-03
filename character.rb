@@ -212,7 +212,7 @@ module DND
       self.stats = {
         'str' => stats[0],
         'con' => stats[1],
-        'dex' => stats[2],
+        'agi' => stats[2],
         'int' => stats[3],
         'wis' => stats[4],
         'cha' => stats[5]
@@ -255,30 +255,50 @@ module DND
 
 
 
+
     def print
       puts "Name: #{self.name}"
       puts "Race: #{self.race}"
       puts "Class: #{self.type}"
       puts "Alignment: #{self.alignment}"
-      puts "Weapon: #{self.weapon['title'] + ' ' + self.weapon['damage_m']}"
-      puts "Armor: #{self.armor['title']}"
-
-      if !self.spells.empty?
-        uses = "Spells: "
-        self.spells.each { |s| uses << "#{s['title']}, " }
-        puts uses.chomp ", "
-      end
-
-      uses = "Proficiencies: "
-      self.profs.each { |s| uses << "#{s['title']}, " }
-      puts uses.chomp ", "
-
+      puts "Weapon: #{self.weapon_str}"
+      puts "Armor: #{self.armor_str}"
+      puts "Spells: #{self.spells_str}"
+      puts "Proficiencies: #{self.profs_str}"
       puts "Trait: #{self.trait}"
       puts "Item: #{self.item}"
-
       puts "Stats: #{self.stats.values.join ' '}"
       puts "HP: #{self.hp}"
       puts "GP: #{self.gp}"
+    end
+
+
+    def weapon_str
+      "#{self.weapon['title'] + ' ' + self.weapon['damage_m']}"
+    end
+
+    def armor_str
+      self.armor['title']
+    end
+
+
+    def spells_str
+      uses = ""
+      if !self.spells.empty?
+        self.spells.each { |s| uses << "#{s['title']}; " }
+        uses = uses.chomp "; "
+      end
+      return uses
+    end
+
+
+    def profs_str
+      uses = ""
+      if !self.profs.empty?
+        self.profs.each { |s| uses << "#{s['title']}; " }
+        uses = uses.chomp "; "
+      end
+      return uses
     end
 
 

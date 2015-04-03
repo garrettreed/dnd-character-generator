@@ -123,8 +123,8 @@ double:
 
   - title: Quarterstaff
     cost: —
-    damage_s: 1d4/1d4
-    damage_m: 1d6/1d6
+    damage_s: 1d4
+    damage_m: 1d6
     critical: x2
     range: —
     weight: 4 lb.
