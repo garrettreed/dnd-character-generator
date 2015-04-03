@@ -70,9 +70,9 @@ module DND
     #
 
     def pick_name
-      self.pool.load_names if (self.pool.names.nil? or self.pool.names.empty?)
-      self.name = self.pool.names.sample
-      self.pool.names.delete self.name
+      # self.pool.load_names if (self.pool.names.nil? or self.pool.names.empty?)
+      # self.name = self.pool.names.sample
+      # self.pool.names.delete self.name
 
       # To enable random selection of first and last names,
       # uncomment the lines below and comment out the lines above.
@@ -80,14 +80,14 @@ module DND
       # prevent duplicates in the crew, that array will be scanned
       # for the generated name before it's assigned.
 
-      # self.pool.load_names if (self.pool.names_f.nil? or self.pool.names_l.nil? or self.pool.names.nil?)
-      # chk = self.pool.names_f.sample + ' ' + self.pool.names_l.sample
-      # if self.pool.names.include? chk
-      #   self.pick_name
-      # else
-      #   self.name = chk
-      #   self.pool.names.push self.name
-      # end
+      self.pool.load_names if (self.pool.names_f.nil? or self.pool.names_l.nil? or self.pool.names.nil?)
+      chk = self.pool.names_f.sample + ' ' + self.pool.names_l.sample
+      if self.pool.names.include? chk
+        self.pick_name
+      else
+        self.name = chk
+        self.pool.names.push self.name
+      end
     end
 
 

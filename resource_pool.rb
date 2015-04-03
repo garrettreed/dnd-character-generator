@@ -9,7 +9,7 @@ module DND
     def self.alignments_file; "sources/alignments.yaml" end
     def self.armor_file; "sources/armor.yaml" end
     def self.classes_file; "sources/classes.yaml" end
-    def self.items_file; "sources/items_2.yaml" end
+    def self.items_file; "sources/items.yaml" end  # items_2
     def self.names_file; "sources/names_2.yaml" end
     def self.names_f_file; "sources/names_first.yaml" end
     def self.names_l_file; "sources/names_last.yaml" end
@@ -55,16 +55,16 @@ module DND
 
 
     def load_names
-      self.names = YAML.load_file(DND::ResourcePool.names_file)
+      # self.names = YAML.load_file(DND::ResourcePool.names_file)
 
       # To enable random selection of first and last names,
       # uncomment the lines below and comment out the line above.
       # To prevent duplicates, the generated names should be placed
       # in the empty :names array and that should be checked when picking.
 
-      # self.names_f = YAML.load_file(DND::ResourcePool.names_f_file)
-      # self.names_l = YAML.load_file(DND::ResourcePool.names_l_file)
-      # self.names = [ ]
+      self.names = [ ]
+      self.names_f = YAML.load_file(DND::ResourcePool.names_f_file)
+      self.names_l = YAML.load_file(DND::ResourcePool.names_l_file)
     end
 
 
