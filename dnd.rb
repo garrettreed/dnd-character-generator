@@ -76,6 +76,10 @@ module DND
           howmany = (num.nil?) ? DND::CharSheet.def_quant : num
           self.act = Proc.new { DND::CharSheet.new(howmany) }
 
+        # For character sheets from a file.
+        elsif act.include? 'file'
+          self.act = Proc.new { DND::CharSheet.from_file(args[1]) }
+
         # For characters.
         elsif act.include? 'char'
           howmany = (num.nil?) ? DND::Character.def_quant : num

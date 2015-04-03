@@ -5,20 +5,23 @@ module DND
   class CharSheet
 
 
+    def self.from_file( filename = DND::CharSheet.file_to_read )
+      DND::CharSheet.new filename
+    end
+
+
+
     def self.def_quant
       20
     end
-
 
     def self.file_to_read
       "chars-list.txt"
     end
 
-
     def self.file_to_write( n = 1 )
       "char-sheets-#{n}.html"
     end
-
 
     def self.block_joint
       "<br />\n<br />\n"
@@ -27,23 +30,35 @@ module DND
 
 
 
-    def initialize( quant = 20 )
-      @quant = quant
-      @char, @chars, @fcount = nil, [ ], 1
+    def initialize( ini )
+      if ini.is_a? Integer
+        @quant, @infile = ini, nil
+      elsif ini.is_a? String
+        @quant, @infile = nil, ini
+      else
+        raise Exception.new "Can't create new character sheet! Bad init param."
+      end
+
+      @crew, @char, @chars, @fcount = [ ], nil, [ ], 1
       @last_lines = 0
       self.make
     end
 
-    attr_reader :quant
-    attr_accessor :char, :chars, :fcount, :last_lines
+    attr_reader :quant, :infile
+    attr_accessor :crew, :char, :chars, :fcount, :last_lines
 
+
+
+    def get_new_sheet
+      self.char, self.chars = nil, [ ]
+    end
 
 
     def make
       self.get_new_sheet
+      self.get_crew
 
-      crew = DND::Character.crew self.quant
-      crew.each do |char|
+      self.crew.each do |char|
         self.char = char
         self.chars.push self.wrap_char
 
@@ -55,8 +70,24 @@ module DND
     end
 
 
-    def get_new_sheet
-      self.char, self.chars = nil, [ ]
+
+    def get_crew
+      if self.infile.nil?
+        self.crew = DND::Character.crew self.quant
+
+      else
+        lines = [ ]
+        f = File.open self.infile
+        f.each do |line|
+          line = line.chomp
+          if line.empty?
+            chk = DND::Character.from_lines lines
+            self.crew.push(chk) if chk.is_a? DND::Character
+          else
+            lines.push line
+          end
+        end
+      end
     end
 
 

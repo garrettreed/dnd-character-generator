@@ -7,10 +7,6 @@ module DND
   class Character
 
 
-    def self.def_quant;  1 end
-
-
-
     # Returns an array of characters.
     def self.crew( n = 1 )
       set, pool = [ ], DND::ResourcePool.new
@@ -19,16 +15,31 @@ module DND
     end
 
 
+    # Pass this an array of key-value pairs
+    # and get a fully-formed Character in return.
+    def self.from_lines( charr = [ ] )
+      char = DND::Character.new(nil, nil)
+      char.read_arr charr
+      return char
+    end
 
 
-    def initialize( pool = nil )
-      @pool = (pool.is_a? DND::ResourcePool) ? pool : DND::ResourcePool.new
+    def self.def_quant;  1 end
+    def self.quant_spells; 2 end
+    def self.quant_profs; 3 end
 
+
+
+
+    def initialize( pool = nil, autogen = true )
       @name, @alignment, @race, @type, @trait, @profs, @spells, @weapon, @armor, @item, @stats, @hp, @gp = '', '', '', '', '', [ ], [ ], '', '', '', { }, 0, 0
 
       @type_key = ''
 
-      self.gen
+      if autogen
+        @pool = (pool.is_a? DND::ResourcePool) ? pool : DND::ResourcePool.new
+        self.gen
+      end
     end
 
     attr_reader :pool
@@ -160,7 +171,7 @@ module DND
         end
       end
 
-      self.profs = profs.flatten.sample 3
+      self.profs = profs.flatten.sample DND::Character.quant_profs
     end
 
 
@@ -198,7 +209,7 @@ module DND
         end
       end
 
-      self.spells = splls.flatten.sample 3
+      self.spells = splls.flatten.sample DND::Character.quant_spells
     end
 
 
@@ -209,16 +220,20 @@ module DND
 
     def pick_stats
       stats = DND::Numbers.stats
-      self.stats = {
-        'str' => stats[0],
-        'con' => stats[1],
-        'agi' => stats[2],
-        'int' => stats[3],
-        'wis' => stats[4],
-        'cha' => stats[5]
-      }
-
+      self.fill_stats stats
       self.adjust_stats
+    end
+
+
+    def fill_stats( arr = [ ] )
+      self.stats = {
+        'str' => arr[0],
+        'con' => arr[1],
+        'agi' => arr[2],
+        'int' => arr[3],
+        'wis' => arr[4],
+        'cha' => arr[5]
+      }
     end
 
 
@@ -319,6 +334,110 @@ module DND
         uses = uses.chomp "; "
       end
       return uses
+    end
+
+
+
+    #
+    # These methods are helpful for filling a character
+    # from an array of strings. Each string in the array
+    # should look like "key: val". This is useful for
+    # generating a character from a file of data.
+    #
+
+    def read_arr( charr = [ ] )
+      if charr.is_a? Array
+        charr.each do |line|
+          self.parse_line line
+        end
+      end
+    end
+
+
+    def parse_line( line )
+      if m = line.match(/^([a-z]+): (.*)$/)
+        self.parse_attr(m[1], m[2])
+      end
+    end
+
+
+    def parse_attr( title, value )
+      if title == 'name'
+        self.name = value
+      elsif title == 'alignment'
+        self.alignment = value
+      elsif title == 'race'
+        self.race = value
+      elsif (title == 'class' or title == 'type')
+        self.type = value
+      elsif title == 'trait'
+        self.trait = value
+      elsif title == 'proficiencies'
+        self.parse_profs_str(value)
+      elsif title == 'spells'
+        self.parse_spells_str(value)
+      elsif title == 'weapon'
+        self.parse_weapon_str(value)
+      elsif title == 'armor'
+        self.parse_armor_str(value)
+      elsif title == 'item'
+        self.item = value
+      elsif title == 'stats'
+        self.parse_stats_str(value)
+      elsif title == 'hp'
+        self.hp = value
+      elsif title == 'gp'
+        self.gp = value
+      else
+        raise Exception.new "WTF: '#{title}', '#{value}'"
+      end
+    end
+
+
+    def parse_profs_str( str = '' )
+      self.profs = [ ]
+      profs = str.split(', ')
+      profs.each do |prof|
+        self.profs.push({ 'title' => prof.strip })
+      end
+    end
+
+
+    def parse_spells_str( str = '' )
+      self.spells = [ ]
+      spells = str.split(', ')
+      spells.each do |prof|
+        self.spells.push({ 'title' => prof.strip })
+      end
+    end
+
+
+
+    def parse_weapon_str( str = '' )
+      if m = str.match(/\A(.*)([0-9]+d[0-9]+)\Z/)
+        ret = {
+          'title' => m[1].strip,
+          'damage_m' => m[2]
+        }
+      else
+        ret = {
+          'title' => str,
+          'damage_m' => '1d6',
+        }
+      end
+
+      self.weapon = ret
+    end
+
+
+    def parse_armor_str( str = '' )
+      self.armor = { }
+      self.armor['title'] = str
+    end
+
+
+    def parse_stats_str( str = '' )
+      self.fill_stats str.split(' ')
     end
 
 
