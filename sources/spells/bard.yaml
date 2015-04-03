@@ -66,9 +66,9 @@ level1:
     desc: "Subject loses actions for 1 round/ level."
   - title: Hypnotism
     desc: "Fascinates 2d4 HD of creatures."
-  - title: IdentifyM&#160;
+  - title: Identify
     desc: "Determines properties of magic item."
-  - title: Magic MouthM&#160;
+  - title: Magic Mouth
     desc: "Speaks once when triggered."
   - title: Magic Aura
     desc: "Alters object's magic aura."
@@ -80,7 +80,9 @@ level1:
     desc: "Creates minor illusion of your design."
   - title: Sleep
     desc: "Puts 4 HD of creatures into magical slumber."
-  - title: Summon Monster I
+  # - title: Summon Monster I
+  #   desc: "Calls extraplanar creature to fight for you."
+  - title: Summon Monster
     desc: "Calls extraplanar creature to fight for you."
   - title: Undetectable Alignment
     desc: "Conceals alignment for 24 hours."
@@ -156,8 +158,8 @@ level2:
     desc: "Deals 1d8 sonic damage to subjects; may stun them."
   - title: Suggestion
     desc: "Compels subject to follow stated course of action."
-  - title: Summon Monster II
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster II
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Summon Swarm
     desc: "Summons swarm of bats, rats, or spiders."
   - title: Tongues
@@ -224,8 +226,8 @@ level3:
     desc: "One subject/level takes only one action/round, –1 to AC, reflex saves, and attack rolls."
   - title: Speak with Animals
     desc: "You can communicate with animals."
-  - title: Summon Monster III
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster III
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Tiny Hut
     desc: "Creates shelter for ten creatures."
 
@@ -270,8 +272,8 @@ level4:
     desc: "Deafens all within cone and deals 5d6 sonic damage."
   - title: Speak with Plants
     desc: "You can talk to normal plants and plant creatures."
-  - title: Summon Monster IV
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster IV
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Zone of Silence
     desc: "Keeps eavesdroppers from overhearing conversations."
 
@@ -308,8 +310,8 @@ level5:
     desc: "Forces targets to attack each other."
   - title: Mass Suggestion
     desc: "As suggestion, plus one subject/level."
-  - title: Summon Monster V
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster V
+  #   desc: "Calls extraplanar creature to fight for you."
 
 
 
@@ -348,8 +350,8 @@ level6:
     desc: "As scrying, but faster and longer."
   - title: Greater Shout
     desc: "Devastating yell deals 10d6 sonic damage; stuns creatures, damages objects."
-  - title: Summon Monster VI
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster VI
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Sympathetic Vibration
     desc: "Deals 2d10 damage/round to freestanding structure."
   - title: Veil

@@ -217,6 +217,26 @@ module DND
         'wis' => stats[4],
         'cha' => stats[5]
       }
+
+      self.adjust_stats
+    end
+
+
+    def adjust_stats( bonus = 6 )
+      while !bonus.nil? and bonus > 0
+        stat_key = self.stats.keys.sample
+        stat_val = self.stats[stat_key]
+
+        bonu = rand(1..bonus)
+        if stat_val + bonu > 18
+          x = 18 - stat_val
+        else
+          x = bonu
+        end
+
+        self.stats[stat_key] = stat_val + x
+        bonus -= x
+      end
     end
 
 

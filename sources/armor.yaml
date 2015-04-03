@@ -124,46 +124,46 @@ shields:
   - title: Buckler
     cost: 15 gp
     armor_bonus: 1
-    max_dex_bonus: —
+    max_dex_bonus: 0
     armor_penalty: -1
     spell_fail_pct: 5%
-    speed: —
+    speed: 0
     weight: 5 lb.
 
   - title: Shield, light wooden
     cost: 3 gp
     armor_bonus: 1
-    max_dex_bonus: —
+    max_dex_bonus: 0
     armor_penalty: -1
     spell_fail_pct: 5%
-    speed: —
+    speed: 0
     weight: 5 lb.
 
   - title: Shield, light steel
     cost: 9 gp
     armor_bonus: 1
-    max_dex_bonus: —
+    max_dex_bonus: 0
     armor_penalty: -1
     spell_fail_pct: 5%
-    speed: —
+    speed: 0
     weight: 6 lb.
 
   - title: Shield, heavy wooden
     cost: 7 gp
     armor_bonus: 2
-    max_dex_bonus: —
+    max_dex_bonus: 0
     armor_penalty: -2
     spell_fail_pct: 15%
-    speed: —
+    speed: 0
     weight: 10 lb.
 
   - title: Shield, heavy steel
     cost: 20 gp
     armor_bonus: 2
-    max_dex_bonus: —
+    max_dex_bonus: 0
     armor_penalty: -2
     spell_fail_pct: 15%
-    speed: —
+    speed: 0
     weight: 15 lb.
 
   - title: Shield, tower
@@ -172,7 +172,7 @@ shields:
     max_dex_bonus: 2
     armor_penalty: -10
     spell_fail_pct: 50%
-    speed: —
+    speed: 0
     weight: 45 lb.
 
 
@@ -181,29 +181,29 @@ extras:
 
   - title: Armor spikes
     cost: +50 gp
-    armor_bonus: —
-    max_dex_bonus: —
-    armor_penalty: —
-    spell_fail_pct: —
-    speed: —
+    armor_bonus: 0
+    max_dex_bonus: 0
+    armor_penalty: 0
+    spell_fail_pct: 0
+    speed: 0
     weight: +10 lb.
 
   - title: Gauntlet, locked
     cost: 8 gp
-    armor_bonus: —
-    max_dex_bonus: —
+    armor_bonus: 0
+    max_dex_bonus: 0
     armor_penalty: Special
-    spell_fail_pct: —
-    speed: —
+    spell_fail_pct: 0
+    speed: 0
     weight: +5 lb.
 
   - title: Shield spikes
     cost: +10 gp
-    armor_bonus: —
-    max_dex_bonus: —
-    armor_penalty: —
-    spell_fail_pct: —
-    speed: —
+    armor_bonus: 0
+    max_dex_bonus: 0
+    armor_penalty: 0
+    spell_fail_pct: 0
+    speed: 0
     weight: +5 lb.
 
 ...

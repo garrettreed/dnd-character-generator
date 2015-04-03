@@ -36,8 +36,10 @@ level1:
     desc: "Ignores 10 (or more) points of damage/attack from specified energy type."
   - title: Speak with Animals
     desc: "You can communicate with animals."
-  - title: Summon Nature's Ally I
+  - title: Summon Nature's Ally
     desc: "Calls animal to fight for you."
+  # - title: Summon Nature's Ally I
+  #   desc: "Calls animal to fight for you."
 
 
 
@@ -62,8 +64,8 @@ level2:
     desc: "You can talk to normal plants and plant creatures."
   - title: Spike Growth
     desc: "Creatures in area take 1d4 damage, may be slowed."
-  - title: Summon Nature's Ally II
-    desc: "Calls animal to fight for you."
+  # - title: Summon Nature's Ally II
+  #   desc: "Calls animal to fight for you."
   - title: Wind Wall
     desc: "Deflects arrows, smaller creatures, and gases."
 
@@ -90,8 +92,8 @@ level3:
     desc: "Cures all diseases affecting subject."
   - title: Repel Vermin
     desc: "Insects, spiders, and other vermin stay 10 ft. away."
-  - title: Summon Nature's Ally III
-    desc: "Calls animal to fight for you."
+  # - title: Summon Nature's Ally III
+  #   desc: "Calls animal to fight for you."
   - title: Tree Shape
     desc: "You look exactly like a tree for 1 hour/level."
   - title: Water Walk
@@ -110,8 +112,8 @@ level4:
     desc: "Subject moves normally despite impediments."
   - title: NondetectionM
     desc: "Hides subject from Divination, scrying."
-  - title: Summon Nature's Ally IV
-    desc: "Calls animal to fight for you."
+  # - title: Summon Nature's Ally IV
+  #   desc: "Calls animal to fight for you."
   - title: Tree Stride
     desc: "Step from one tree to another far away."
 ...

@@ -88,7 +88,9 @@ level1:
       desc: "Summons riding horse for 2 hours/level."
     - title: Obscuring Mist
       desc: "Fog surrounds you."
-    - title: Summon Monster I
+    # - title: Summon Monster I
+    #   desc: "Calls extraplanar creature to fight for you."
+    - title: Summon Monster
       desc: "Calls extraplanar creature to fight for you."
     - title: Unseen Servant
       desc: "Invisible force obeys your commands."
@@ -182,8 +184,8 @@ level2:
       desc: "Fog obscures vision."
     - title: Glitterdust
       desc: "Blinds creatures, outlines invisible creatures."
-    - title: Summon Monster II
-      desc: "Calls extraplanar creature to fight for you."
+    # - title: Summon Monster II
+    #   desc: "Calls extraplanar creature to fight for you."
     - title: Summon Swarm
       desc: "Summons swarm of bats, rats, or spiders."
     - title: Web
@@ -312,8 +314,8 @@ level3:
       desc: "Hampers vision and movement."
     - title: Stinking Cloud
       desc: "Nauseating vapors, 1 round/level."
-    - title: Summon Monster III
-      desc: "Calls extraplanar creature to fight for you."
+    # - title: Summon Monster III
+    #   desc: "Calls extraplanar creature to fight for you."
 
   div:
     - title: Arcane Sight
@@ -422,8 +424,8 @@ level4:
       desc: "Creates sturdy cottage."
     - title: Solid Fog
       desc: "Blocks vision and slows movement."
-    - title: Summon Monster IV
-      desc: "Calls extraplanar creature to fight for you."
+    # - title: Summon Monster IV
+    #   desc: "Calls extraplanar creature to fight for you."
 
   div:
     - title: Arcane Eye
@@ -630,8 +632,8 @@ level6:
       desc: "Fog deals acid damage."
     - title: Planar Binding
       desc: "As lesser planar binding, but up to 12 HD."
-    - title: Summon Monster VI
-      desc: "Calls extraplanar creature to fight for you."
+    # - title: Summon Monster VI
+    #   desc: "Calls extraplanar creature to fight for you."
     - title: Wall of Iron
       desc: "30 hp/four levels; can topple onto foes."
 
@@ -744,8 +746,8 @@ level7:
       desc: "Creates an invisible passage through wood or stone."
     - title: Plane Shift
       desc: "As many as eight subjects travel to another plane."
-    - title: Summon Monster VII
-      desc: "Calls extraplanar creature to fight for you."
+    # - title: Summon Monster VII
+    #   desc: "Calls extraplanar creature to fight for you."
     - title: Greater Teleport
       desc: "As teleport, but no range limit and no off-target arrival."
     - title: Teleport Object
@@ -813,7 +815,7 @@ level7:
 
   univ:
     - title: Limited Wish
-      desc: "Alters reality—within spell limits."
+      desc: "Alters reality -- within spell limits."
 
 
 
@@ -836,8 +838,8 @@ level8:
       desc: "Traps subject in extradimensional maze."
     - title: Greater Planar Binding
       desc: "As lesser planar binding, but up to 18 HD."
-    - title: Summon Monster VIII
-      desc: "Calls extraplanar creature to fight for you."
+    # - title: Summon Monster VIII
+    #   desc: "Calls extraplanar creature to fight for you."
     - title: Trap the Soul
       desc: "Imprisons subject within gem."
 
@@ -926,8 +928,8 @@ level9:
       desc: "Connects two planes for travel or summoning."
     - title: Refuge
       desc: "Alters item to transport its possessor to you."
-    - title: Summon Monster I
-      desc: "Calls extraplanar creature to fight for you."
+    # - title: Summon Monster IX
+    #   desc: "Calls extraplanar creature to fight for you."
     - title: Teleportation Circle
       desc: "Circle teleports any creature inside to designated spot."
 

@@ -88,8 +88,10 @@ level1:
     desc: "Opponents can't attack you, and you can't attack."
   - title: Shield of Faith
     desc: "Aura grants +2 or higher deflection bonus."
-  - title: Summon Monster I
+  - title: Summon Monster
     desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster I
+  #   desc: "Calls extraplanar creature to fight for you."
 
 
 
@@ -152,8 +154,8 @@ level2:
     desc: "Magic weapon attacks on its own."
   - title: Status
     desc: "Monitors condition, position of allies."
-  - title: Summon Monster II
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster II
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Undetectable Alignment
     desc: "Conceals alignment for 24 hours."
   - title: Zone of Truth
@@ -222,8 +224,8 @@ level3:
     desc: "Corpse answers one question/two levels."
   - title: Stone Shape
     desc: "Sculpts stone into any shape."
-  - title: Summon Monster III
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster III
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Lesser Telepathic Bond
     desc: "As telepathic bond, but you and one other creature."
   - title: Water Breathing
@@ -280,8 +282,8 @@ level4:
     desc: "Delivers short message anywhere, instantly."
   - title: Spell Immunity
     desc: "Subject is immune to one spell per four levels."
-  - title: Summon Monster IV
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster IV
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Tongues
     desc: "Speak any language."
 
@@ -332,8 +334,8 @@ level5:
     desc: "Touch attack kills subject."
   - title: Spell Resistance
     desc: "Subject gains SR 12 + level."
-  - title: Summon Monster V
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster V
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Symbol of Pain
     desc: "Triggered rune wracks nearby creatures with pain."
   - title: Symbol of Sleep
@@ -388,8 +390,8 @@ level6:
     desc: "As owl's wisdom, affects one subject/level."
   - title: Planar Ally
     desc: "As lesser planar ally, but up to 12 HD."
-  - title: Summon Monster VI
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster VI
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Symbol of Fear
     desc: "Triggered rune panics nearby creatures."
   - title: Symbol of Persuasion
@@ -434,8 +436,8 @@ level7:
     desc: "Fully restore dead subject."
   - title: Greater Scrying
     desc: "As scrying, but faster and longer."
-  - title: Summon Monster VII
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster VII
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Symbol of Stunning
     desc: "Triggered rune stuns nearby creatures."
   - title: Symbol of Weakness
@@ -474,8 +476,8 @@ level8:
     desc: "+4 to AC, +4 resistance, and SR 25 against chaotic spells."
   - title: Greater Spell Immunity
     desc: "As spell immunity, but up to 8th-level spells."
-  - title: Summon Monster VIII
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster VIII
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: Symbol of Death
     desc: "Triggered rune slays nearby creatures."
   - title: Symbol of Insanity
@@ -504,8 +506,8 @@ level9:
     desc: "Traps newly dead soul to prevent resurrection."
   - title: Storm of Vengeance
     desc: "Storm rains acid, lightning, and hail."
-  - title: Summon Monster IX
-    desc: "Calls extraplanar creature to fight for you."
+  # - title: Summon Monster IX
+  #   desc: "Calls extraplanar creature to fight for you."
   - title: True Resurrection
     desc: "As resurrection, plus remains aren't needed."
 ...

@@ -30,11 +30,12 @@ module DND
     def initialize( quant = 20 )
       @quant = quant
       @char, @chars, @fcount = nil, [ ], 1
+      @last_lines = 0
       self.make
     end
 
     attr_reader :quant
-    attr_accessor :char, :chars, :fcount
+    attr_accessor :char, :chars, :fcount, :last_lines
 
 
 
@@ -61,6 +62,8 @@ module DND
 
 
     def wrap_char
+      self.last_lines = 6
+
       ret = <<HTML
 <div class="block-cell">
 	<div class="block-block">
@@ -120,6 +123,7 @@ module DND
 HTML
 
       if !self.char.spells.empty?
+        self.last_lines -= 1
         ret << <<HTML
 		<div class="attrs-block">
 			<img class="list-icon" id="magis-icon" src="icons/icon_26143/icon_26143.svg " />
@@ -142,10 +146,11 @@ HTML
 		<div class="attrs-block">
 			<img class="list-icon" id="items-icon" src="icons/icon_23677/icon_23677.png" />
 			<p>#{self.char.item}</p>
-			<hr />
-			<hr />
-			<hr />
-			<hr />
+HTML
+
+      self.last_lines.times { ret << "<p>&nbsp;</p>" }
+
+      ret << <<HTML
 		</div>
 
 	</div>
@@ -157,10 +162,26 @@ HTML
 
 
 
-    def attr_block( attr )
-      attr = attr.nil? ? '' : attr
-      ret = "<p>#{attr}</p><hr />"
-      ret << "<hr />" if attr.length > 36
+    def attr_block( attr = '' )
+      attr = (attr.nil?) ? '' : attr
+      ret, lim, len, loopd = '', 36, 0, 0
+
+      while !attr.nil? and attr.length > 0
+        if attr.length > lim
+          chk = attr.slice(0..lim)
+          len = chk.rindex(' ') || lim
+        else
+          chk, len = attr, attr.length
+        end
+
+        ret << "<p>#{chk.slice(0..len)}</p>"
+        attr = attr.slice((len + 1)..attr.length)
+
+        loopd += 1
+      end
+
+      self.last_lines -= (loopd - 1) if (loopd > 1)
+
       return ret
     end
 

@@ -24,7 +24,7 @@ light:
     damage_s: 1d4
     damage_m: 1d6
     critical: x3
-    range: —
+    range: 0
     weight: 3 lb.
     type: Slashing
 
@@ -33,7 +33,7 @@ light:
     damage_s: 1d3
     damage_m: 1d4
     critical: 18-20/x2
-    range: —
+    range: 0
     weight: 2 lb.
     type: Slashing
 
@@ -42,7 +42,7 @@ light:
     damage_s: 1d3
     damage_m: 1d4
     critical: x4
-    range: —
+    range: 0
     weight: 3 lb.
     type: Piercing
 
@@ -51,7 +51,7 @@ light:
     damage_s: 1d4
     damage_m: 1d6
     critical: x2
-    range: —
+    range: 0
     weight: 2 lb.
     type: Bludgeoning
 
@@ -60,7 +60,7 @@ light:
     damage_s: 1d2
     damage_m: 1d3
     critical: x2
-    range: —
+    range: 0
     weight: special
     type: Bludgeoning
 
@@ -69,7 +69,7 @@ light:
     damage_s: 1d4
     damage_m: 1d6
     critical: x2
-    range: —
+    range: 0
     weight: special
     type: Piercing
 
@@ -78,7 +78,7 @@ light:
     damage_s: 1d3
     damage_m: 1d4
     critical: x2
-    range: —
+    range: 0
     weight: special
     type: Piercing
 
@@ -87,7 +87,7 @@ light:
     damage_s: 1d4
     damage_m: 1d6
     critical: 19-20/x2
-    range: —
+    range: 0
     weight: 2 lb.
     type: Piercing
 
@@ -100,7 +100,7 @@ single:
     damage_s: 1d6
     damage_m: 1d8
     critical: x3
-    range: —
+    range: 0
     weight: 6 lb.
     type: Slashing
 
@@ -109,7 +109,7 @@ single:
     damage_s: 1d6
     damage_m: 1d8
     critical: x2
-    range: —
+    range: 0
     weight: 5 lb.
     type: Bludgeoning
 
@@ -118,7 +118,7 @@ single:
     damage_s: 1d6
     damage_m: 1d8
     critical: 19-20/x2
-    range: —
+    range: 0
     weight: 4 lb.
     type: Slashing
 
@@ -127,7 +127,7 @@ single:
     damage_s: 1d4
     damage_m: 1d6
     critical: x4
-    range: —
+    range: 0
     weight: 6 lb.
     type: Piercing
 
@@ -136,7 +136,7 @@ single:
     damage_s: 1d4
     damage_m: 1d6
     critical: 18-20/x2
-    range: —
+    range: 0
     weight: 2 lb.
     type: Piercing
 
@@ -145,7 +145,7 @@ single:
     damage_s: 1d4
     damage_m: 1d6
     critical: 18-20/x2
-    range: —
+    range: 0
     weight: 4 lb.
     type: Slashing
 
@@ -154,7 +154,7 @@ single:
     damage_s: 1d3
     damage_m: 1d4
     critical: x2
-    range: —
+    range: 0
     weight: special
     type: Bludgeoning
 
@@ -163,7 +163,7 @@ single:
     damage_s: 1d4
     damage_m: 1d6
     critical: x2
-    range: —
+    range: 0
     weight: special
     type: Piercing
 
@@ -181,7 +181,7 @@ single:
     damage_s: 1d6
     damage_m: 1d8
     critical: x3
-    range: —
+    range: 0
     weight: 5 lb.
     type: Bludgeoning
 
@@ -194,7 +194,7 @@ double:
     damage_s: 1d6
     damage_m: 2d4
     critical: 18-20/x2
-    range: —
+    range: 0
     weight: 8 lb.
     type: Slashing
 
@@ -203,7 +203,7 @@ double:
     damage_s: 1d8
     damage_m: 1d10
     critical: x3
-    range: —
+    range: 0
     weight: 10 lb.
     type: Slashing
 
@@ -212,7 +212,7 @@ double:
     damage_s: 1d10
     damage_m: 1d12
     critical: x3
-    range: —
+    range: 0
     weight: 12 lb.
     type: Slashing
 
@@ -221,7 +221,7 @@ double:
     damage_s: 1d8
     damage_m: 1d10
     critical: x2
-    range: —
+    range: 0
     weight: 8 lb.
     type: Bludgeoning
 
@@ -230,7 +230,7 @@ double:
     damage_s: 1d8
     damage_m: 1d10
     critical: 19-20/x2
-    range: —
+    range: 0
     weight: 10 lb.
     type: Bludgeoning
 
@@ -239,7 +239,7 @@ double:
     damage_s: 1d10
     damage_m: 2d6
     critical: 19-20/x2
-    range: —
+    range: 0
     weight: 8 lb.
     type: Slashing
 
@@ -248,7 +248,7 @@ double:
     damage_s: 1d6
     damage_m: 2d4
     critical: x3
-    range: —
+    range: 0
     weight: 12 lb.
     type: Slashing
 
@@ -257,7 +257,7 @@ double:
     damage_s: 1d8
     damage_m: 1d10
     critical: x3
-    range: —
+    range: 0
     weight: 12 lb.
     type: Piercing or slashing
 
@@ -266,7 +266,7 @@ double:
     damage_s: 1d6
     damage_m: 1d8
     critical: x3
-    range: —
+    range: 0
     weight: 10 lb.
     type: Piercing
 
@@ -275,7 +275,7 @@ double:
     damage_s: 1d6
     damage_m: 2d4
     critical: x3
-    range: —
+    range: 0
     weight: 12 lb.
     type: Piercing
 
@@ -284,7 +284,7 @@ double:
     damage_s: 1d6
     damage_m: 2d4
     critical: x4
-    range: —
+    range: 0
     weight: 10 lb.
     type: Piercing or slashing
 

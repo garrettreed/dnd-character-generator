@@ -6,17 +6,17 @@ unarmed:
     damage_s: 1d2
     damage_m: 1d3
     critical: x2
-    range: —
+    range: 0
     weight: 1 lb.
     type: Bludgeoning
 
   - title: Unarmed Strike
-    cost: —
+    cost: 0
     damage_s: 1d2
     damage_m: 1d3
     critical: x2
-    range: —
-    weight: —
+    range: 0
+    weight: 0
     type: Bludgeoning
 
 
@@ -37,7 +37,7 @@ light:
     damage_s: 1d3
     damage_m: 1d4
     critical: x3
-    range: —
+    range: 0
     weight: 1 lb.
     type: Piercing
 
@@ -46,7 +46,7 @@ light:
     damage_s: 1d3
     damage_m: 1d4
     critical: x2
-    range: —
+    range: 0
     weight: 1 lb.
     type: Piercing
 
@@ -55,7 +55,7 @@ light:
     damage_s: 1d4
     damage_m: 1d6
     critical: x2
-    range: —
+    range: 0
     weight: 4 lb.
     type: Bludgeoning
 
@@ -64,7 +64,7 @@ light:
     damage_s: 1d4
     damage_m: 1d6
     critical: x2
-    range: —
+    range: 0
     weight: 2 lb.
     type: Slashing
 
@@ -73,7 +73,7 @@ light:
 single:
 
   - title: Club
-    cost: —
+    cost: 0
     damage_s: 1d4
     damage_m: 1d6
     critical: x2
@@ -86,7 +86,7 @@ single:
     damage_s: 1d6
     damage_m: 1d8
     critical: x2
-    range: —
+    range: 0
     weight: 8 lb.
     type: Bludgeoning
 
@@ -95,7 +95,7 @@ single:
     damage_s: 1d6
     damage_m: 1d8
     critical: x2
-    range: —
+    range: 0
     weight: 6 lb.
     type: Bludgeoning and piercing
 
@@ -117,16 +117,16 @@ double:
     damage_s: 1d6
     damage_m: 1d8
     critical: x3
-    range: —
+    range: 0
     weight: 9 lb.
     type: Piercing
 
   - title: Quarterstaff
-    cost: —
+    cost: 0
     damage_s: 1d4
     damage_m: 1d6
     critical: x2
-    range: —
+    range: 0
     weight: 4 lb.
     type: Bludgeoning
 
@@ -180,7 +180,7 @@ ranged:
     type: Piercing
 
   - title: Sling
-    cost: —
+    cost: 0
     damage_s: 1d3
     damage_m: 1d4
     critical: x2

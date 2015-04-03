@@ -68,8 +68,10 @@ level1:
     desc: "Cudgel or quarterstaff becomes +1 weapon (1d10 damage) for 1 min./level."
   - title: Speak with Animals
     desc: "You can communicate with animals."
-  - title: Summon Nature's Ally I
+  - title: Summon Nature's Ally
     desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally I
+  #   desc: "Calls creature to fight."
 
 
 
@@ -116,8 +118,8 @@ level2:
     desc: "Turns stone to clay or dirt to sand or mud."
   - title: Spider Climb
     desc: "Grants ability to walk on walls and ceilings."
-  - title: Summon Nature's Ally II
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally II
+  #   desc: "Calls creature to fight."
   - title: Summon Swarm
     desc: "Summons swarm of bats, rats, or spiders."
   - title: Tree Shape
@@ -168,8 +170,8 @@ level3:
     desc: "Creatures in area take 1d4 damage, may be slowed."
   - title: Stone Shape
     desc: "Sculpts stone into any shape."
-  - title: Summon Nature's Ally III
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally III
+  #   desc: "Calls creature to fight."
   - title: Water Breathing
     desc: "Subjects can breathe underwater."
   - title: Wind Wall
@@ -210,8 +212,8 @@ level4:
     desc: "Spies on subject from a distance."
   - title: Spike Stones
     desc: "Creatures in area take 1d8 damage, may be slowed."
-  - title: Summon Nature's Ally IV
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally IV
+  #   desc: "Calls creature to fight."
 
 
 
@@ -240,8 +242,8 @@ level5:
     desc: "Locust swarms attack creatures."
   - title: Stoneskin
     desc: "Ignore 10 points of damage per attack."
-  - title: Summon Nature's Ally V
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally V
+  #   desc: "Calls creature to fight."
   - title: Transmute Mud to Rock
     desc: "Transforms two 10-ft. cubes per level."
   - title: Transmute Rock to Mud
@@ -288,8 +290,8 @@ level6:
     desc: "Stores one spell in wooden quarterstaff."
   - title: Stone Tell
     desc: "Talk to natural or worked stone."
-  - title: Summon Nature's Ally VI
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally VI
+  #   desc: "Calls creature to fight."
   - title: Transport via Plants
     desc: "Move instantly from one plant to another of the same kind."
   - title: Wall of Stone
@@ -314,8 +316,8 @@ level7:
     desc: "Cures 10 points/level of damage, all diseases and mental conditions."
   - title: Greater Scrying
     desc: "As scrying, but faster and longer."
-  - title: Summon Nature's Ally VII
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally VII
+  #   desc: "Calls creature to fight."
   - title: Sunbeam
     desc: "Beam blinds and deals 4d6 damage."
   - title: Transmute Metal to Wood
@@ -342,8 +344,8 @@ level8:
     desc: "Pushes away metal and stone."
   - title: Reverse Gravity
     desc: "Objects and creatures fall upward."
-  - title: Summon Nature's Ally VIII
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally VIII
+  #   desc: "Calls creature to fight."
   - title: Sunburst
     desc: "Blinds all within 10 ft., deals 6d6 damage."
   - title: Whirlwind
@@ -370,8 +372,8 @@ level9:
     desc: "Transforms you into any creature, and change forms once per round."
   - title: Storm of Vengeance
     desc: "Storm rains acid, lightning, and hail."
-  - title: Summon Nature's Ally IX
-    desc: "Calls creature to fight."
+  # - title: Summon Nature's Ally IX
+  #   desc: "Calls creature to fight."
   - title: Sympathy
     desc: "Object or location attracts certain creatures."
 ...
