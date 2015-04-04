@@ -81,8 +81,9 @@ module DND
         f.each do |line|
           line = line.chomp
           if line.empty?
-            chk = DND::Character.from_lines lines
+            chk, lines = DND::Character.from_lines(lines), [ ]
             self.crew.push(chk) if chk.is_a? DND::Character
+            # puts "Got #{chk.name}"
           else
             lines.push line
           end

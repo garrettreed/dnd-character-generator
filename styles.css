@@ -31,7 +31,7 @@ body {
   display: table-row;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  /* border: $border; */
   text-align: center; }
 
 .block-cell {
@@ -51,6 +51,19 @@ body {
   margin: 0;
   border: 1px solid black;
   overflow: hidden; }
+
+.block-row:first-child .block-cell:first-child {
+  border-top: 0 !important;
+  border-left: 0 !important; }
+.block-row:first-child .block-cell:last-child {
+  border-top: 0 !important;
+  border-right: 0 !important; }
+.block-row:last-child .block-cell:first-child {
+  border-bottom: 0 !important;
+  border-left: 0 !important; }
+.block-row:last-child .block-cell:last-child {
+  border-bottom: 0 !important;
+  border-right: 0 !important; }
 
 .sheet_line, .name, .vitals, .stats-line, .attrs-block {
   position: relative;
