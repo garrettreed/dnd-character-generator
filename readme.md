@@ -71,7 +71,11 @@ To get a sheet of characters, run
 
 and you'll get an HTML file named `sheets/char-sheets-1.html`, which will look like [this][look]. You can then print that file to [a PDF][pdf], print that PDF to paper, chop that paper up, and you'll be good to go.
 
-The module can also read characters from a file, shaped like the abve output, and return an HTML file containing those characters.
+The module can also read characters from a file shaped like the above output:
+
+    $ ./dnd.rb file chars-list.txt
+
+And it will return an HTML file containing those characters.
 
 
 
@@ -80,6 +84,8 @@ The module can also read characters from a file, shaped like the abve output, an
 One: character sheets must be created in multiples of four. Sorry. Otherwise you'd just be wasting paper.
 
 Two: there are some simple rules for allowing a character race- and class-specific proficieicies and spells, but the rules pretty much stop there. There are no restrictions on classes for races, bonuses or limitations based on stats, no THAC0 or Saving Throws, etc. The module could easily be expanded to conform fully with official rules but I have little motivations to do that right now.
+
+Three: it won't check for existing files in `sheets/` before writing over them, so if you generate a sheet you want to keep, rename it.
 
 
 
