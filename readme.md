@@ -83,7 +83,7 @@ And it will return an HTML file containing those characters.
 
 One: character sheets must be created in multiples of four. Sorry. Otherwise you'd just be wasting paper.
 
-Two: there are some simple rules for allowing a character race- and class-specific proficieicies and spells, but the rules pretty much stop there. There are no restrictions on classes for races, bonuses or limitations based on stats, no THAC0 or Saving Throws, etc. The module could easily be expanded to conform fully with official rules but I have little motivations to do that right now.
+Two: there are some simple rules for allowing a character race- and class-specific proficiencies and spells, but the rules pretty much stop there. There are no restrictions on classes for races, bonuses or limitations based on stats, no THAC0 or Saving Throws, etc. The module could easily be expanded to conform fully with official rules but I have little motivation to do that right now.
 
 Three: it won't check for existing files in `sheets/` before writing over them, so if you generate a sheet you want to keep, rename it.
 
