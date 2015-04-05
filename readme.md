@@ -69,7 +69,7 @@ To get a sheet of characters, run
 
     $ ./dnd.rb sheet 4
 
-and you'll get an HTML file named `sheets/char-sheets-1.html`, which will look like this. You can then print that file to a PDF, print that PDF to paper, chop that paper up, and you'll be good to go.
+and you'll get an HTML file named `sheets/char-sheets-1.html`, which will look like [this][look]. You can then print that file to [a PDF][pdf], print that PDF to paper, chop that paper up, and you'll be good to go.
 
 The module can also read characters from a file, shaped like the abve output, and return an HTML file containing those characters.
 
@@ -86,3 +86,5 @@ Two: there are some simple rules for allowing a character race- and class-specif
 
 
 [story]: http://richardmavis.info/dungeons-debauchery
+[look]: https://github.com/rmavis/dnd-character-generator/blob/master/sheets/char-sheets-1.html
+[pdf]: http://richardmavis.info/misc/dnd/char-sheets-3.pdf
