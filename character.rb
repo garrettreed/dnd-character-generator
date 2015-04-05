@@ -325,7 +325,7 @@ module DND
 
 
     def weapon_str
-      "#{self.weapon['title'] + ' ' + self.weapon['damage_m']}"
+      "#{self.weapon['title']} #{self.weapon['damage_m']}"
     end
 
     def armor_str

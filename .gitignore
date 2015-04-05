@@ -1,5 +1,3 @@
-*.html
-*.pdf
 *.txt
 .sass-cache
 .sass-cache/*
