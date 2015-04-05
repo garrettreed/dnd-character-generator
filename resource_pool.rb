@@ -9,12 +9,12 @@ module DND
     def self.alignments_file; "sources/alignments.yaml" end
     def self.armor_file; "sources/armor.yaml" end
     def self.classes_file; "sources/classes.yaml" end
-    def self.items_file; "sources/items.yaml" end  # items_2
+    def self.items_file; "sources/items.yaml" end
     def self.names_file; "sources/names_2.yaml" end
     def self.names_f_file; "sources/names_first.yaml" end
     def self.names_l_file; "sources/names_last.yaml" end
     def self.races_file; "sources/races.yaml" end
-    def self.traits_file; "sources/_traits-horror-movie-theme.yaml" end  # traits
+    def self.traits_file; "sources/traits.yaml" end
 
 
     def self.spells_file( ref = '' )

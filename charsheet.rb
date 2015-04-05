@@ -20,7 +20,7 @@ module DND
     end
 
     def self.file_to_write( n = 1 )
-      "char-sheets-#{n}.html"
+      "sheets/char-sheets-#{n}.html"
     end
 
     def self.block_joint
@@ -144,12 +144,12 @@ module DND
 		</div>
 
 		<div class="attrs-block">
-			<img class="list-icon" id="persn-icon" src="icons/icon_43149/icon_43149.svg" />
+			<img class="list-icon" id="persn-icon" src="../icons/icon_43149/icon_43149.svg" />
 			#{self.attr_block self.char.trait}
 		</div>
 
 		<div class="attrs-block">
-			<img class="list-icon" id="profs-icon" src="icons/icon_2672/icon_2672.png" />
+			<img class="list-icon" id="profs-icon" src="../icons/icon_2672/icon_2672.png" />
 			#{self.attr_block self.char.profs_str}
 		</div>
 HTML
@@ -158,7 +158,7 @@ HTML
         self.last_lines -= 1
         ret << <<HTML
 		<div class="attrs-block">
-			<img class="list-icon" id="magis-icon" src="icons/icon_26143/icon_26143.svg " />
+			<img class="list-icon" id="magis-icon" src="../icons/icon_26143/icon_26143.svg " />
 			#{self.attr_block self.char.spells_str}
 		</div>
 HTML
@@ -166,17 +166,17 @@ HTML
 
       ret << <<HTML
 		<div class="attrs-block">
-			<img class="list-icon" id="wpons-icon" src="icons/icon_1161/icon_1161.png" />
+			<img class="list-icon" id="wpons-icon" src="../icons/icon_1161/icon_1161.png" />
 			#{self.attr_block self.char.weapon_str}
 		</div>
 
 		<div class="attrs-block">
-			<img class="list-icon" id="armrs-icon" src="icons/icon_5826/icon_5826.png" />
+			<img class="list-icon" id="armrs-icon" src="../icons/icon_5826/icon_5826.png" />
 			#{self.attr_block self.char.armor_str}
 		</div>
 
 		<div class="attrs-block">
-			<img class="list-icon" id="items-icon" src="icons/icon_23677/icon_23677.png" />
+			<img class="list-icon" id="items-icon" src="../icons/icon_23677/icon_23677.png" />
 			<p>#{self.char.item}</p>
 HTML
 
@@ -226,7 +226,7 @@ HTML
 <!DOCTYPE html>
 <html lang="en">
   <head>
-		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="../styles.css" />
   </head>
 
   <body>
