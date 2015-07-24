@@ -2,3 +2,5 @@
 .sass-cache
 .sass-cache/*
 eml
+sheets/*.html
+sheets/*.pdf

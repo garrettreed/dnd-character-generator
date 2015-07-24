@@ -1,0 +1,18 @@
+---
+light:
+  - title: Repeating Light Crossbow
+    cost: 250 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 80 ft.
+    weight: 6 lb.
+    type: Piercing
+
+single:
+
+double:
+
+ranged:
+
+...

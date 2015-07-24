@@ -1,0 +1,241 @@
+---
+light:
+
+  - title: Sick Sticks
+    cost: 50 gp
+    damage_s: 1d3
+    damage_m: 1d3
+    critical: 19-20/x2
+    range: 30 ft.
+    weight: 2 lb.
+    type: Biological
+
+  - title: Finger Razors
+    cost: 350 gp
+    damage_s: 1d6
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 5 ft.
+    weight: 1 lb.
+    type: Slashing/Piercing
+
+  - title: Monomolecular Wire
+    cost: 350 gp
+    damage_s: 1d6
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 5 ft.
+    weight: 1 lb.
+    type: Slicing
+
+  - title: Predator Disc
+    cost: 450 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 10 lb.
+    type: Slashing
+
+
+
+single:
+
+  - title: Laser Sword
+    cost: 400 gp
+    damage_s: 1d8
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 4 ft.
+    weight: 5 lb.
+    type: Slashing/Piercing/Laser
+
+  - title: Magnetic Repulsor Knife
+    cost: 150 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 5 lb.
+    type: Piercing
+
+
+
+double:
+
+  - title: Flensing Arm
+    cost: 1500 gp
+    damage_s: 1d4/1d8
+    damage_m: 1d6/1d12
+    critical: 19-20/x2
+    range: 3 ft. / 60 ft.
+    weight: 25 lb.
+    type: Bludgeoning/Piercing/Slashing
+
+
+
+ranged:
+
+  - title: Needle Gun
+    cost: 250 gp
+    damage_s: 1d3
+    damage_m: 1d4
+    critical: 19-20/x2
+    range: 80 ft.
+    weight: 3 lb.
+    type: Piercing
+
+  - title: Rail Gun
+    cost: 450 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 80 ft.
+    weight: 10 lb.
+    type: Piercing
+
+  - title: Laser Gun
+    cost: 400 gp
+    damage_s: 1d6
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 300 ft.
+    weight: 6 lb.
+    type: Laser
+
+  - title: Pulse Laser Gun
+    cost: 450 gp
+    damage_s: 1d6
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 300 ft.
+    weight: 6 lb.
+    type: Laser
+
+  - title: Neutron Beam Gun
+    cost: 450 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 150 ft.
+    weight: 6 lb.
+    type: Laser
+
+  - title: Heat Ray
+    cost: 300 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 60 ft.
+    weight: 8 lb.
+    type: Heat
+
+  - title: Plasma Cannon
+    cost: 650 gp
+    damage_s: 1d8
+    damage_m: 1d12
+    critical: 19-20/x2
+    range: 80 ft.
+    weight: 25 lb.
+    type: Energy
+
+  - title: Sonic Blaster
+    cost: 350 gp
+    damage_s: 1d8
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 50 ft.
+    weight: 8 lb.
+    type: Sonic
+
+  - title: Antimatter Grenade
+    cost: 850 gp
+    damage_s: 1d12
+    damage_m: 1d20
+    critical: 19-20/x2
+    range: 80 ft.
+    weight: 7 lb.
+    type: Antimatter
+
+  - title: Freezer
+    cost: 400 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 60 ft.
+    weight: 10 lb.
+    type: Freezing
+
+  - title: Buzzer
+    cost: 600 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 60 ft.
+    weight: 10 lb.
+    type: Electrical
+
+  - title: Super-Taser
+    cost: 250 gp
+    damage_s: 1d8
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 20 ft.
+    weight: 5 lb.
+    type: Electrical
+
+  - title: Portal Gun
+    cost: 850 gp
+    damage_s: 0
+    damage_m: 0
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 10 lb.
+    type: Physical
+
+  - title: Point-of-View Gun
+    cost: 450 gp
+    damage_s: 0
+    damage_m: 0
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 10 lb.
+    type: Intellectual
+
+  - title: Gristle Gun
+    cost: 450 gp
+    damage_s: 1d6
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 10 lb.
+    type: Biological
+
+  - title: Sonic Shotgun
+    cost: 450 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 10 lb.
+    type: Sonic
+
+  - title: Proton Pack
+    cost: 450 gp
+    damage_s: 1d6
+    damage_m: 1d8
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 10 lb.
+    type: Electrical
+
+  - title: Phaser
+    cost: 450 gp
+    damage_s: 1d4
+    damage_m: 1d6
+    critical: 19-20/x2
+    range: 40 ft.
+    weight: 10 lb.
+    type: Electrical
+
+...

@@ -7,14 +7,26 @@ module DND
   class ResourcePool
 
     def self.alignments_file; "sources/alignments.yaml" end
-    def self.armor_file; "sources/armor.yaml" end
-    def self.classes_file; "sources/classes.yaml" end
-    def self.items_file; "sources/items.yaml" end
-    def self.names_file; "sources/names_2.yaml" end
-    def self.names_f_file; "sources/names_first.yaml" end
-    def self.names_l_file; "sources/names_last.yaml" end
-    def self.races_file; "sources/races.yaml" end
-    def self.traits_file; "sources/traits.yaml" end
+
+    def self.armor_file; "sources/armor/general.yaml" end
+    # def self.armor_file; "sources/armor/sci-fi.yaml" end
+
+    def self.classes_file; "sources/classes/general.yaml" end
+    # def self.classes_file; "sources/classes/sci-fi.yaml" end
+
+    def self.items_file; "sources/items/items.yaml" end
+    # def self.items_file; "sources/items/sci-fi.yaml" end
+
+    # def self.names_file; "sources/names/general.yaml" end
+    # def self.names_f_file; "sources/names/general_first.yaml" end
+    # def self.names_l_file; "sources/names/general_last.yaml" end
+    def self.names_f_file; "sources/names/jack_names.yaml" end
+    def self.names_l_file; "sources/names/jack_titles.yaml" end
+
+    def self.races_file; "sources/races/general.yaml" end
+    # def self.races_file; "sources/races/sci-fi.yaml" end
+
+    def self.traits_file; "sources/traits/general.yaml" end
 
 
     def self.spells_file( ref = '' )
@@ -40,6 +52,7 @@ module DND
 
     def self.weapons_files
       %w{ exotic martial simple }
+      # %w{ sci-fi }
     end
 
 
@@ -100,7 +113,7 @@ module DND
       self.proficiencies = YAML.load_file(DND::ResourcePool.proficiencies_file(ref))
     end
 
-    def load_weapons( ref = "general" )
+    def load_weapons( ref = "" )
       self.weapons = YAML.load_file(DND::ResourcePool.weapons_file(ref))
     end
 

@@ -1,0 +1,114 @@
+---
+light:
+  - title: Deflector Field
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Stillsuit
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Particle Interference Field
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Sonic-Nullifier Field
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Spatial Displacement Field
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Stasis Field
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Visual Disruption Field
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+
+
+medium:
+
+  - title: Powered Armor
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+
+
+heavy:
+
+  - title: Exoskeleton
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+  - title: Mecha Suit
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+
+
+shields:
+
+  - title: Kinetic Shield
+    cost: 5 gp
+    armor_bonus: 1
+    max_dex_bonus: 8
+    armor_penalty: 0
+    spell_fail_pct: 5%
+    speed: 30 ft.
+    weight: 10 lb.
+
+...
