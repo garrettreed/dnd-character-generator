@@ -52,7 +52,7 @@ module DND
 
     def self.weapons_files
       %w{ exotic martial simple }
-      # %w{ sci-fi }
+      # "sci-fi"
     end
 
 

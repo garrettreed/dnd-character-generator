@@ -103,6 +103,15 @@ module DND
             end
           end
 
+        # For single selections from a character.
+        # The list of commands is the array of keys in DND::Character.acts_and_actions
+        elsif DND::Character.acts_and_actions.keys.include? act
+          howmany = (num.nil?) ? DND::Character.def_quant : num
+          self.act = Proc.new do
+            selects = DND::Character.single_trait(act, howmany)
+            selects.each { |nom| puts nom }
+          end
+
         else
           self.err_msg = "Invalid action: #{act}."
         end

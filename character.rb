@@ -15,12 +15,48 @@ module DND
     end
 
 
+
     # Pass this an array of key-value pairs
     # and get a fully-formed Character in return.
     def self.from_lines( charr = [ ] )
       char = DND::Character.new(nil, nil)
       char.read_arr charr
       return char
+    end
+
+
+
+    def self.single_trait( act, n )
+      set, refs, pool = [ ], DND::Character.acts_and_actions, DND::ResourcePool.new
+
+      refs.each do |key,acts|
+        if (key == act) or (act.include? key)
+          n.times do
+            char = DND::Character.new(pool, nil)
+            char.send(acts[:pick])
+            set.push(char.send(acts[:attr]))
+          end
+        end
+      end
+
+      return set
+    end
+
+
+
+    def self.acts_and_actions
+      {
+        'names' => { :pick => :pick_name, :attr => :name },
+        'races' => { :pick => :pick_race, :attr => :race },
+        'classes' => { :pick => :pick_class, :attr => :class },
+        'aligns' => { :pick => :pick_alignment, :attr => :alignment },
+        'items' => { :pick => :pick_item, :attr => :item },
+        'traits' => { :pick => :pick_trait, :attr => :trait },
+        'weapons' => { :pick => :pick_weapon, :attr => :weapon },
+        'armors' => { :pick => :pick_armor, :attr => :armor },
+        'profs' => { :pick => :pick_proficiencies, :attr => :profs },
+        'spells' => { :pick => :pick_spells, :attr => :spells },
+      }
     end
 
 
@@ -34,12 +70,11 @@ module DND
     def initialize( pool = nil, autogen = true )
       @name, @alignment, @race, @type, @trait, @profs, @spells, @weapon, @armor, @item, @stats, @hp, @gp = '', '', '', '', '', [ ], [ ], '', '', '', { }, 0, 0
 
+      @pool = (pool.is_a? DND::ResourcePool) ? pool : DND::ResourcePool.new
+
       @type_key = ''
 
-      if autogen
-        @pool = (pool.is_a? DND::ResourcePool) ? pool : DND::ResourcePool.new
-        self.gen
-      end
+      self.gen if autogen
     end
 
     attr_reader :pool
@@ -81,13 +116,20 @@ module DND
       # for the generated name before it's assigned.
 
       self.pool.load_names if (self.pool.names_f.nil? or self.pool.names_l.nil? or self.pool.names.nil?)
-      chk = self.pool.names_f.sample + ' ' + self.pool.names_l.sample
-      if self.pool.names.include? chk
-        self.pick_name
-      else
-        self.name = chk
-        self.pool.names.push self.name
-      end
+      nom_f = self.pool.names_f.sample
+      nom_l = self.pool.names_l.sample
+      self.name = "#{nom_f} #{nom_l}"
+      self.pool.names_f.delete nom_f
+      self.pool.names_l.delete nom_l
+
+      # This is another method. It only checks for unique combinations, not repeated instances.
+      # chk = self.pool.names_f.sample + ' ' + self.pool.names_l.sample
+      # if self.pool.names.include? chk
+      #   self.pick_name
+      # else
+      #   self.name = chk
+      #   self.pool.names.push self.name
+      # end
     end
 
 
@@ -142,18 +184,25 @@ module DND
 
 
     def pick_weapon
-      if self.is_class? 'fighter'
-        if self.is_class? 'ranger'
-          self.pool.load_weapons "simple"
-        else
-          self.pool.load_weapons "martial"
-        end
+      res = DND::ResourcePool.weapons_files
 
-      elsif self.is_class? 'rogue'
-        self.pool.load_weapons 'exotic'
+      if res.is_a? String
+        self.pool.load_weapons res
 
       else
-        self.pool.load_weapons "simple"
+        if self.is_class? 'fighter'
+          if self.is_class? 'ranger'
+            self.pool.load_weapons 'simple'
+          else
+            self.pool.load_weapons 'martial'
+          end
+
+        elsif self.is_class? 'rogue'
+          self.pool.load_weapons 'exotic'
+
+        else
+          self.pool.load_weapons 'simple'
+        end
       end
 
       wkey = self.pool.weapons.keys.sample
