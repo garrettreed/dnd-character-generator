@@ -6,7 +6,7 @@ module DND
 
 
     def self.from_file( filename = DND::CharSheet.file_to_read )
-      DND::CharSheet.new filename
+      DND::CharSheet.new(filename)
     end
 
 
@@ -31,16 +31,17 @@ module DND
 
 
     def initialize( ini )
-      if ini.is_a? Integer
+      if ini.is_a?(Integer)
         @quant, @infile = ini, nil
-      elsif ini.is_a? String
+      elsif ini.is_a?(String)
         @quant, @infile = nil, ini
       else
-        raise Exception.new "Can't create new character sheet! Bad init param."
+        raise Exception.new("Can't create new character sheet! Bad init param.")
       end
 
       @crew, @char, @chars, @fcount = [ ], nil, [ ], 1
       @last_lines = 0
+
       self.make
     end
 
@@ -60,7 +61,7 @@ module DND
 
       self.crew.each do |char|
         self.char = char
-        self.chars.push self.wrap_char
+        self.chars.push(self.wrap_char)
 
         if self.chars.count == 4
           self.write_file
@@ -73,19 +74,21 @@ module DND
 
     def get_crew
       if self.infile.nil?
-        self.crew = DND::Character.crew self.quant
+        self.crew = DND::Character.crew(self.quant)
 
       else
         lines = [ ]
-        f = File.open self.infile
+        f = File.open(self.infile)
         f.each do |line|
           line = line.chomp
+
           if line.empty?
-            chk, lines = DND::Character.from_lines(lines), [ ]
-            self.crew.push(chk) if chk.is_a? DND::Character
-            # puts "Got #{chk.name}"
+            chk = DND::Character.from_lines(lines)
+            lines = [ ]
+            self.crew.push(chk) if chk.is_a?(DND::Character)
+
           else
-            lines.push line
+            lines.push(line)
           end
         end
       end

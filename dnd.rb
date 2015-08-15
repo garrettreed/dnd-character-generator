@@ -31,7 +31,10 @@ module DND
 
 
     def initialize( args = [ ] )
-      @args, @act, @err_msg = args, nil, nil
+      @args = args
+      @act = nil
+      @err_msg = nil
+
       self.main
     end
 
@@ -46,8 +49,11 @@ module DND
     # will be printed.
     def main
       self.parse_args
-      if self.act.is_a? Proc
+
+      if self.act.is_a?(Proc)
         self.act.call
+      elsif self.act.is_a?(Array)
+        self.act.each { |x| x.call if x.is_a?(Proc) }
       else
         self.print_error
       end
@@ -62,28 +68,47 @@ module DND
     # The {string} is required. If the {number} is absent,
     # then a sensible default will be used.
     def parse_args
-      if (self.args.is_a? Array) and (self.args.length > 0)
+      if self.args.is_a?(Array) && (self.args.length > 0)
 
-        act = (self.args[0].is_a? String) ? self.args[0].downcase : ''
-        if self.args.length == 2
+        act = (self.args[0].is_a?(String)) ? self.args[0].downcase : ''
+        switch = nil
+
+        if self.args.length == 3
+          if self.args[1].numeric? && self.args[2].is_a?(String)
+            num = self.args[1].to_1
+            switch = self.args[2]
+          elsif self.args[2].numeric? && self.args[1].is_a?(String)
+            num = self.args[2].to_i
+            switch = self.args[1]
+          else
+            self.err_msg = "Ignoring invalid arguments: #{self.args.to_s}."
+          end
+        elsif self.args.length == 2
           num = (self.args[1].numeric?) ? self.args[1].to_i : 1
         else
           num = nil
         end
 
+
         # For character sheets.
-        if act.include? 'sheet'
+        if act.include?('sheet')
           howmany = (num.nil?) ? DND::CharSheet.def_quant : num
-          self.act = Proc.new { DND::CharSheet.new(howmany) }
+          if switch == '-c'
+            self.act = lambda { DND::CharSheet.from_file(DND::Character.to_file(DND::Character.select(howmany))) }
+          else
+            self.act = lambda { DND::CharSheet.new(howmany) }
+          end
+
 
         # For character sheets from a file.
-        elsif act.include? 'file'
-          self.act = Proc.new { DND::CharSheet.from_file(args[1]) }
+        elsif act.include?('file')
+          self.act = lambda { DND::CharSheet.from_file(args[1]) }
+
 
         # For characters.
-        elsif act.include? 'char'
+        elsif act.include?('char')
           howmany = (num.nil?) ? DND::Character.def_quant : num
-          self.act = Proc.new do
+          self.act = lambda do
             chars = DND::Character.crew(howmany)
             chars.each do |char|
               char.print
@@ -91,10 +116,11 @@ module DND
             end
           end
 
+
         # For stats.
-        elsif act.include? 'stat'
+        elsif act.include?('stat')
           howmany = (num.nil?) ? DND::Numbers.def_sets : num
-          self.act = Proc.new do
+          self.act = lambda do
             nums = DND::Numbers.stats(howmany)
             if howmany > 1
               nums.each { |n| puts n.to_s }
@@ -103,14 +129,16 @@ module DND
             end
           end
 
+
         # For single selections from a character.
         # The list of commands is the array of keys in DND::Character.acts_and_actions
-        elsif DND::Character.acts_and_actions.keys.include? act
+        elsif DND::Character.acts_and_actions.keys.include?(act)
           howmany = (num.nil?) ? DND::Character.def_quant : num
-          self.act = Proc.new do
+          self.act = lambda do
             selects = DND::Character.single_trait(act, howmany)
             selects.each { |nom| puts nom }
           end
+
 
         else
           self.err_msg = "Invalid action: #{act}."
@@ -124,7 +152,7 @@ module DND
 
 
     def print_error
-      if self.err_msg.is_a? String
+      if self.err_msg.is_a?(String)
         puts self.err_msg
       else
         puts "Something unknown is doing something we don't know what. That is what our knowledge amounts to."
@@ -138,4 +166,4 @@ end
 
 
 # Run it.
-DND::Hub.with ARGV
+DND::Hub.with(ARGV)

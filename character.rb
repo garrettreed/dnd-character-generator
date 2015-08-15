@@ -16,11 +16,40 @@ module DND
 
 
 
+    def self.select( n = self.def_quant )
+      pool = DND::ResourcePool.new
+      set = [ ]
+
+      while set.length < n do
+        char = DND::Character.new(pool, true)
+        set.push(char) if char.want_to_keep?
+      end
+
+      return set
+    end
+
+
+
+    def self.to_file( chars )
+      filename = "characters-#{chars.length}-#{Time.now.to_i}.txt"
+
+      handle = File.new(filename, 'w')
+      chars.each do |char|
+        handle.puts(char.lines.join("\n"), "\n")
+      end
+      handle.close
+
+      return filename
+    end
+
+
+
     # Pass this an array of key-value pairs
     # and get a fully-formed Character in return.
     def self.from_lines( charr = [ ] )
+      # puts "Generating character from: #{charr.to_s}"
       char = DND::Character.new(nil, nil)
-      char.read_arr charr
+      char.read_arr(charr)
       return char
     end
 
@@ -68,7 +97,20 @@ module DND
 
 
     def initialize( pool = nil, autogen = true )
-      @name, @alignment, @race, @type, @trait, @profs, @spells, @weapon, @armor, @item, @stats, @hp, @gp = '', '', '', '', '', [ ], [ ], '', '', '', { }, 0, 0
+      @name = ''
+      @alignment = ''
+      @race = ''
+      @type = ''
+      @trait = ''
+      @weapon = ''
+      @armor = ''
+      @item = ''
+
+      @profs = [ ]
+      @spells = [ ]
+
+      @hp = 0
+      @gp = 0
 
       @pool = (pool.is_a? DND::ResourcePool) ? pool : DND::ResourcePool.new
 
@@ -274,7 +316,7 @@ module DND
         end
       end
 
-      self.spells = splls.flatten.sample DND::Character.quant_spells
+      self.spells = splls.flatten.sample(DND::Character.quant_spells)
     end
 
 
@@ -355,21 +397,54 @@ module DND
 
 
 
+    def want_to_keep?
+      puts "\n"
+      self.print
+      $stdout.print "\nDo you want to keep this character? (y/N) "
+      # $stdout.flush
+      keep = $stdin.gets.chomp
+
+      if keep == 'y'
+        puts "Keeping."
+        keep = true
+      else
+        puts "Skipping."
+        keep = nil
+      end
+
+      return keep
+    end
+
+
+
+    def lines
+      lines = [
+        "Name: #{self.name}",
+        "Race: #{self.race}",
+        "Class: #{self.type}",
+        "Alignment: #{self.alignment}",
+        "Weapon: #{self.weapon_str}",
+        "Armor: #{self.armor_str}"
+      ]
+
+      lines.push("Spells: #{self.spells_str}") if !self.spells.empty?
+
+      lines.push(
+        "Proficiencies: #{self.profs_str}",
+        "Trait: #{self.trait}",
+        "Item: #{self.item}",
+        "Stats: #{self.stats.values.join(' ')}",
+        "HP: #{self.hp}",
+        "GP: #{self.gp}"
+      )
+
+      return lines
+    end
+
+
 
     def print
-      puts "Name: #{self.name}"
-      puts "Race: #{self.race}"
-      puts "Class: #{self.type}"
-      puts "Alignment: #{self.alignment}"
-      puts "Weapon: #{self.weapon_str}"
-      puts "Armor: #{self.armor_str}"
-      puts "Spells: #{self.spells_str}" if !self.spells.empty?
-      puts "Proficiencies: #{self.profs_str}"
-      puts "Trait: #{self.trait}"
-      puts "Item: #{self.item}"
-      puts "Stats: #{self.stats.values.join ' '}"
-      puts "HP: #{self.hp}"
-      puts "GP: #{self.gp}"
+      self.lines.each { |line| puts line }
     end
 
 
@@ -411,17 +486,15 @@ module DND
     #
 
     def read_arr( charr = [ ] )
-      if charr.is_a? Array
-        charr.each do |line|
-          self.parse_line line
-        end
+      if charr.is_a?(Array)
+        charr.each { |line| self.parse_line(line) }
       end
     end
 
 
     def parse_line( line )
-      if m = line.match(/^([a-z]+): (.*)$/)
-        self.parse_attr(m[1], m[2])
+      if m = line.match(/^([A-Za-z]+): (.*)$/)
+        self.parse_attr(m[1].downcase, m[2])
       end
     end
 
