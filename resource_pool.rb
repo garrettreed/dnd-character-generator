@@ -6,41 +6,46 @@ require 'yaml'
 module DND
   class ResourcePool
 
+    #
+    # These methods name files for loading the character traits they
+    # describe.
+    #
+
     def self.alignments_file; "sources/alignments.yaml" end
+
 
     def self.armor_file; "sources/armor/general.yaml" end
     # def self.armor_file; "sources/armor/sci-fi.yaml" end
 
+
     def self.classes_file; "sources/classes/general.yaml" end
     # def self.classes_file; "sources/classes/sci-fi.yaml" end
+
 
     def self.items_file; "sources/items/items.yaml" end
     # def self.items_file; "sources/items/sci-fi.yaml" end
 
-    # def self.names_file; "sources/names/general.yaml" end
+
+    def self.names_f_file; "sources/names/airtype_first.yaml" end
+    def self.names_l_file; "sources/names/airtype_last.yaml" end
     # def self.names_f_file; "sources/names/general_first.yaml" end
     # def self.names_l_file; "sources/names/general_last.yaml" end
-    def self.names_f_file; "sources/names/jack_names.yaml" end
-    def self.names_l_file; "sources/names/jack_titles.yaml" end
+
 
     def self.races_file; "sources/races/general.yaml" end
     # def self.races_file; "sources/races/sci-fi.yaml" end
 
+
     def self.traits_file; "sources/traits/general.yaml" end
 
 
-    def self.spells_file( ref = '' )
-      "sources/spells/#{ref}.yaml"
-    end
 
-    def self.proficiencies_file( ref = '' )
-      "sources/proficiencies/#{ref}.yaml"
-    end
-
-    def self.weapons_file( ref = '' )
-      "sources/weapons/#{ref}.yaml"
-    end
-
+    #
+    # These traits could depend on the character's race, class, etc.
+    # So if an array is given, then filtering might occur on those
+    # traits. If a string, then that file will be irrespective of
+    # anything.
+    #
 
     def self.spell_files
       %w{ bard cleric druid paladin ranger wizard }
@@ -57,64 +62,157 @@ module DND
 
 
 
+    #
+    # These methods point to file locations and will load the file
+    # named in the parameter.
+    #
 
-    def initialize
-      @alignments, @armors, @classes, @names, @items, @races, @traits, @spells, @proficiencies, @weapons = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-      @names_f, @names_l = nil, nil
+    def self.spells_file( ref = 'wizard' )
+      "sources/spells/#{ref}.yaml"
     end
 
-    attr_accessor :alignments, :armors, :classes, :names, :items, :races, :traits, :spells, :proficiencies, :weapons, :names_f, :names_l
+    def self.proficiencies_file( ref = 'general' )
+      "sources/proficiencies/#{ref}.yaml"
+    end
+
+    def self.weapons_file( ref = 'simple' )
+      "sources/weapons/#{ref}.yaml"
+    end
+
+
+
+
+
+    def initialize
+      @alignments = nil
+      @armors = nil
+      @classes = nil
+      @items = nil
+      @names = nil  # Holds the selected names.
+      @names_f = nil
+      @names_l = nil
+      @proficiencies = nil
+      @races = nil
+      @spells = nil
+      @traits = nil
+      @weapons = nil
+    end
+
+    attr_accessor :alignments, :armors, :classes, :items, :names, :names_f, :names_l, :proficiencies, :races, :spells, :traits, :weapons
+
+
+
+    # To prevent duplicates, the generated names should be placed in
+    # the @names array and that should be checked when picking.
+    def init_names
+      n = self.load_names
+      self.names_f = n[:f]
+      self.names_l = n[:l]
+      self.names = [ ]
+    end
+
+    def init_alignments
+      self.alignments = self.load_alignments
+    end
+
+    def init_armors
+      self.armors = self.load_armors
+    end
+
+    def init_classes
+      self.classes = self.load_classes
+    end
+
+    def init_items
+      self.items = self.load_items
+    end
+
+    def init_races
+      self.races = self.load_races
+    end
+
+    def init_traits
+      self.traits = self.load_traits
+    end
+
+    def init_spells( ref = 'wizard' )
+      self.spells = self.load_spells
+    end
+
+    def init_proficiencies
+      self.proficiencies = self.load_proficiencies
+    end
+
+    def init_weapons( ref = '' )
+      self.weapons = self.load_weapons(ref)
+    end
 
 
 
     def load_names
-      # self.names = YAML.load_file(DND::ResourcePool.names_file)
-
-      # To enable random selection of first and last names,
-      # uncomment the lines below and comment out the line above.
-      # To prevent duplicates, the generated names should be placed
-      # in the empty :names array and that should be checked when picking.
-
-      self.names = [ ]
-      self.names_f = YAML.load_file(DND::ResourcePool.names_f_file)
-      self.names_l = YAML.load_file(DND::ResourcePool.names_l_file)
+      return {
+        :f => YAML.load_file(DND::ResourcePool.names_f_file),
+        :l => YAML.load_file(DND::ResourcePool.names_l_file)
+      }
     end
 
-
     def load_alignments
-      self.alignments = YAML.load_file(DND::ResourcePool.alignments_file)
+      return YAML.load_file(DND::ResourcePool.alignments_file)
     end
 
     def load_armors
-      self.armors = YAML.load_file(DND::ResourcePool.armor_file)
+      return YAML.load_file(DND::ResourcePool.armor_file)
     end
 
     def load_classes
-      self.classes = YAML.load_file(DND::ResourcePool.classes_file)
+      return YAML.load_file(DND::ResourcePool.classes_file)
     end
 
     def load_items
-      self.items = YAML.load_file(DND::ResourcePool.items_file)
+      return YAML.load_file(DND::ResourcePool.items_file)
     end
 
     def load_races
-      self.races = YAML.load_file(DND::ResourcePool.races_file)
+      return YAML.load_file(DND::ResourcePool.races_file)
     end
 
     def load_traits
-      self.traits = YAML.load_file(DND::ResourcePool.traits_file)
+      return YAML.load_file(DND::ResourcePool.traits_file)
     end
 
-    def load_spells( ref = "wizard" )
-      self.spells = YAML.load_file(DND::ResourcePool.spells_file(ref))
+    def load_spells( ref = 'wizard' )
+      return YAML.load_file(DND::ResourcePool.spells_file(ref))
     end
 
-    def load_proficiencies( ref = "general" )
-      self.proficiencies = YAML.load_file(DND::ResourcePool.proficiencies_file(ref))
+    def load_proficiencies( ref = 'general' )
+      return YAML.load_file(DND::ResourcePool.proficiencies_file(ref))
     end
 
-    def load_weapons( ref = "" )
-      self.weapons = YAML.load_file(DND::ResourcePool.weapons_file(ref))
+    def load_weapons( ref = '' )
+      return YAML.load_file(DND::ResourcePool.weapons_file(ref))
+    end
+
+
+
+    def find_class_key( classname )
+      self.init_classes if self.classes.nil?
+      compare = classname.downcase
+      key = nil
+
+      self.classes.each do |parent, children|
+        children.each { |n| key = parent if n.downcase == compare }
+      end
+
+      return key
+    end
+
+
+
+    # Pass this a Character. Any of those character's traits that
+    # should be unique need to be deleted from the appropriate set.
+    def remove_unique_attrs( char )
+      self.names.push(char.name)
+      self.traits.delete(char.trait)
     end
 
   end

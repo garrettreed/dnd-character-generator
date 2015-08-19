@@ -19,12 +19,30 @@ module DND
       "chars-list.txt"
     end
 
+    def self.dir_to_write
+      "sheets"
+    end
+
     def self.file_to_write( n = 1 )
-      "sheets/char-sheets-#{n}.html"
+      "#{DND::CharSheet.dir_to_write}/char-sheets-#{n}.html"
     end
 
     def self.block_joint
       "<br />\n<br />\n"
+    end
+
+
+    def self.dir_ok?
+      if Dir.exist?(DND::CharSheet.dir_to_write)
+        return true
+      else
+        return nil
+      end
+    end
+
+
+    def self.make_dir!
+      Dir.mkdir(DND::CharSheet.dir_to_write)
     end
 
 
@@ -153,7 +171,7 @@ module DND
 
 		<div class="attrs-block">
 			<img class="list-icon" id="profs-icon" src="../icons/icon_2672/icon_2672.png" />
-			#{self.attr_block self.char.profs_str}
+			#{self.attr_block self.char.str_from_list(self.char.profs)}
 		</div>
 HTML
 
@@ -162,7 +180,7 @@ HTML
         ret << <<HTML
 		<div class="attrs-block">
 			<img class="list-icon" id="magis-icon" src="../icons/icon_26143/icon_26143.svg " />
-			#{self.attr_block self.char.spells_str}
+			#{self.attr_block self.char.str_from_list(self.char.spells)}
 		</div>
 HTML
       end
@@ -223,6 +241,7 @@ HTML
 
 
     def write_file
+      DND::CharSheet.make_dir! if !DND::CharSheet.dir_ok?
       top, bot = self.chars.slice(0,2), self.chars.slice(2,2)
 
       out = <<HTML

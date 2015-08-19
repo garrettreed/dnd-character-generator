@@ -9,12 +9,16 @@ module DND
     # If the class is initialized with a :sets => 1, then
     # it will return an array. Else, an array of arrays.
     def self.def_sets; 1 end
+
     # This is the number of numbers.
     def self.def_quant; 6 end
+
     # This is the upper limit of the randomness.
     def self.bound_high; 18 end
+
     # This is the lower limit of the randomness.
     def self.bound_low; 6 end
+
 
     def self.def_lims
       {
@@ -60,39 +64,45 @@ module DND
 
 
 
-    def initialize( u_lim = { } )
+    attr_accessor :set
+
+    protected
+
+
+    def initialize( u_lims = { } )
       defs = DND::Numbers.def_lims
-      i_lim = (u_lim.is_a? Hash) ? defs.merge(u_lim) : defs
+      lims = (u_lims.is_a?(Hash)) ? defs.merge(u_lims) : defs
 
-      @sets = (i_lim[:sets].nil?) ? 0 : i_lim[:sets].to_i
-      @quantity = (i_lim[:quant].nil?) ? 0 : i_lim[:quant].to_i
-      @lim_high = (i_lim[:high].nil?) ? 0 : i_lim[:high].to_i
-      @lim_low = (i_lim[:low].nil?) ? 0 : i_lim[:low].to_i
+      sets = (lims[:sets].nil?) ? 0 : lims[:sets].to_i
+      quant = (lims[:quant].nil?) ? 0 : lims[:quant].to_i
+      high = (lims[:high].nil?) ? 0 : lims[:high].to_i
+      low = (lims[:low].nil?) ? 0 : lims[:low].to_i
 
-      if @lim_high < @lim_low
-        @lim_high, @lim_low = @lim_low, @lim_high
+      if high < low
+        high, low = low, high
       end
 
       # puts "quant: #{@quantity}, low: #{@lim_low}, high: #{@lim_high}"
 
-      self.gen
+      @set = self.gen(sets, quant, low, high)
     end
 
-    attr_reader :quantity, :lim_high, :lim_low, :sets
-    attr_accessor :set
 
 
+    def gen( sets, quant, low, high )
+      ret = [ ]
 
-    def gen
-      self.set = [ ]
-
-      self.sets.times do
+      sets.times do
         s = [ ]
-        self.quantity.times { s.push rand(self.lim_low..self.lim_high) }
-        self.set.push s
+        quant.times { s.push(rand(low..high)) }
+        ret.push(s)
       end
 
-      self.set = self.set.first if self.sets < 2
+      if sets == 1
+        return ret[0]
+      else
+        return ret
+      end
     end
 
   end
