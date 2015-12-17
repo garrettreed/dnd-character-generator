@@ -23,7 +23,7 @@ module DND
 
 
 
-    def self.with( args = [ ] )
+    def self.with_args( args = [ ] )
       DND::Hub.require_files
       dnd = DND::Hub.new(args)
       dnd.main
@@ -83,7 +83,7 @@ module DND
         if m = arg.match(/^[0-9]+$/)
           ret[:quant] = m[0].to_i
 
-        elsif m = arg.match(/^-([A-Za-z])$/)
+        elsif m = arg.match(/^-+([A-Za-z])$/)
           ret[:flag] = m[1].downcase
 
         elsif m = arg.match(/^[A-Za-z]+$/)
@@ -103,37 +103,38 @@ module DND
 
 
 
-    def parse_instructions( instructs = { } )
+    def parse_instructions( inx = { } )
       ret = nil
 
-      if instructs.is_a?(Hash)
-        if instructs[:act].nil?
-          self.err = "Quitting: no instruction specified in the arguments."
+      if inx.is_a?(Hash)
+        if inx[:act].nil? || inx[:act] == 'help' ||
+           inx[:flag] == 'help' || inx[:flag] == 'h'
+          self.err = File.read('help-message.md')
 
         else
           # For character sheets.
-          if instructs[:act].include?('sheet')
-            ret = parse_sheets_instructions(instructs)
+          if inx[:act].include?('sheet')
+            ret = parse_sheets_instructions(inx)
 
           # For characters. Below `sheet` in case of 'charsheet'.
-          elsif instructs[:act].include?('char')
-            ret = parse_character_instructions(instructs)
+          elsif inx[:act].include?('char')
+            ret = parse_character_instructions(inx)
 
           # For character sheets from a file.
-          elsif instructs[:act].include?('file')
-            ret = parse_file_instructions(instructs)
+          elsif inx[:act].include?('file')
+            ret = parse_file_instructions(inx)
 
           # For stats.
-          elsif instructs[:act].include?('stat')
-            ret = parse_stats_instructions(instructs)
+          elsif inx[:act].include?('stat')
+            ret = parse_stats_instructions(inx)
 
           # For single selections from a character. The commands are
           # the keys of Character::acts_and_actions.
-          elsif DND::Character.acts_and_actions.keys.include?(instructs[:act])
-            ret = parse_singles_instructions(instructs)
+          elsif DND::Character.acts_and_actions.keys.include?(inx[:act])
+            ret = parse_singles_instructions(inx)
 
           else
-            self.err = "Quitting: #{instructs[:act]} is not a valid command."
+            self.err = "Quitting: #{inx[:act]} is not a valid command."
           end
         end
 
@@ -146,24 +147,24 @@ module DND
 
 
 
-    def parse_sheets_instructions( instructs )
+    def parse_sheets_instructions( inx )
       ret = nil
 
-      n = (instructs[:quant].nil?) ? DND::CharSheet.def_quant : instructs[:quant]
+      n = (inx[:quant].nil?) ? DND::CharSheet.def_quant : inx[:quant]
 
-      if instructs[:flag].nil?
+      if inx[:flag].nil?
         ret = lambda { DND::CharSheet.new(n) }
 
       # c is for cherrypick.
-      elsif instructs[:flag] == 'c'
+      elsif inx[:flag] == 'c'
         ret = [
-          lambda { DND::Character.select(n) },
+          lambda { DND::Character.select(n * DND::CharSheet.chars_per_sheet) },
           lambda { |chars| DND::Character.to_file(chars) },
           lambda { |file| DND::CharSheet.from_file(file) }
         ]
 
       else
-        self.err = "Quitting: '#{instructs[:flag]}' is not a valid flag for character sheets."
+        self.err = "Quitting: '#{inx[:flag]}' is not a valid flag for character sheets."
       end
 
       return ret
@@ -171,12 +172,12 @@ module DND
 
 
 
-    def parse_character_instructions( instructs )
+    def parse_character_instructions( inx )
       ret = nil
 
-      n = (instructs[:quant].nil?) ? DND::Character.def_quant : instructs[:quant]
+      n = (inx[:quant].nil?) ? DND::Character.def_quant : inx[:quant]
 
-      if instructs[:flag].nil?
+      if inx[:flag].nil?
         ret = lambda do
           DND::Character.crew(n).each do |char|
             char.print
@@ -185,14 +186,14 @@ module DND
         end
 
       # c is for cherrypick.
-      elsif instructs[:flag] == 'c'
+      elsif inx[:flag] == 'c'
         ret = [
           lambda { DND::Character.select(n) },
           lambda { |chars| DND::Character.to_file(chars) }
         ]
 
       else
-        self.err = "Quitting: '#{instructs[:flag]}' not a valid flag for characters."
+        self.err = "Quitting: '#{inx[:flag]}' not a valid flag for characters."
       end
 
       return ret
@@ -200,11 +201,11 @@ module DND
 
 
 
-    def parse_file_instructions( instructs )
+    def parse_file_instructions( inx )
       ret = nil
 
-      if instructs[:var].is_a?(String)
-        ret = lambda { DND::CharSheet.from_file(instructs[:var]) }
+      if inx[:var].is_a?(String)
+        ret = lambda { DND::CharSheet.from_file(inx[:var]) }
       else
         self.err = "Quitting: given file command but no file name."
       end
@@ -214,8 +215,8 @@ module DND
 
 
 
-    def parse_stats_instructions( instructs )
-      n = (instructs[:quant].nil?) ? DND::Numbers.def_sets : instructs[:quant]
+    def parse_stats_instructions( inx )
+      n = (inx[:quant].nil?) ? DND::Numbers.def_sets : inx[:quant]
 
       ret = lambda do
         nums = DND::Numbers.stats(n)
@@ -232,11 +233,11 @@ module DND
 
 
 
-    def parse_singles_instructions( instructs )
-      n = (instructs[:quant].nil?) ? DND::Character.def_quant : instructs[:quant]
+    def parse_singles_instructions( inx )
+      n = (inx[:quant].nil?) ? DND::Character.def_quant : inx[:quant]
 
       ret = lambda do
-        selects = DND::Character.single_trait(instructs[:act], n)
+        selects = DND::Character.single_trait(inx[:act], n)
         selects.each { |nom| puts nom }
       end
 
@@ -286,4 +287,4 @@ end
 
 
 # Run it.
-DND::Hub.with(ARGV)
+DND::Hub.with_args(ARGV)

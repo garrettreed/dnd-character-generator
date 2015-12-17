@@ -52,6 +52,37 @@ module DND
 
 
 
+    def self.from_file( filename )
+      f = File.open(filename)
+      chars = [ ]
+      lines = [ ]
+      working = nil
+
+      f.each do |line|
+        line = line.chomp
+
+        if line.empty?
+          chk = self.from_lines(lines)
+          chars.push(chk) if chk.is_a?(DND::Character)
+          working = nil
+          lines = [ ]
+
+        else
+          working = true
+          lines.push(line)
+        end
+      end
+
+      if working
+        chk = self.from_lines(lines)
+        chars.push(chk) if chk.is_a?(DND::Character)
+      end
+
+      return chars
+    end
+
+
+
     # Pass this an array of key-value pairs and get a fully-formed
     # Character in return.
     def self.from_lines( charr = [ ] )
@@ -63,14 +94,15 @@ module DND
 
 
     def self.single_trait( act, n )
-      set, refs, pool = [ ], DND::Character.acts_and_actions, DND::ResourcePool.new
+      refs = DND::Character.acts_and_actions
+      pool = DND::ResourcePool.new
+      set = [ ]
 
       refs.each do |key,acts|
         if (key == act) or (act.include? key)
           n.times do
             char = DND::Character.new(pool, nil)
-            char.send(acts[:pick])
-            set.push(char.send(acts[:attr]))
+            set.push(char.send(acts[:pick], char.pool))
           end
         end
       end
@@ -163,7 +195,7 @@ module DND
     #
 
     def pick_name( pool )
-      pool.init_names if (pool.names_f.nil? or pool.names_l.nil? or pool.names.nil?)
+      pool.init_names if (pool.names_f.nil? || pool.names_l.nil? || pool.names.nil?)
 
       chk = pool.names_f.sample + ' ' + pool.names_l.sample
 
