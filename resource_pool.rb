@@ -34,6 +34,7 @@ module DND
 
     def self.races_file; "sources/races/general.yaml" end
     # def self.races_file; "sources/races/sci-fi.yaml" end
+    # def self.races_file; "sources/races/aliens.yaml" end
 
 
     def self.traits_file; "sources/traits/general.yaml" end

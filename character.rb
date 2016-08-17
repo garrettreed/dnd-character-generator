@@ -27,7 +27,7 @@ module DND
       while set.length < n do
         char = DND::Character.new(pool, true)
 
-        if char.want_to_keep?
+        if char.want_to_keep?([set.length, n])
           set.push(char)
           pool.remove_unique_attrs(char)
         end
@@ -441,10 +441,16 @@ module DND
     #
 
 
-    def want_to_keep?
+    def want_to_keep?( nums = [ ] )
       puts "\n"
       self.print
-      $stdout.print "\nDo you want to keep this character? (y/N) "
+
+      $stdout.print "\nDo you want to keep this character? "
+      if (nums.length == 2)
+        $stdout.print "It would be \##{nums[0] + 1} of #{nums[1]}. "
+      end
+      $stdout.print "(y/N): "
+
       # $stdout.flush
       keep = $stdin.gets.chomp
 
