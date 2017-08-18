@@ -252,18 +252,28 @@ module DND
     # These ones do.
     #
 
+    # `pool.armors` must be a hash or an array.
     def pick_armor( pool )
       pool.init_armors if pool.armors.nil?
 
-      if self.is_class?('fighter')
-        key = 'heavy'
-      elsif self.is_class?('rogue')
-        key = 'medium'
-      else
-        key = 'light'
-      end
+      if (pool.armors.is_a?(Hash))
+        if self.is_class?('fighter')
+          key = 'heavy'
+        elsif self.is_class?('rogue')
+          key = 'medium'
+        else
+          key = 'light'
+        end
 
-      return pool.armors[key].sample
+        if (pool.armors.has_key?(key))
+          return pool.armors[key].sample
+        else
+          return pool.armors[pool.armors.keys.sample].sample
+        end
+
+      else
+        return pool.armors.sample
+      end
     end
 
 

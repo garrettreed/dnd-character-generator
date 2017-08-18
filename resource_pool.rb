@@ -11,34 +11,51 @@ module DND
     # describe.
     #
 
-    def self.alignments_file; "sources/alignments.yaml" end
+    def self.alignments_file
+      "sources/alignments.yaml"
+    end
 
+    def self.armor_file
+      # "sources/armor/general.yaml"
+      # "sources/armor/sci-fi.yaml"
+      "sources/armor/summer-camp.yaml"
+    end
 
-    def self.armor_file; "sources/armor/general.yaml" end
-    # def self.armor_file; "sources/armor/sci-fi.yaml" end
+    def self.classes_file
+      # "sources/classes/general.yaml"
+      # "sources/classes/sci-fi.yaml"
+      "sources/classes/summer-camp.yaml"
+    end
 
+    def self.items_file
+      # "sources/items/items.yaml"
+      # "sources/items/sci-fi.yaml"
+      "sources/items/summer-camp.yaml"
+    end
 
-    def self.classes_file; "sources/classes/general.yaml" end
-    # def self.classes_file; "sources/classes/sci-fi.yaml" end
+    def self.names_f_file
+      # "sources/names/airtype_first.yaml"
+      # "sources/names/general_first.yaml"
+      "sources/names/summer-camp_first.yaml"
+    end
 
+    def self.names_l_file
+      # "sources/names/airtype_lsst.yaml"
+      "sources/names/general_last.yaml"
+      # "sources/names/summer-camp_first.yaml"
+    end
 
-    def self.items_file; "sources/items/items.yaml" end
-    # def self.items_file; "sources/items/sci-fi.yaml" end
+    def self.races_file
+      # "sources/races/general.yaml"
+      # "sources/races/sci-fi.yaml"
+      # "sources/races/aliens.yaml"
+      "sources/races/summer-camp.yaml"
+    end
 
-
-    def self.names_f_file; "sources/names/airtype_first.yaml" end
-    def self.names_l_file; "sources/names/airtype_last.yaml" end
-    # def self.names_f_file; "sources/names/general_first.yaml" end
-    # def self.names_l_file; "sources/names/general_last.yaml" end
-
-
-    def self.races_file; "sources/races/general.yaml" end
-    # def self.races_file; "sources/races/sci-fi.yaml" end
-    # def self.races_file; "sources/races/aliens.yaml" end
-
-
-    def self.traits_file; "sources/traits/general.yaml" end
-
+    def self.traits_file
+      # "sources/traits/general.yaml"
+      "sources/traits/summer-camp.yaml"
+    end
 
 
     #
@@ -48,17 +65,18 @@ module DND
     # anything.
     #
 
+    def self.weapons_files
+      # %w{ exotic martial simple }
+      # "sci-fi"
+      "summer-camp"
+    end
+
     def self.spell_files
       %w{ bard cleric druid paladin ranger wizard }
     end
 
     def self.proficiencies_files
       %w{ dwarf elf fighter general gnome halfling mage monk psionics rogue }
-    end
-
-    def self.weapons_files
-      %w{ exotic martial simple }
-      # "sci-fi"
     end
 
 
