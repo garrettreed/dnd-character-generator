@@ -1,35 +1,37 @@
-#!/usr/bin/env ruby
-
+# The Campaign class will `require` this one, so this won't need to
+# `require` Campaign.
+require_relative "numbers.rb"
 require_relative "resource_pool.rb"
-
 
 module DND
   class Character
 
-
     # Returns an array of characters.
     def self.crew( n = self.def_quant )
       set = [ ]
-      pool = DND::ResourcePool.new
-      n.times { set.push(DND::Character.new(pool)) }
+      pool = ResourcePool.new
+
+      n.times do
+        char = Character.new(pool, true)
+        pool.remove_unique_attrs(char)
+        set.push(char)
+      end
 
       return set
     end
 
 
-
-    # Returns the same as ::crew but prints the character and
-    # prompts to keep or skip it before adding it to the crew.
+    # Returns the same as `crew` but prints the character and prompts
+    # the user to keep or skip it before adding it to the crew.
     def self.select( n = self.def_quant )
-      pool = DND::ResourcePool.new
       set = [ ]
+      pool = ResourcePool.new
 
-      while set.length < n do
-        char = DND::Character.new(pool, true)
-
-        if char.want_to_keep?([set.length, n])
-          set.push(char)
+      while (set.length < n) do
+        char = Character.new(pool, true)
+        if (char.want_to_keep?([set.length, n]))
           pool.remove_unique_attrs(char)
+          set.push(char)
         end
       end
 
@@ -37,7 +39,7 @@ module DND
     end
 
 
-
+    # Receives an array of characters and prints them to a file.
     def self.to_file( chars )
       filename = "characters-#{chars.length}-#{Time.now.to_i}.txt"
 
@@ -51,7 +53,7 @@ module DND
     end
 
 
-
+    # Receives a filename, reads it, returns an array of characters.
     def self.from_file( filename )
       f = File.open(filename)
       chars = [ ]
@@ -63,10 +65,11 @@ module DND
 
         if line.empty?
           chk = self.from_lines(lines)
-          chars.push(chk) if chk.is_a?(DND::Character)
+          if chk.is_a?(Character)
+            chars.push(chk)
+          end
           working = nil
           lines = [ ]
-
         else
           working = true
           lines.push(line)
@@ -75,36 +78,36 @@ module DND
 
       if working
         chk = self.from_lines(lines)
-        chars.push(chk) if chk.is_a?(DND::Character)
+        if chk.is_a?(Character)
+          chars.push(chk)
+        end
       end
 
       return chars
     end
 
 
-
     # Pass this an array of key-value pairs and get a fully-formed
     # Character in return.
     def self.from_lines( charr = [ ] )
-      char = DND::Character.new(nil, nil)
-      char.read_arr(charr)
+      pool = ResourcePool.new
+      char = Character.new(nil, nil)
+      char.read_arr(charr, pool)
       return char
     end
 
 
-
     def self.single_trait( act, n )
-      refs = DND::Character.acts_and_actions
-      pool = DND::ResourcePool.new
+      ref = Campaign.acts_and_actions[act]
+      pool = ResourcePool.new
       set = [ ]
 
-      refs.each do |key,acts|
-        if (key == act) or (act.include? key)
-          n.times do
-            char = DND::Character.new(pool, nil)
-            set.push(char.send(acts[:pick], char.pool))
-          end
-        end
+      n.times do
+        char = Character.new(pool, nil)
+        val = char.send(ref[:pick], pool)
+        char.send("#{ref[:attr]}=", val)
+        pool.remove_unique_attrs(char)
+        set.push(val)
       end
 
       return set
@@ -112,30 +115,21 @@ module DND
 
 
 
-    def self.acts_and_actions
-      {
-        'names' => { :pick => :pick_name, :attr => :name },
-        'races' => { :pick => :pick_race, :attr => :race },
-        'classes' => { :pick => :pick_class, :attr => :class },
-        'aligns' => { :pick => :pick_alignment, :attr => :alignment },
-        'items' => { :pick => :pick_item, :attr => :item },
-        'traits' => { :pick => :pick_trait, :attr => :trait },
-        'weapons' => { :pick => :pick_weapon, :attr => :weapon },
-        'armors' => { :pick => :pick_armor, :attr => :armor },
-        'profs' => { :pick => :pick_proficiencies, :attr => :profs },
-        'spells' => { :pick => :pick_spells, :attr => :spells },
-      }
+    def self.def_quant
+      1
+    end
+
+    def self.quant_spells
+      2
+    end
+
+    def self.quant_profs
+      3
     end
 
 
-    def self.def_quant;  1 end
-    def self.quant_spells; 2 end
-    def self.quant_profs; 3 end
 
-
-
-
-    def initialize( pool = nil, autogen = true )
+    def initialize( pool, autogen = nil )
       @alignment = ''
       @armor = ''
       @item = ''
@@ -152,34 +146,34 @@ module DND
       @gp = 0
       @hp = 0
 
-      @pool = (pool.is_a?(DND::ResourcePool)) ? pool : DND::ResourcePool.new
-
-      self.gen(@pool) if autogen
+      if autogen
+        if (pool.is_a?(ResourcePool))
+          self.gen(pool)
+        else
+          raise "Can't generate Character without a ResourcePool."
+        end
+      end
     end
 
-
-    attr_reader :pool
     attr_accessor :alignment, :armor, :gp, :hp, :item, :name, :profs, :race, :spells, :stats, :trait, :type, :type_key, :weapon
 
 
-
     def gen( pool )
-      # These are the simplest.
-      self.alignment = self.pick_alignment(pool)
-      self.item = self.pick_item(pool)
+      self.alignment = self.pick_from_pool(pool, :alignments)
+      self.item = self.pick_from_pool(pool, :items)
+      self.race = self.pick_from_pool(pool, :races)
+      self.trait = self.pick_from_pool(pool, :traits)
+
       self.name = self.pick_name(pool)
-      self.race = self.pick_race(pool)
-      self.trait = self.pick_trait(pool)
-
-      # This returns a hash.
-      cls = self.pick_class(pool)
-      self.type = cls[:class]
-      self.type_key = cls[:key]
-
+      self.type = self.pick_class(pool)
       self.armor = self.pick_armor(pool)
       self.weapon = self.pick_weapon(pool)
       self.profs = self.pick_proficiencies(pool)
-      self.spells = self.pick_spells(pool) if self.gets_spells?
+
+      # #HERE
+      # if (self.gets_spells?)
+      #   self.spells = self.pick_spells(pool)
+      # end
 
       # These generate numbers.
       self.stats = self.pick_stats
@@ -189,174 +183,139 @@ module DND
 
 
 
-
     #
     # These characteristics don't depend on others.
     #
 
+    def pick_from_pool(pool, attr, ref = nil)
+      # puts "Picking #{attr}"
+      return pool.pick(attr, ref)
+    end
+
+
     def pick_name( pool )
-      pool.init_names if (pool.names_f.nil? || pool.names_l.nil? || pool.names.nil?)
-
-      chk = pool.names_f.sample + ' ' + pool.names_l.sample
-
-      if pool.names.include?(chk)
-        chk = self.pick_name(pool)
-      else
-        pool.names.push(chk)
-      end
-
-      return chk
+      # val = "#{pool.pick(:names_f)} #{pool.pick(:names_l)}"  #HERE
+      return pool.pick(:names_f)
     end
-
-
-
-    def pick_race( pool )
-      pool.init_races if pool.races.nil?
-      return pool.races.sample
-    end
-
 
 
     def pick_class( pool )
-      pool.init_classes if pool.classes.nil?
-      key = pool.classes.keys.sample
-      nom = pool.classes[key].sample
-      return { :key => key, :class => nom }
-    end
+      pool.check(:classes)
 
-
-
-    def pick_alignment( pool )
-      pool.init_alignments if pool.alignments.nil?
-      return pool.alignments.sample
-    end
-
-
-
-    def pick_item( pool )
-      pool.init_items if (pool.items.nil? or pool.items.empty?)
-      return pool.items.sample
-    end
-
-
-
-    def pick_trait( pool )
-      pool.init_traits if (pool.traits.nil? or pool.traits.empty?)
-      return pool.traits.sample
-    end
-
-
-
-
-    #
-    # These ones do.
-    #
-
-    # `pool.armors` must be a hash or an array.
-    def pick_armor( pool )
-      pool.init_armors if pool.armors.nil?
-
-      if (pool.armors.is_a?(Hash))
-        if self.is_class?('fighter')
-          key = 'heavy'
-        elsif self.is_class?('rogue')
-          key = 'medium'
-        else
-          key = 'light'
-        end
-
-        if (pool.armors.has_key?(key))
-          return pool.armors[key].sample
-        else
-          return pool.armors[pool.armors.keys.sample].sample
-        end
-
+      if (pool.classes.is_a?(Hash))
+        self.type_key = pool.classes.keys.sample
+        return pool.classes[self.type_key].sample
       else
-        return pool.armors.sample
+        return pool.pick(:classes)
       end
     end
 
+
+
+    #
+    # These attributes must be picked after the character's class.
+    # Note that they rely on the `type_key`, which will be set in
+    # `pick_class` if necessary.
+    #
+
+    def pick_armor( pool )
+      pool.check(:armors)
+
+      if (self.type_key.nil?)
+        return pool.pick(:armors)
+      elsif (self.is_class?('fighter'))
+        return pool.pick(:armors, 'heavy')
+      elsif (self.is_class?('rogue'))
+        return pool.pick(:armors, 'medium')
+      else
+        return pool.pick(:armors, 'light')
+      end
+    end
 
 
     def pick_weapon( pool )
-      res = DND::ResourcePool.weapons_files
+      # This will be a string or an array.
+      res = ResourcePool.weapons_files
 
-      if res.is_a?(String)
-        pool.init_weapons(res) if (pool.weapons.nil? or pool.weapons.empty?)
-
-      else
-        if self.is_class?('fighter')
-          if self.is_class?('ranger')
-            pool.init_weapons('simple')
-          else
-            pool.init_weapons('martial')
-          end
-
-        elsif self.is_class?('rogue')
-          pool.init_weapons('exotic')
-
+      if (res.is_a?(String))
+        return pool.pick(:weapons, res)
+      elsif (self.type_key.nil?)
+        return pool.pick(:weapons, res.sample)
+      elsif (self.is_class?('fighter'))
+        if (self.is_class?('ranger'))
+          return pool.pick(:weapons, 'simple')
         else
-          pool.init_weapons('simple')
+          return pool.pick(:weapons, 'martial')
         end
+      elsif (self.is_class?('rogue'))
+        return pool.pick(:weapons, 'exotic')
+      else
+        return pool.pick(:weapons, 'simple')
       end
-
-      return pool.weapons[pool.weapons.keys.sample].sample
     end
 
 
+    def pick_proficiencies( pool, quant = Character.quant_profs )
+      res = ResourcePool.proficiencies_files
 
-    def pick_proficiencies( pool, quant = DND::Character.quant_profs )
-      pool.init_proficiencies if pool.proficiencies.nil?
-
-      profs = [ ]
-      profs.push(pool.proficiencies)
-
-      %w{ dwarf elf gnome halfling }.each do |race|
-        profs.push(pool.load_proficiencies(race)) if self.is_race?(race)
+      if (res.is_a?(String))
+        profs = pool.load_attr(:proficiencies, res)
+        return profs.sample(quant)
       end
 
-      %w{ fighter mage monk rogue }.each do |closs|
-        profs.push(pool.load_proficiencies(closs)) if self.is_class?(closs)
+      profs = [ ]
+
+      profs.push(pool.load_attr(:proficiencies, 'general'))
+      %w{ dwarf elf gnome halfling }.each do |race|
+        if (self.is_race?(race))
+          profs.push(pool.load_attr(:proficiencies, race))
+        end
+      end
+      %w{ fighter mage monk rogue }.each do |_class|
+        if (self.is_class?(_class))
+          profs.push(pool.load_attr(:proficiencies, _class))
+        end
       end
 
       return profs.flatten.sample(quant)
     end
 
 
+    # ATTENTION  #HERE
+    # In its revised form, `pick_spells` will end up looking pretty
+    # similar to `pick_proficiencies`.
+    # def pick_spells( pool, quant = Character.quant_spells )
+    #   pool.init_spells if pool.spells.nil?
 
-    def pick_spells( pool, quant = DND::Character.quant_spells )
-      pool.init_spells if pool.spells.nil?
+    #   spells = [ ]
 
-      spells = [ ]
+    #   # This could be expanded but it will work for entry-level characters.
+    #   levels = %w{ level0 level1 level2 }
 
-      # This could be expanded but it will work for entry-level characters.
-      levels = %w{ level0 level1 level2 }
+    #   # The general spells.
+    #   levels.each do |level|
+    #     if pool.spells.has_key?(level)
+    #       chk_sp = pool.spells[level].clone
 
-      # The general spells.
-      levels.each do |level|
-        if pool.spells.has_key?(level)
-          chk_sp = pool.spells[level].clone
+    #       # Necromancer spells are special.
+    #       chk_sp.delete('necro') if !self.is_class?('necro')
+    #       chk_sp.each { |key,arr| spells.push(arr) }
+    #     end
+    #   end
 
-          # Necromancer spells are special.
-          chk_sp.delete('necro') if !self.is_class?('necro')
-          chk_sp.each { |key,arr| spells.push(arr) }
-        end
-      end
+    #   # The class-based spells.
+    #   %w{ bard cleric druid paladin ranger }.each do |closs|
+    #     if self.is_class?(closs)
+    #       chk_sp = pool.init_spells(closs)
 
-      # The class-based spells.
-      %w{ bard cleric druid paladin ranger }.each do |closs|
-        if self.is_class?(closs)
-          chk_sp = pool.load_spells(closs)
+    #       levels.each do |level|
+    #         spells.push(chk_sp[level]) if chk_sp.has_key?(level)
+    #       end
+    #     end
+    #   end
 
-          levels.each do |level|
-            spells.push(chk_sp[level]) if chk_sp.has_key?(level)
-          end
-        end
-      end
-
-      return spells.flatten.sample(quant)
-    end
-
+    #   return spells.flatten.sample(quant)
+    # end
 
 
 
@@ -368,7 +327,6 @@ module DND
     def pick_stats
       return self.adjust_stats(self.fill_stats(DND::Numbers.stats))
     end
-
 
 
     def fill_stats( arr = [ ] )
@@ -383,16 +341,15 @@ module DND
     end
 
 
-
     def adjust_stats( stats, bonus = 6 )
       ret = stats
 
-      while !bonus.nil? and bonus > 0
+      while ((!bonus.nil?) && (bonus > 0))
         stat_key = ret.keys.sample
         stat_val = ret[stat_key]
 
         bonu = rand(1..bonus)
-        if stat_val + bonu > 18
+        if ((stat_val + bonu) > 18)
           x = 18 - stat_val
         else
           x = bonu
@@ -406,7 +363,6 @@ module DND
     end
 
 
-
     def pick_hp
       return DND::Numbers.hp
     end
@@ -415,7 +371,6 @@ module DND
     def pick_gp
       return DND::Numbers.gp
     end
-
 
 
 
@@ -431,17 +386,16 @@ module DND
 
 
     def is_race?( chk = '' )
-      if self.race.downcase.include?(chk) then true else nil end
+      return self.race.downcase.include?(chk)
     end
 
     def is_class?( chk = '' )
-      if ((self.type.downcase.include?(chk)) or (self.type_key == chk)) then true else nil end
+      return ((self.type_key == chk) || (self.type.downcase.include?(chk)))
     end
 
     def is_alignment?( chk = '' )
-      if (self.alignment.downcase.include?(chk)) then true else nil end
+      return self.alignment.downcase.include?(chk)
     end
-
 
 
 
@@ -476,7 +430,6 @@ module DND
     end
 
 
-
     def lines
       lines = [
         "Name: #{self.name}",
@@ -487,7 +440,9 @@ module DND
         "Armor: #{self.armor_str}"
       ]
 
-      lines.push("Spells: #{self.str_from_list(self.spells)}") if !self.spells.empty?
+      if (!self.spells.empty?)
+        lines.push("Spells: #{self.str_from_list(self.spells)}")
+      end
 
       lines.push(
         "Proficiencies: #{self.str_from_list(self.profs)}",
@@ -502,11 +457,9 @@ module DND
     end
 
 
-
     def print
       self.lines.each { |line| puts line }
     end
-
 
 
     def weapon_str
@@ -517,7 +470,6 @@ module DND
     def armor_str
       self.armor['title']
     end
-
 
 
     def str_from_list( list, key = 'title' )
@@ -533,7 +485,6 @@ module DND
 
 
 
-
     #
     # These methods are helpful for filling a character
     # from an array of strings. Each string in the array
@@ -541,19 +492,16 @@ module DND
     # generating a character from a file of data.
     #
 
-    def read_arr( charr = [ ] )
-      if charr.is_a?(Array)
-        charr.each do |line|
-          if m = line.match(/^([A-Za-z]+): (.*)$/)
-            self.parse_attr(m[1].downcase, m[2])
-          end
+    def read_arr( charr = [ ], pool )
+      charr.each do |line|
+        if m = line.match(/^([A-Za-z]+): (.*)$/)
+          self.parse_attr(pool, m[1].downcase, m[2])
         end
       end
     end
 
 
-
-    def parse_attr( title, value )
+    def parse_attr( pool, title, value )
       if title == 'name'
         self.name = value
 
@@ -563,9 +511,9 @@ module DND
       elsif title == 'race'
         self.race = value
 
-      elsif (title == 'class' or title == 'type')
+      elsif ((title == 'class') || (title == 'type'))
         self.type = value
-        self.type_key = self.pool.find_class_key(value)
+        self.type_key = pool.find_class_key(value)
 
       elsif title == 'trait'
         self.trait = value
@@ -600,7 +548,6 @@ module DND
     end
 
 
-
     def list_from_line( line = '', key = 'title', sep = ',' )
       ret = [ ]
 
@@ -611,7 +558,6 @@ module DND
 
       return ret
     end
-
 
 
     def parse_weapon_str( str = '' )

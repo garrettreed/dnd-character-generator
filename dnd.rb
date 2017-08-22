@@ -1,227 +1,205 @@
 #!/usr/bin/env ruby
 
+require_relative "lib/utils.rb"
 
 module DND
-  class Hub
+  class Campaign
 
+    #
+    # Call this to start the procedure.
+    #
 
-    def self.require_files
-      DND::Hub.required_files.each do |req|
-        req = "#{__dir__}/#{req}"
-        if File.exists?(req)
-          require_relative(req)
-        else
-          raise Exception.new("Critical hit! DND is missing required file '#{req}'.")
-        end
-      end
+    def self.run( args = [ ] )
+      args = (args.is_a?(Array)) ? args : [ ]
+      Campaign.new(args)
     end
 
 
-    def self.required_files
-      %w{ utils.rb numbers.rb character.rb charsheet.rb }
+    def self.acts_and_actions
+      {
+        'names' => { :pick => :pick_name, :attr => :name },
+        'races' => { :pick => :pick_race, :attr => :race },
+        'classes' => { :pick => :pick_class, :attr => :class },
+        'aligns' => { :pick => :pick_alignment, :attr => :alignment },
+        'items' => { :pick => :pick_item, :attr => :item },
+        'traits' => { :pick => :pick_trait, :attr => :trait },
+        'weapons' => { :pick => :pick_weapon, :attr => :weapon },
+        'armors' => { :pick => :pick_armor, :attr => :armor },
+        'profs' => { :pick => :pick_proficiencies, :attr => :profs },
+        'spells' => { :pick => :pick_spells, :attr => :spells },
+      }
     end
 
 
 
-    def self.with_args( args = [ ] )
-      DND::Hub.require_files
-      dnd = DND::Hub.new(args)
-      dnd.main
-    end
-
-
+    #
+    # Instance methods.
+    #
 
     def initialize( args = [ ] )
-      @args = (args.is_a?(Array)) ? args : nil
-      @err = nil
-    end
+      act = get_action(self.get_instruction(args))
 
-    attr_reader :args
-    attr_accessor :err
-
-
-
-    # The idea is that #parse_args will assign a proc or an array of
-    # procs to the instance's @act, which will be called here. If an
-    # action is not specified, then an error message will be printed.
-    def main
-      actions = parse_instructions(self.parse_args(self.args))
-
-      if actions.is_a?(Proc) || actions.is_a?(Array)
-        return act_on_procs(actions)
+      if ((act.is_a?(Proc)) || (act.is_a?(Array)))
+        return run_action(act)
       else
-        print_error
+        print_error("Something unknown is doing something we don't know what. That is what our knowledge amounts to.")
         return nil
       end
     end
 
 
-
-
-
     protected
-
-
 
     # Arguments take the form {action} {flag} {number}, where
     # {action} is the command, like `char` or `stats`,
     # {flag} is optional and depends on the action, and
     # {number} is the quantity of {action}s to generate.
-    # Examples: `chars 12`, `sheets -c 40`, `names 20`
+    # Examples: `chars 12`, `sheets -c 5`, `names 20`
     # The {action} is required. The {flag} is not. If the {number}
     # is absent, then a sensible default will be used. The `:var`
     # can be useful for things like a file name.
-    def parse_args( arr = [ ] )
-      ret = {
+    def get_instruction( args = [ ] )
+      inx = {
         :act => nil,    # The main action.
         :flag => nil,   # Action modifier.
         :quant => nil,  # The quantity.
         :var => nil     # Variable. E.g., a filename.
       }
 
-      arr.each do |arg|
-        if m = arg.match(/^[0-9]+$/)
-          ret[:quant] = m[0].to_i
-
-        elsif m = arg.match(/^-+([A-Za-z])$/)
-          ret[:flag] = m[1].downcase
-
-        elsif m = arg.match(/^[A-Za-z]+$/)
-          if ret[:act].nil?
-            ret[:act] = m[0].downcase
+      args.each do |arg|
+        if (arg.numeric?)
+          inx[:quant] = arg.to_i
+        elsif (m = arg.match(/^-+([A-Za-z])$/))
+          inx[:flag] = m[1].downcase
+        elsif (m = arg.match(/^[A-Za-z]+$/))
+          if inx[:act].nil?
+            inx[:act] = m[0].downcase
           else
-            ret[:var] = m[0].downcase
+            inx[:var] = m[0].downcase
           end
-
         else
-          ret[:var] = arg
+          inx[:var] = arg
         end
       end
 
-      return ret
+      return inx
     end
 
 
+    def get_action( inx )
+      # For the main help message.
+      if ((inx[:act].nil?) || (inx[:act] == 'help') ||
+          (inx[:flag] == 'help') || (inx[:flag] == 'h'))
+        return make_error_action(File.read('help-message.md'))
 
-    def parse_instructions( inx = { } )
-      ret = nil
+      # For character sheets.
+      elsif (inx[:act].include?('sheet'))
+        return make_sheet_action(inx)
 
-      if inx.is_a?(Hash)
-        if inx[:act].nil? || inx[:act] == 'help' ||
-           inx[:flag] == 'help' || inx[:flag] == 'h'
-          self.err = File.read('help-message.md')
+      # For characters. Below `sheet` in case of 'charsheet'.
+      elsif (inx[:act].include?('char'))
+        return make_character_action(inx)
 
-        else
-          # For character sheets.
-          if inx[:act].include?('sheet')
-            ret = parse_sheets_instructions(inx)
+      # For character sheets from a file.
+      elsif (inx[:act].include?('file'))
+        return make_file_action(inx)
 
-          # For characters. Below `sheet` in case of 'charsheet'.
-          elsif inx[:act].include?('char')
-            ret = parse_character_instructions(inx)
+      # For stats.
+      elsif (inx[:act].include?('stat'))
+        return make_stats_action(inx)
 
-          # For character sheets from a file.
-          elsif inx[:act].include?('file')
-            ret = parse_file_instructions(inx)
-
-          # For stats.
-          elsif inx[:act].include?('stat')
-            ret = parse_stats_instructions(inx)
-
-          # For single selections from a character. The commands are
-          # the keys of Character::acts_and_actions.
-          elsif DND::Character.acts_and_actions.keys.include?(inx[:act])
-            ret = parse_singles_instructions(inx)
-
-          else
-            self.err = "Quitting: #{inx[:act]} is not a valid command."
-          end
-        end
+      # For single selections from a character. The commands are
+      # the keys of Campaign::acts_and_actions.
+      elsif (Campaign.acts_and_actions.keys.include?(inx[:act]))
+        return make_singles_action(inx)
 
       else
-        self.err = "Quitting: no arguments."
+        return make_error_action("Quitting: #{inx[:act]} is not a valid command.")
       end
-
-      return ret
     end
 
 
 
-    def parse_sheets_instructions( inx )
-      ret = nil
+    #
+    # Make Action methods.
+    #
+    # These all receive an instruction hash and return either a
+    # lambda or an array of lambdas. If an array, each one will
+    # receive the return of the one run before it.
+    #
 
-      n = (inx[:quant].nil?) ? DND::CharSheet.def_quant : inx[:quant]
+    def make_sheet_action( inx )
+      require_relative "lib/charsheet.rb"
 
-      if inx[:flag].nil?
-        ret = lambda { DND::CharSheet.new(n) }
+      n = (inx[:quant].is_a?(Integer)) ? inx[:quant] : CharSheet.def_quant
+
+      if (inx[:flag].nil?)
+        return [
+          lambda { Character.crew(n * CharSheet.chars_per_sheet) },
+          lambda { |chars| Character.to_file(chars) },
+          lambda { |file| CharSheet.from_file(file) }
+        ]
 
       # c is for cherrypick.
-      elsif inx[:flag] == 'c'
-        ret = [
-          lambda { DND::Character.select(n * DND::CharSheet.chars_per_sheet) },
-          lambda { |chars| DND::Character.to_file(chars) },
-          lambda { |file| DND::CharSheet.from_file(file) }
+      elsif (inx[:flag] == 'c')
+        return [
+          lambda { Character.select(n * CharSheet.chars_per_sheet) },
+          lambda { |chars| Character.to_file(chars) },
+          lambda { |file| CharSheet.from_file(file) }
         ]
 
       else
-        self.err = "Quitting: '#{inx[:flag]}' is not a valid flag for character sheets."
+        return make_error_action("Quitting: '#{inx[:flag]}' is not a valid flag for character sheets.")
       end
-
-      return ret
     end
 
 
+    def make_character_action( inx )
+      require_relative "lib/character.rb"
 
-    def parse_character_instructions( inx )
-      ret = nil
+      n = (inx[:quant].is_a?(Integer)) ? inx[:quant] : Character.def_quant
 
-      n = (inx[:quant].nil?) ? DND::Character.def_quant : inx[:quant]
-
-      if inx[:flag].nil?
+      if (inx[:flag].nil?)
         ret = lambda do
-          DND::Character.crew(n).each do |char|
+          Character.crew(n).each do |char|
             char.print
             puts "\n"
           end
         end
+        return ret
 
       # c is for cherrypick.
-      elsif inx[:flag] == 'c'
-        ret = [
-          lambda { DND::Character.select(n) },
-          lambda { |chars| DND::Character.to_file(chars) }
+      elsif (inx[:flag] == 'c')
+        return [
+          lambda { Character.select(n) },
+          lambda { |chars| Character.to_file(chars) }
         ]
 
       else
-        self.err = "Quitting: '#{inx[:flag]}' not a valid flag for characters."
+        return make_error_action("Quitting: '#{inx[:flag]}' not a valid flag for characters.")
       end
-
-      return ret
     end
 
 
+    def make_file_action( inx )
+      require_relative "lib/charsheet.rb"
 
-    def parse_file_instructions( inx )
-      ret = nil
-
-      if inx[:var].is_a?(String)
-        ret = lambda { DND::CharSheet.from_file(inx[:var]) }
+      if (inx[:var].is_a?(String))
+        return lambda { CharSheet.from_file(inx[:var]) }
       else
-        self.err = "Quitting: given file command but no file name."
+        return make_error_action("Quitting: given file command but no file name.")
       end
-
-      return ret
     end
 
 
+    def make_stats_action( inx )
+      require_relative "lib/numbers.rb"
 
-    def parse_stats_instructions( inx )
-      n = (inx[:quant].nil?) ? DND::Numbers.def_sets : inx[:quant]
+      n = (inx[:quant].is_a?(Integer)) ? inx[:quant] : Numbers.def_sets
 
       ret = lambda do
-        nums = DND::Numbers.stats(n)
-
-        if n > 1
+        nums = Numbers.stats(n)
+        if (n > 1)
           nums.each { |n| puts n.to_s }
         else
           puts nums.to_s
@@ -232,16 +210,22 @@ module DND
     end
 
 
+    def make_singles_action( inx )
+      require_relative "lib/character.rb"
 
-    def parse_singles_instructions( inx )
-      n = (inx[:quant].nil?) ? DND::Character.def_quant : inx[:quant]
+      n = (inx[:quant].is_a?(Integer)) ? inx[:quant] : Character.def_quant
 
       ret = lambda do
-        selects = DND::Character.single_trait(inx[:act], n)
+        selects = Character.single_trait(inx[:act], n)
         selects.each { |nom| puts nom }
       end
 
       return ret
+    end
+
+
+    def make_error_action( msg )
+      return lambda { puts msg }
     end
 
 
@@ -250,33 +234,28 @@ module DND
     # will be passed the return of the preceding proc. The first
     # proc should use the command line arguments. And the return
     # will be what is returned from the last proc called.
-    def act_on_procs( procs )
-      ret = nil
+    def run_action( act )
+      if (act.is_a?(Proc))
+        return act.call
 
-      if procs.is_a?(Proc)
-        ret = procs.call
-
-      elsif procs.is_a?(Array)
-        procs.each do |proc|
-          if proc.is_a?(Proc)
-            ret = (ret.nil?) ? proc.call : proc.call(ret)
-          end
+      elsif act.is_a?(Array)
+        ret = nil
+        act.each do |proc|
+          ret = (ret.nil?) ? proc.call : proc.call(ret)
         end
+        return ret
 
       else
-        print_error
+        raise "Can't run action: need a Proc or a Array of Procs."
       end
-
-      return ret
     end
 
 
-
-    def print_error( msg = self.err )
-      if msg.is_a?(String)
+    def print_error( msg, exc = nil )
+      if (exc.nil?)
         puts msg
       else
-        puts "Something unknown is doing something we don't know what. That is what our knowledge amounts to."
+        raise msg
       end
     end
 
@@ -284,7 +263,5 @@ module DND
 end
 
 
-
-
 # Run it.
-DND::Hub.with_args(ARGV)
+DND::Campaign.run(ARGV)

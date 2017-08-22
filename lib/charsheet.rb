@@ -1,12 +1,11 @@
-#!/usr/bin/env ruby
-
+require_relative "character.rb"
 
 module DND
   class CharSheet
 
 
-    def self.from_file( filename = DND::CharSheet.file_to_read )
-      DND::CharSheet.new(filename)
+    def self.from_file( filename = CharSheet.file_to_read )
+      CharSheet.new(filename)
     end
 
 
@@ -28,7 +27,7 @@ module DND
     end
 
     def self.file_to_write( n = 1 )
-      "#{DND::CharSheet.dir_to_write}/char-sheets-#{n}.html"
+      "#{CharSheet.dir_to_write}/char-sheets-#{n}.html"
     end
 
     def self.block_joint
@@ -37,7 +36,7 @@ module DND
 
 
     def self.dir_ok?
-      if Dir.exist?(DND::CharSheet.dir_to_write)
+      if Dir.exist?(CharSheet.dir_to_write)
         return true
       else
         return nil
@@ -46,7 +45,7 @@ module DND
 
 
     def self.make_dir!
-      Dir.mkdir(DND::CharSheet.dir_to_write)
+      Dir.mkdir(CharSheet.dir_to_write)
     end
 
 
@@ -54,14 +53,14 @@ module DND
 
     def initialize( ini )
       if ini.is_a?(Integer)
-        crew = DND::Character.crew(ini * DND::CharSheet.chars_per_sheet)
+        crew = Character.crew(ini * CharSheet.chars_per_sheet)
       elsif ini.is_a?(String)
-        crew = DND::Character.from_file(ini)
+        crew = Character.from_file(ini)
       else
         raise Exception.new("Can't create new character sheet! Bad init param.")
       end
 
-      per = DND::CharSheet.chars_per_sheet
+      per = CharSheet.chars_per_sheet
       rem = crew.length.divmod(per)
       x = 0
 
@@ -73,7 +72,7 @@ module DND
 
       if x > 0
         puts "Adding #{x} characters to fill the sheet."
-        crew.concat(DND::Character.crew(x))
+        crew.concat(Character.crew(x))
       end
 
       @last_lines = 0
@@ -231,7 +230,7 @@ HTML
 
 
     def write_file( chars, count )
-      DND::CharSheet.make_dir! if !DND::CharSheet.dir_ok?
+      CharSheet.make_dir! if !CharSheet.dir_ok?
       top, bot = chars.slice(0,2), chars.slice(2,2)
 
       out = <<HTML
@@ -244,17 +243,17 @@ HTML
   <body>
 		<div id="carapace">
 			<div class="block-row">
-				#{top.join(DND::CharSheet.block_joint)}
+				#{top.join(CharSheet.block_joint)}
 			</div>
 			<div class="block-row">
-				#{bot.join(DND::CharSheet.block_joint)}
+				#{bot.join(CharSheet.block_joint)}
 			</div>
 		</div>
 	</body>
 </html>
 HTML
 
-      f = File.write(DND::CharSheet.file_to_write(count), out)
+      f = File.write(CharSheet.file_to_write(count), out)
 
       return (count += 1)
     end

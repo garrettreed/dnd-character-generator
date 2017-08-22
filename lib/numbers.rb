@@ -1,6 +1,3 @@
-#!/usr/bin/env ruby
-
-
 module DND
   class Numbers
 
@@ -22,10 +19,10 @@ module DND
 
     def self.def_lims
       {
-        :sets => DND::Numbers.def_sets,
-        :quant => DND::Numbers.def_quant,
-        :high => DND::Numbers.bound_high,
-        :low => DND::Numbers.bound_low
+        :sets => Numbers.def_sets,
+        :quant => Numbers.def_quant,
+        :high => Numbers.bound_high,
+        :low => Numbers.bound_low
       }
     end
 
@@ -35,7 +32,7 @@ module DND
     #
 
     def self.stats( n = 1 )
-      return DND::Numbers.new({
+      return Numbers.new({
                                 :sets => n,
                                 :quant => 6,
                                 :high => 18,
@@ -44,7 +41,7 @@ module DND
     end
 
     def self.hp(n = 1 )
-      return DND::Numbers.new({
+      return Numbers.new({
                                 :sets => n,
                                 :quant => 1,
                                 :high => 20,
@@ -53,7 +50,7 @@ module DND
     end
 
     def self.gp( n = 1 )
-      return DND::Numbers.new({
+      return Numbers.new({
                                 :sets => n,
                                 :quant => 1,
                                 :high => 500,
@@ -70,7 +67,7 @@ module DND
 
 
     def initialize( u_lims = { } )
-      defs = DND::Numbers.def_lims
+      defs = Numbers.def_lims
       lims = (u_lims.is_a?(Hash)) ? defs.merge(u_lims) : defs
 
       sets = (lims[:sets].nil?) ? 0 : lims[:sets].to_i
