@@ -16,19 +16,22 @@ module DND
     def self.armors_file
       # "sources/armor/general.yaml"
       # "sources/armor/sci-fi.yaml"
-      "sources/armor/summer-camp.yaml"
+      # "sources/armor/summer-camp.yaml"
+      "sources/armor/home-alone.yaml"
     end
 
-    def self.classes_file
+    def self.types_file
       # "sources/classes/general.yaml"
       # "sources/classes/sci-fi.yaml"
-      "sources/classes/summer-camp.yaml"
+      # "sources/classes/summer-camp.yaml"
+      "sources/classes/home-alone.yaml"
     end
 
     def self.items_file
       # "sources/items/items.yaml"
       # "sources/items/sci-fi.yaml"
-      "sources/items/summer-camp.yaml"
+      # "sources/items/summer-camp.yaml"
+      "sources/items/home-alone.yaml"
     end
 
     def self.names_f_file
@@ -51,8 +54,8 @@ module DND
     end
 
     def self.traits_file
-      # "sources/traits/general.yaml"
-      "sources/traits/summer-camp.yaml"
+      "sources/traits/general.yaml"
+      # "sources/traits/summer-camp.yaml"
     end
 
 
@@ -69,13 +72,14 @@ module DND
       "sources/spells/#{ref}.yaml"
     end
 
-    def self.weapons_file( ref = 'simple' )
-      "sources/weapons/#{ref}.yaml"
+    def self.weapons_file( ref = 'summer-camp' )
+      # "sources/weapons/#{ref}.yaml"
+      "sources/weapons/summer-camp.yaml"
     end
 
 
     #
-    # These traits could depend on the character's race, class, etc.
+    # These traits could depend on the character's race, type, etc.
     # So if an array is given, then filtering might occur on those
     # traits. If a string, then that file will be irrespective of
     # anything.
@@ -100,12 +104,12 @@ module DND
     # These symbols name the various sub-pools that comprise the
     # Resource Pool. Methods in this class and instance must use
     # these names because they will be called dynamically. So like
-    # `alignments_file`, `init_armors`, `load_classes`, etc.
+    # `alignments_file`, `init_armors`, `load_types`, etc.
     def self.attrs
       [
         :alignments,
         :armors,
-        :classes,
+        :types,
         :items,
         :names_f,
         :names_l,
@@ -131,11 +135,12 @@ module DND
     #   1: The method name on the Character to access the value.
     def self.unique_attrs
       [
-        [:items, :item],
-        [:names, [:names_f, :name]],
+        # [:names, [:names_f, :names_l]],
+        [:types, :type],
         [:weapons, :weapon],
         [:armors, :armor],
         [:traits, :trait],
+        [:items, :item],
       ]
     end
 
@@ -292,8 +297,8 @@ module DND
     #   self.armors = YAML.load_file(ResourcePool.armor_file)
     # end
 
-    # def init_classes
-    #   self.classes = YAML.load_file(ResourcePool.classes_file)
+    # def init_types
+    #   self.types = YAML.load_file(ResourcePool.types_file)
     # end
 
     # def init_items
@@ -335,14 +340,16 @@ module DND
 
 
 
-    def find_class_key( classname )
-      self.check(:classes)
+    def find_type_key( typename )
+      self.check(:types)
 
-      compare = classname.downcase
+      compare = typename.downcase
       key = nil
 
-      self.classes.each do |parent, children|
-        children.each { |n| key = parent if n.downcase == compare }
+      self.types.each do |parent, children|
+        if (children.is_a?(Hash))
+          children.each { |n| key = parent if n.downcase == compare }
+        end
       end
 
       return key

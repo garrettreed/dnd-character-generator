@@ -133,18 +133,28 @@ body {
 
 .vitals {
 	@extend .sheet_line;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 	text-align: center;
 	margin: $block_margin;
 }
 .vitals > div {
 	display: inline-block;
-	margin: $inline_margin;
+	// margin: $inline_margin;
+    flex-basis: auto;
+    text-align: center;
 
     &:first-child {
         margin-left: 0;
+        text-align: left;
     }
     &:last-child {
         margin-right: 0;
+        text-align: right;
     }
 }
 

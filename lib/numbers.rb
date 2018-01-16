@@ -33,29 +33,29 @@ module DND
 
     def self.stats( n = 1 )
       return Numbers.new({
-                                :sets => n,
-                                :quant => 6,
-                                :high => 18,
-                                :low => 6
-                              }).set
+                           :sets => n,
+                           :quant => 6,
+                           :high => 18,
+                           :low => 6
+                         }).set
     end
 
     def self.hp(n = 1 )
       return Numbers.new({
-                                :sets => n,
-                                :quant => 1,
-                                :high => 20,
-                                :low => 10
-                              }).set[0]
+                           :sets => n,
+                           :quant => 1,
+                           :high => 20,
+                           :low => 10
+                         }).set[0]
     end
 
     def self.gp( n = 1 )
       return Numbers.new({
-                                :sets => n,
-                                :quant => 1,
-                                :high => 500,
-                                :low => 1
-                              }).set[0]
+                           :sets => n,
+                           :quant => 1,
+                           :high => 500,
+                           :low => 1
+                         }).set[0]
     end
 
 

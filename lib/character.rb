@@ -165,7 +165,7 @@ module DND
       self.trait = self.pick_from_pool(pool, :traits)
 
       self.name = self.pick_name(pool)
-      self.type = self.pick_class(pool)
+      self.type = self.pick_type(pool)
       self.armor = self.pick_armor(pool)
       self.weapon = self.pick_weapon(pool)
       self.profs = self.pick_proficiencies(pool)
@@ -194,28 +194,28 @@ module DND
 
 
     def pick_name( pool )
-      # val = "#{pool.pick(:names_f)} #{pool.pick(:names_l)}"  #HERE
-      return pool.pick(:names_f)
+      # return pool.pick(:names_f)
+      return "#{pool.pick(:names_f)} #{pool.pick(:names_l)}"
     end
 
 
-    def pick_class( pool )
-      pool.check(:classes)
+    def pick_type( pool )
+      pool.check(:types)
 
-      if (pool.classes.is_a?(Hash))
-        self.type_key = pool.classes.keys.sample
-        return pool.classes[self.type_key].sample
+      if (pool.types.is_a?(Hash))
+        self.type_key = pool.types.keys.sample
+        return pool.types[self.type_key].sample
       else
-        return pool.pick(:classes)
+        return pool.pick(:types)
       end
     end
 
 
 
     #
-    # These attributes must be picked after the character's class.
+    # These attributes must be picked after the character's type.
     # Note that they rely on the `type_key`, which will be set in
-    # `pick_class` if necessary.
+    # `pick_type` if necessary.
     #
 
     def pick_armor( pool )
@@ -223,9 +223,9 @@ module DND
 
       if (self.type_key.nil?)
         return pool.pick(:armors)
-      elsif (self.is_class?('fighter'))
+      elsif (self.is_type?('fighter'))
         return pool.pick(:armors, 'heavy')
-      elsif (self.is_class?('rogue'))
+      elsif (self.is_type?('rogue'))
         return pool.pick(:armors, 'medium')
       else
         return pool.pick(:armors, 'light')
@@ -241,13 +241,13 @@ module DND
         return pool.pick(:weapons, res)
       elsif (self.type_key.nil?)
         return pool.pick(:weapons, res.sample)
-      elsif (self.is_class?('fighter'))
-        if (self.is_class?('ranger'))
+      elsif (self.is_type?('fighter'))
+        if (self.is_type?('ranger'))
           return pool.pick(:weapons, 'simple')
         else
           return pool.pick(:weapons, 'martial')
         end
-      elsif (self.is_class?('rogue'))
+      elsif (self.is_type?('rogue'))
         return pool.pick(:weapons, 'exotic')
       else
         return pool.pick(:weapons, 'simple')
@@ -271,9 +271,9 @@ module DND
           profs.push(pool.load_attr(:proficiencies, race))
         end
       end
-      %w{ fighter mage monk rogue }.each do |_class|
-        if (self.is_class?(_class))
-          profs.push(pool.load_attr(:proficiencies, _class))
+      %w{ fighter mage monk rogue }.each do |_type|
+        if (self.is_type?(_type))
+          profs.push(pool.load_attr(:proficiencies, _type))
         end
       end
 
@@ -298,14 +298,14 @@ module DND
     #       chk_sp = pool.spells[level].clone
 
     #       # Necromancer spells are special.
-    #       chk_sp.delete('necro') if !self.is_class?('necro')
+    #       chk_sp.delete('necro') if !self.is_type?('necro')
     #       chk_sp.each { |key,arr| spells.push(arr) }
     #     end
     #   end
 
-    #   # The class-based spells.
+    #   # The type-based spells.
     #   %w{ bard cleric druid paladin ranger }.each do |closs|
-    #     if self.is_class?(closs)
+    #     if self.is_type?(closs)
     #       chk_sp = pool.init_spells(closs)
 
     #       levels.each do |level|
@@ -380,7 +380,7 @@ module DND
 
     def gets_spells?
       ret = nil
-      %w{ mage monk Bard }.each { |chk| ret = true if self.is_class?(chk) }
+      %w{ mage monk Bard }.each { |chk| ret = true if self.is_type?(chk) }
       return ret
     end
 
@@ -389,7 +389,7 @@ module DND
       return self.race.downcase.include?(chk)
     end
 
-    def is_class?( chk = '' )
+    def is_type?( chk = '' )
       return ((self.type_key == chk) || (self.type.downcase.include?(chk)))
     end
 
@@ -511,9 +511,9 @@ module DND
       elsif title == 'race'
         self.race = value
 
-      elsif ((title == 'class') || (title == 'type'))
+      elsif ((title == 'type') || (title == 'class'))
         self.type = value
-        self.type_key = pool.find_class_key(value)
+        self.type_key = pool.find_type_key(value)
 
       elsif title == 'trait'
         self.trait = value

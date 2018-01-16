@@ -19,7 +19,7 @@ module DND
       {
         'names' => { :pick => :pick_name, :attr => :name },
         'races' => { :pick => :pick_race, :attr => :race },
-        'classes' => { :pick => :pick_class, :attr => :class },
+        'classes' => { :pick => :pick_type, :attr => :type },
         'aligns' => { :pick => :pick_alignment, :attr => :alignment },
         'items' => { :pick => :pick_item, :attr => :item },
         'traits' => { :pick => :pick_trait, :attr => :trait },
