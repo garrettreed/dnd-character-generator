@@ -133,7 +133,8 @@ module DND
       @alignment = ''
       @armor = ''
       @item = ''
-      @name = ''
+      @name_f = ''
+      @name_l = ''
       @race = ''
       @trait = ''
       @type = ''
@@ -155,7 +156,7 @@ module DND
       end
     end
 
-    attr_accessor :alignment, :armor, :gp, :hp, :item, :name, :profs, :race, :spells, :stats, :trait, :type, :type_key, :weapon
+    attr_accessor :alignment, :armor, :gp, :hp, :item, :name_f, :name_l, :profs, :race, :spells, :stats, :trait, :type, :type_key, :weapon
 
 
     def gen( pool )
@@ -164,7 +165,8 @@ module DND
       self.race = self.pick_from_pool(pool, :races)
       self.trait = self.pick_from_pool(pool, :traits)
 
-      self.name = self.pick_name(pool)
+      self.name_f = self.pick_name_f(pool)
+      self.name_l = self.pick_name_l(pool)
       self.type = self.pick_type(pool)
       self.armor = self.pick_armor(pool)
       self.weapon = self.pick_weapon(pool)
@@ -193,9 +195,14 @@ module DND
     end
 
 
-    def pick_name( pool )
-      # return pool.pick(:names_f)
-      return "#{pool.pick(:names_f)} #{pool.pick(:names_l)}"
+    def pick_name_f( pool )
+      return pool.pick(:names_f)
+      # return "#{pool.pick(:names_f)} #{pool.pick(:names_l)}"
+    end
+
+    def pick_name_l( pool )
+      return pool.pick(:names_l)
+      # return "#{pool.pick(:names_f)} #{pool.pick(:names_l)}"
     end
 
 
@@ -432,7 +439,8 @@ module DND
 
     def lines
       lines = [
-        "Name: #{self.name}",
+        "First name: #{self.name_f}",
+        "Last name: #{self.name_l}",
         "Race: #{self.race}",
         "Class: #{self.type}",
         "Alignment: #{self.alignment}",
@@ -494,7 +502,7 @@ module DND
 
     def read_arr( charr = [ ], pool )
       charr.each do |line|
-        if m = line.match(/^([A-Za-z]+): (.*)$/)
+        if m = line.match(/^([A-Za-z ]+): (.*)$/)
           self.parse_attr(pool, m[1].downcase, m[2])
         end
       end
@@ -502,8 +510,11 @@ module DND
 
 
     def parse_attr( pool, title, value )
-      if title == 'name'
-        self.name = value
+      if title == 'first name'
+        self.name_f = value
+
+      elsif title == 'last name'
+          self.name_l = value
 
       elsif title == 'alignment'
         self.alignment = value

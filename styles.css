@@ -76,6 +76,9 @@ body {
   font-weight: bold;
   margin: 0; }
 
+.name_part {
+  white-space: nowrap; }
+
 .vitals {
   display: flex;
   flex-direction: row;

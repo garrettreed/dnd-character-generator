@@ -130,6 +130,10 @@ body {
 	margin: 0;
 }
 
+.name_part {
+    white-space: nowrap;
+}
+
 
 .vitals {
 	@extend .sheet_line;

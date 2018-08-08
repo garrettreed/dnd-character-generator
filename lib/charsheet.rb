@@ -107,7 +107,7 @@ module DND
 <div class="block-cell">
 	<div class="block-block">
 
-		<div class="name">#{char.name}</div>
+		<div class="name"><span class="name_part">#{char.name_f}</span> <span class="name_part">#{char.name_l}</span></div>
 
 		<div class="vitals">
 			<div class="alignment">#{char.alignment}</div>

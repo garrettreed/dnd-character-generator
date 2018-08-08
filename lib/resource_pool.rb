@@ -17,32 +17,35 @@ module DND
       # "sources/armor/general.yaml"
       # "sources/armor/sci-fi.yaml"
       # "sources/armor/summer-camp.yaml"
-      "sources/armor/home-alone.yaml"
+      # "sources/armor/home-alone.yaml"
+      "sources/armor/airtype_summer.yaml"
     end
 
     def self.types_file
       # "sources/classes/general.yaml"
       # "sources/classes/sci-fi.yaml"
       # "sources/classes/summer-camp.yaml"
-      "sources/classes/home-alone.yaml"
+      # "sources/classes/home-alone.yaml"
+      "sources/classes/airtype_summer.yaml"
     end
 
     def self.items_file
       # "sources/items/items.yaml"
       # "sources/items/sci-fi.yaml"
       # "sources/items/summer-camp.yaml"
-      "sources/items/home-alone.yaml"
+      # "sources/items/home-alone.yaml"
+      "sources/items/airtype_summer.yaml"
     end
 
     def self.names_f_file
-      # "sources/names/airtype_first.yaml"
+      "sources/names/airtype_first.yaml"
       # "sources/names/general_first.yaml"
-      "sources/names/summer-camp_first.yaml"
+      # "sources/names/summer-camp_first.yaml"
     end
 
     def self.names_l_file
-      # "sources/names/airtype_lsst.yaml"
-      "sources/names/general_last.yaml"
+      "sources/names/airtype_last.yaml"
+      # "sources/names/general_last.yaml"
       # "sources/names/summer-camp_first.yaml"
     end
 
@@ -50,12 +53,14 @@ module DND
       # "sources/races/general.yaml"
       # "sources/races/sci-fi.yaml"
       # "sources/races/aliens.yaml"
-      "sources/races/summer-camp.yaml"
+      # "sources/races/summer-camp.yaml"
+      "sources/races/airtype_summer.yaml"
     end
 
     def self.traits_file
-      "sources/traits/general.yaml"
+      # "sources/traits/general.yaml"
       # "sources/traits/summer-camp.yaml"
+      "sources/traits/airtype_summer.yaml"
     end
 
 
@@ -74,7 +79,7 @@ module DND
 
     def self.weapons_file( ref = 'summer-camp' )
       # "sources/weapons/#{ref}.yaml"
-      "sources/weapons/summer-camp.yaml"
+      "sources/weapons/airtype_summer.yaml"
     end
 
 
@@ -88,7 +93,7 @@ module DND
     def self.weapons_files
       # %w{ exotic martial simple }
       # "sci-fi"
-      "summer-camp"
+      "airtype_summer"
     end
 
     def self.spell_files
@@ -135,7 +140,8 @@ module DND
     #   1: The method name on the Character to access the value.
     def self.unique_attrs
       [
-        # [:names, [:names_f, :names_l]],
+        [:names_f, :name_f],
+        [:names_l, :name_l],
         [:types, :type],
         [:weapons, :weapon],
         [:armors, :armor],
